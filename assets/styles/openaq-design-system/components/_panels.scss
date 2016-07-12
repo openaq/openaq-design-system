@@ -20,11 +20,15 @@
   }
 }
 
-.panel__header {
+.panel__header,
+.panel__footer {
   position: relative;
   z-index: 2;
   padding: $global-spacing;
   background: #fff;
+}
+
+.panel__header {
   border-radius: $base-border-radius $base-border-radius 0 0;
   box-shadow: 0 1px 0 0 $base-alpha-color;
 }
@@ -39,6 +43,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin: 0;
+
   .drop__toggle {
     &:visited, & {
       color: $base-font-color;
@@ -49,6 +54,7 @@
 .panel__headline,
 .panel__meta-actions {
   display: table-cell;
+
   &, > * {
     vertical-align: top;
   }
@@ -60,11 +66,20 @@
 
 .panel__meta-actions {
   text-align: right;
-  padding-left: 0.5rem;
+  white-space: nowrap;
+
+  > * {
+    margin-left: $global-spacing / 2;
+  }
+
+  > [class*="button"]:last-child {
+    margin-right: - $global-spacing / 4;
+  }
 
   [class*="button"],
   [class*="drop__toggle"] {
     opacity: 0.48;
+
     &:hover {
       opacity: 1;
     }
@@ -72,13 +87,10 @@
 }
 
 .panel__footer {
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  border-radius: 0 0 $base-border-radius $base-border-radius;
   min-height: 1rem;
-  padding: $global-spacing;
+  border-radius: 0 0 $base-border-radius $base-border-radius;
   box-shadow: 0 -1px 0 0 $base-alpha-color;
+
   &:empty {
     padding: 0;
   }
@@ -87,6 +99,7 @@
 .panel__body {
   position: relative;
   z-index: 1;
+
   > *:last-child {
     margin-bottom: 0;
   }
@@ -108,7 +121,8 @@
 
 .panel__button-dismiss {
   @extend .button, .button--base-unbounded, .button--small, .button--text-hidden;
-  &:before {
+
+  &::before {
     @extend %openaq-ds-icon-sm-xmark;
   }
 }

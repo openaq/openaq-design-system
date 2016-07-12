@@ -8,7 +8,7 @@
  */
 
 
-/* Normalize
+/* Third-party
    ========================================================================== */
 
 /**
@@ -16,50 +16,55 @@
  * http://necolas.github.io/normalize.css/
  */
 
-@import "openaq-design-system/normalize";
+@import "openaq-design-system/vendor/normalize";
 
 /**
  * Kenneth Ormandy's OpenType features—ligatures, kerning, and more—to Normalize.css:
  * https://github.com/kennethormandy/normalize-opentype.css
  */
 
-@import "openaq-design-system/normalize-opentype";
+@import "openaq-design-system/vendor/normalize-opentype";
 
 
 /* Settings
    ========================================================================== */
 
-@import "openaq-design-system/variables";
-@import "openaq-design-system/functions";
-@import "openaq-design-system/mixins";
+@import "openaq-design-system/settings/variables";
+@import "openaq-design-system/settings/functions";
+@import "openaq-design-system/settings/mixins";
 
 
 /* Core
    ========================================================================== */
 
-@import "openaq-design-system/base";
-@import "openaq-design-system/typography";
-@import "openaq-design-system/tables";
-@import "openaq-design-system/code";
-@import "openaq-design-system/media";
-@import "openaq-design-system/openaq-ds-icons";
-@import "openaq-design-system/utilities";
+@import "openaq-design-system/core/base";
+@import "openaq-design-system/core/openaq-ds-icons"; // Webfont icon library
+@import "openaq-design-system/core/animations";
+@import "openaq-design-system/core/typography";
+@import "openaq-design-system/core/tables";
+@import "openaq-design-system/core/code";
+@import "openaq-design-system/core/media";
+@import "openaq-design-system/core/utilities";
 
 
 /* Components
    ========================================================================== */
 
-@import "openaq-design-system/buttons";
-@import "openaq-design-system/forms";
-@import "openaq-design-system/drops";
-@import "openaq-design-system/panels";
-@import "openaq-design-system/alerts";
-@import "openaq-design-system/modals";
-@import "openaq-design-system/layout";
-@import "openaq-design-system/constructs";
+@import "openaq-design-system/components/buttons";
+@import "openaq-design-system/components/forms";
+@import "openaq-design-system/components/drops";
+@import "openaq-design-system/components/panels";
+@import "openaq-design-system/components/alerts";
+@import "openaq-design-system/components/modals";
 
 
-/* Third-party components
+/* Content
    ========================================================================== */
 
-@import "openaq-design-system/third-party/react-scrollbar";
+@import "openaq-design-system/content/layout";
+
+
+/* Third-party (cont.)
+   ========================================================================== */
+
+@import "openaq-design-system/vendor/react-scrollbar";
