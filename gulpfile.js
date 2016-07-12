@@ -148,7 +148,7 @@ gulp.task('openaq:icons', function (done) {
     '--font-name', 'OpenAQ DS Icons',
     '--font-types', 'woff',
     '--style-format', 'sass',
-    '--style-dest', 'assets/styles/openaq-design-system',
+    '--style-dest', 'assets/styles/openaq-design-system/core',
     '--style-name', 'openaq-ds-icons',
     '--class-name', 'openaq-ds-icon',
     '--author-name', 'Development Seed',
