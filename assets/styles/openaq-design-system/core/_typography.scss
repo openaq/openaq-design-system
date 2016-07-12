@@ -33,7 +33,6 @@
 /* Common elements
    ========================================================================== */
 
-
 p, ul, ol, dl, pre, blockquote {
   margin: 0 0 $global-spacing 0;
 }
@@ -129,9 +128,11 @@ dd {
 blockquote {
   box-shadow: inset 1px 0 0 0 $base-alpha-color;
   padding: ($global-spacing / 2) $global-spacing;
+
   *:last-child {
     margin-bottom: 0;
   }
+
   footer {
     color: rgba($base-font-color, 0.64);
     margin-top: -0.5rem;
@@ -281,7 +282,6 @@ h4, h5, h6 {
   > h4,
   > h5,
   > h6 { @include heading(1rem, xlarge-up); }               // 16, 20, 24, 28
-  
 
   @include media(medium-up) {
     > h1:not(:first-child),
