@@ -5,14 +5,14 @@
 /* Colors
    ========================================================================== */
 
-$base-color: #1f3b45;                                   // Midnight Blue
-$primary-color: #439ab4;                                // Boston Blue
-$secondary-color: #68c39f;                              // Silver Tree
+$base-color: #496A90;                                   // Blue
+$primary-color: #36AA90;                                // Green
+$secondary-color: #EA9D1E;                              // Yellow
 
-$danger-color: #ea4f54;                                 // Mandy
-$success-color: $secondary-color;                       // 
-$warning-color: #f6d55f;                                // Energy Yellow
-$info-color: $primary-color;                            // 
+$danger-color: #C86471;                                 // Contessa
+$success-color: $primary-color;                         // Green
+$warning-color: $secondary-color;                       // Yellow
+$info-color: $base-color;                               // Blue
 
 $link-color: $primary-color;
 $base-alpha-color: rgba($base-color, 0.12);
@@ -24,7 +24,7 @@ $base-semi-alpha-color: rgba($base-color, 0.08);
 
 $root-font-size: 16px;
 
-$base-font-color: tint($base-color, 16%);
+$base-font-color: $base-color;
 $base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-style: normal;
 $base-font-light: 300;
