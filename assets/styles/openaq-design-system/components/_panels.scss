@@ -6,8 +6,8 @@
   position: relative;
   font-size: 1rem;
   line-height: 1.5;
-  background: tint($base-color, 96%);
-  box-shadow: 0 2px 12px 2px $base-alpha-color, 0 0 0 1px $base-alpha-color;
+  background: tint($base-color, 92%);
+  box-shadow: 0 2px 12px 2px $base-alpha-color, 0 0 0 2px $base-alpha-color;
   border-radius: $base-border-radius;
 
   &__headline,
@@ -30,7 +30,6 @@
 
 .panel__header {
   border-radius: $base-border-radius $base-border-radius 0 0;
-  box-shadow: 0 1px 0 0 $base-alpha-color;
 }
 
 .panel__title {
@@ -89,7 +88,6 @@
 .panel__footer {
   min-height: 1rem;
   border-radius: 0 0 $base-border-radius $base-border-radius;
-  box-shadow: 0 -1px 0 0 $base-alpha-color;
 
   &:empty {
     padding: 0;

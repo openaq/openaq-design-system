@@ -1,0 +1,136 @@
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+
+/* Exhibit
+   ========================================================================== */
+
+.exhibit {
+  @extend .clearfix;
+  box-shadow: 0 6px 0 0 $base-semi-alpha-color, 0 0 0 2px $base-alpha-color;
+  border-radius: $base-border-radius;
+  background: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  li > & {
+    margin: 0;
+  }
+
+  &--clipped {
+    overflow: hidden;
+  }
+}
+
+.exhibit__content,
+.exhibit__caption,
+.prose .exhibit__caption {
+  padding: $global-spacing;
+  clear: both;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(medium-up) {
+    padding: $global-spacing * 1.5;
+  }
+}
+
+.exhibit__content {
+  &--dark {
+    @extend .antialiased;
+    background: $base-color;
+    color: #fff;
+  }
+}
+
+.exhibit__caption {
+  background: rgba($base-color, 0.04);
+  box-shadow: inset 0 1px 0 $base-alpha-color;
+
+  pre {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+
+  .highlight pre,
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.exhibit__captitle {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.exhibit__details {
+  dd {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Design System / Components: misc
+   ========================================================================== */
+
+.button--example-icon:before {
+  @extend %openaq-ds-icon-pencil;
+}
+
+.drop__menu-item--example-icon:before {
+  @extend %openaq-ds-icon-download;
+}
+
+.exhibit__content {
+  > .button,
+  > .button-group,
+  [data-hook="react:drops"] .button {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  > .drop {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0;
+    .drop__toggle {
+      float: left;
+    }
+    .drop__content {
+      position: relative;
+      float: left;
+      clear: left;
+    }
+  }
+
+  .panel {
+    position: static;
+  }
+
+  .alert--popover {
+    position: relative;
+    bottom: initial;
+    right: initial;
+    margin-bottom: 1rem;
+  }
+}
+
+.exhibit--modal {
+  overflow: hidden;
+
+  .exhibit__content {
+    padding: 0;
+  }
+
+  .modal {
+    position: relative;
+    z-index: 0;
+  }
+}

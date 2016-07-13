@@ -46,7 +46,7 @@
     
   </head>
   <body class="page page--sandbox">
-    <div class="page__inner">
+    <div class="inner">
       <header class="page__header" role="banner">
         <div class="inner">
           <div class="page__headline">
@@ -79,180 +79,238 @@
               <div class="inner">
 
                 <!-- section main content -->
-                <div class="section__main-content">
+                <div class="section__main-content prose prose--responsive">
 
-                  <!-- HEADINGS -->
-                  <h1>This is an h1 heading</h1>
-                  <h2>This is an h2 heading</h2>
-                  <h3>This is an h3 heading</h3>
-                  <h4>This is an h4 heading</h4>
-                  <h5>This is an h5 heading</h5>
-                  <h6>This is an h6 heading</h6>
-                  <h6 class="heading-alt">This an alt heading</h6>
-                  <h6 class="heading-deco">This a deco heading</h6>
-                  <hr>
-                  <!-- /HEADINGS -->
+                  <h2>Headings</h2>
 
-                  <!-- BUTTONS -->
-                  <h2>Buttons</h2>
-                  <button class="button button--achromic" type="button"><span>Achromic</span></button>
-                  <button class="button button--base" type="submit"><span>Base</span></button>
-                  <a class="button button--primary" role="button"><span>Primary</span></a>
-                  <button class="button button--secondary" type="button"><span>Secondary</span></button>
-                  <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
-                  <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
-                  <button class="button button--secondary-unbounded" type="button"><span>Secondary unbounded</span></button>
-                  <a class="button button--base-bounded" role="button"><span>Base bounded</span></a>
-                  <button class="button button--primary-bounded" type="button"><span>Primary bounded</span></button>
-                  <button class="button button--secondary-bounded" type="button"><span>Secondary bounded</span></button>
-                  <hr>
-                  <button class="button button--primary-bounded button--small" type="button"><span>Small</span></button>
-                  <button class="button button--primary-bounded button--medium" type="button"><span>Medium</span></button>
-                  <button class="button button--primary-bounded button--large" type="button"><span>Large</span></button>
-                  <button class="button button--primary-bounded button--xlarge" type="button"><span>Xlarge</span></button>
-                  <hr>
-                  <button class="button button--primary button--block" type="button"><span>Block</span></button>
-                  <hr>
-                  <button class="button button--primary-bounded button--large button--semi-fluid" type="button"><span>Semi fluid</span></button>
-                  <hr>
-                  <div class="button-group button-group--horizontal" role="group" aria-label="...">
-                    <button class="button button--primary button--active" type="button"><span>Left</span></button>
-                    <button class="button button--primary" type="button"><span>Middle</span></button>
-                    <button class="button button--primary" type="button"><span>Right</span></button>
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <h1>This is an h1 heading</h1>
+                      <h2>This is an h2 heading</h2>
+                      <h3>This is an h3 heading</h3>
+                      <h4>This is an h4 heading</h4>
+                      <h5>This is an h5 heading</h5>
+                      <h6>This is an h6 heading</h6>
+                      <h6 class="heading-alt">This an alt heading</h6>
+                      <h6 class="heading-deco">This a deco heading</h6>
+                    </div>
                   </div>
-                  <hr>
-                  <!-- / BUTTONS -->
 
-                  <!-- SCROLLAREA -->
+                  <h2>Buttons</h2>
+
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <button class="button button--achromic" type="button"><span>Achromic</span></button>
+                      <button class="button button--base" type="submit"><span>Base</span></button>
+                      <a class="button button--primary" role="button"><span>Primary</span></a>
+                      <button class="button button--secondary" type="button"><span>Secondary</span></button>
+                      <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
+                      <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
+                      <button class="button button--secondary-unbounded" type="button"><span>Secondary unbounded</span></button>
+                      <a class="button button--base-bounded" role="button"><span>Base bounded</span></a>
+                      <button class="button button--primary-bounded" type="button"><span>Primary bounded</span></button>
+                      <button class="button button--secondary-bounded" type="button"><span>Secondary bounded</span></button>
+                    </div>
+                  </div>
+
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <button class="button button--primary-bounded button--small" type="button"><span>Small</span></button>
+                      <button class="button button--primary-bounded button--medium" type="button"><span>Medium</span></button>
+                      <button class="button button--primary-bounded button--large" type="button"><span>Large</span></button>
+                      <button class="button button--primary-bounded button--xlarge" type="button"><span>Xlarge</span></button>
+                    </div>
+                  </div>
+
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <button class="button button--primary button--block" type="button"><span>Block</span></button>
+                      <button class="button button--primary-bounded button--large button--semi-fluid" type="button"><span>Semi fluid</span></button>
+                    </div>
+                  </div>
+                  
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <div class="button-group button-group--horizontal" role="group" aria-label="...">
+                        <button class="button button--primary button--active" type="button"><span>Left</span></button>
+                        <button class="button button--primary" type="button"><span>Middle</span></button>
+                        <button class="button button--primary" type="button"><span>Right</span></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2>Drops</h2>
+
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <div class="drop drop--down drop--align-left drop--open">
+                        <button class="button button--achromic drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
+                        <div class="drop__content">
+                          <h6 class="drop__title">This is a title</h6>
+                          <ul class="drop__menu drop__menu--iconified" role="menu">
+                            <li><a href="#" title="This is Item 1a" class="drop__menu-item"><i class="openaq-ds-icon-pencil"></i>Edit</a></li>
+                            <li><a href="#" title="This is Item 2a" class="drop__menu-item drop__menu-item--example-icon">Download</a></li>
+                          </ul>
+                          <ul class="drop__menu drop__menu--iconified" role="menu">
+                            <li><a href="#" title="This is Item 1a" class="drop__menu-item delete"><i class="openaq-ds-icon-trash-bin"></i>Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="drop drop--down drop--align-left drop--open">
+                        <button class="button button--achromic drop__toggle drop__toggle--caret" type="button"><span>Toggle</span></button>
+                        <div class="drop__content">
+                          <h6 class="drop__title">This is a title</h6>
+                          <ul class="drop__menu drop__menu--select" role="menu">
+                            <li><a href="#" title="This is Item 1b" class="drop__menu-item drop__menu-item--active">Item 1b</a></li>
+                            <li><a href="#" title="This is Item 2b" class="drop__menu-item">Item 2b</a></li>
+                            <li><a href="#" title="This is Item 3b" class="drop__menu-item">Item 3b</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
                   <h2>Scroll Area</h2>
-                  <div data-hook='scroll'></div>
-                  <hr>
-                  <!-- / SCROLLAREA -->
 
-                  <!-- MODAL HOLDER -->
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <div data-hook='scroll'></div>
+                    </div>
+                  </div>
+
                   <h2>Modal</h2>
-                  <div data-hook='modal'></div>
-                  <hr>
-                  <!-- / MODAL HOLDER -->
+
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <div data-hook='modal'></div>
+                    </div>
+                  </div>
                   
                   <h2>Forms</h2>
-                  <form class="form">
-                    <fieldset class="form__fieldset">
-                      <legend class="form__legend">Fieldset legend 1</legend>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-name">Input text</label>
-                        <input type="text" class="form__control form__control--medium" id="form-name" name="form-name" placeholder="This is a placeholder" />
-                      </div>
+                  <div class="exhibit">
+                    <div class="exhibit__content">
+                      <form class="form">
+                        <fieldset class="form__fieldset">
+                          <legend class="form__legend">Fieldset legend 1</legend>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-email">Input email</label>
-                        <input type="email" class="form__control form__control--medium" id="form-email" name="form-email" placeholder="This is a placeholder" />
-                        <div class="form__help">
-                          <p>This is some help text.</p>
-                        </div>
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-name">Input text</label>
+                            <input type="text" class="form__control form__control--medium" id="form-name" name="form-name" placeholder="This is a placeholder" />
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label">Radio options (custom)</label>
+                          <div class="form__group">
+                            <label class="form__label" for="form-email">Input email</label>
+                            <input type="email" class="form__control form__control--medium" id="form-email" name="form-email" placeholder="This is a placeholder" />
+                            <div class="form__help">
+                              <p>This is some help text.</p>
+                            </div>
+                          </div>
 
-                        <label class="form__option form__option--inline form__option--custom-radio">
-                          <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked />
-                          <span class="form__option__text">Radio 1</span>
-                          <span class="form__option__ui"></span>
-                        </label>
-                        <label class="form__option form__option--inline form__option--custom-radio">
-                          <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" />
-                          <span class="form__option__text">Radio 2</span>
-                          <span class="form__option__ui"></span>
-                        </label>
-                      </div>
-                    </fieldset>
+                          <div class="form__group">
+                            <label class="form__label">Radio options (custom)</label>
 
-                    <fieldset class="form__fieldset">
-                      <legend class="form__legend">Fieldset legend 2</legend>
+                            <label class="form__option form__option--inline form__option--custom-radio">
+                              <input type="radio" name="form-radio" id="form-radio-1" value="Radio 1" checked />
+                              <span class="form__option__text">Radio 1</span>
+                              <span class="form__option__ui"></span>
+                            </label>
+                            <label class="form__option form__option--inline form__option--custom-radio">
+                              <input type="radio" name="form-radio" id="form-radio-2" value="Radio 2" />
+                              <span class="form__option__text">Radio 2</span>
+                              <span class="form__option__ui"></span>
+                            </label>
+                          </div>
+                        </fieldset>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-select-1">Select</label>
-                        <select class="form__control form__control--medium" id="form-select-1">
-                          <option>Option 1</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                          <option>Option 5</option>
-                        </select>
-                      </div>
+                        <fieldset class="form__fieldset">
+                          <legend class="form__legend">Fieldset legend 2</legend>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-input-1">Small</label>
-                        <input type="text" class="form__control form__control--small" id="form-input-1" placeholder="This is a placeholder" />
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-select-1">Select</label>
+                            <select class="form__control form__control--medium" id="form-select-1">
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                              <option>Option 4</option>
+                              <option>Option 5</option>
+                            </select>
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-input-2">Medium</label>
-                        <input type="text" class="form__control form__control--medium" id="form-input-2" placeholder="This is a placeholder" />
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-input-1">Small</label>
+                            <input type="text" class="form__control form__control--small" id="form-input-1" placeholder="This is a placeholder" />
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-input-3">Large</label>
-                        <input type="text" class="form__control form__control--large" id="form-input-3" placeholder="This is a placeholder" />
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-input-2">Medium</label>
+                            <input type="text" class="form__control form__control--medium" id="form-input-2" placeholder="This is a placeholder" />
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-input-4">XLarge</label>
-                        <input type="text" class="form__control form__control--xlarge" id="form-input-4" placeholder="This is a placeholder" />
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-input-3">Large</label>
+                            <input type="text" class="form__control form__control--large" id="form-input-3" placeholder="This is a placeholder" />
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label">Checkbox options (custom)</label>
-                        <label class="form__option form__option--custom-checkbox">
-                          <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" />
-                          <span class="form__option__text">Checkbox 1</span>
-                          <span class="form__option__ui"></span>
-                        </label>
-                        <label class="form__option form__option--custom-checkbox">
-                          <input type="checkbox" name="form-checkbox" value="form-checkbox-2" />
-                          <span class="form__option__text">Checkbox 2</span>
-                          <span class="form__option__ui"></span>
-                        </label>
-                        <label class="form__option form__option--custom-checkbox">
-                          <input type="checkbox" name="form-checkbox" value="form-checkbox-3" />
-                          <span class="form__option__text">Checkbox 3</span>
-                          <span class="form__option__ui"></span>
-                        </label>
-                      </div>
-                    </fieldset>
+                          <div class="form__group">
+                            <label class="form__label" for="form-input-4">XLarge</label>
+                            <input type="text" class="form__control form__control--xlarge" id="form-input-4" placeholder="This is a placeholder" />
+                          </div>
 
-                    <fieldset class="form__fieldset">
-                      <legend class="form__legend">Fieldset legend 3</legend>
+                          <div class="form__group">
+                            <label class="form__label">Checkbox options (custom)</label>
+                            <label class="form__option form__option--custom-checkbox">
+                              <input type="checkbox" name="form-checkbox" id="form-checkbox-1" value="Checkbox 1" />
+                              <span class="form__option__text">Checkbox 1</span>
+                              <span class="form__option__ui"></span>
+                            </label>
+                            <label class="form__option form__option--custom-checkbox">
+                              <input type="checkbox" name="form-checkbox" value="form-checkbox-2" />
+                              <span class="form__option__text">Checkbox 2</span>
+                              <span class="form__option__ui"></span>
+                            </label>
+                            <label class="form__option form__option--custom-checkbox">
+                              <input type="checkbox" name="form-checkbox" value="form-checkbox-3" />
+                              <span class="form__option__text">Checkbox 3</span>
+                              <span class="form__option__ui"></span>
+                            </label>
+                          </div>
+                        </fieldset>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-file-1">File input</label>
-                        <input type="file" class="form__control" id="form-file-1" />
-                      </div>
+                        <fieldset class="form__fieldset">
+                          <legend class="form__legend">Fieldset legend 3</legend>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-textarea-1">Textarea</label>
-                        <textarea class="form__control" id="form-textarea-1" rows="4" placeholder="This is a placeholder"></textarea>
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-file-1">File input</label>
+                            <input type="file" class="form__control" id="form-file-1" />
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-input-5">Input group</label>
-                        <div class="form__input-group">
-                          <input type="text" class="form__control form__control--medium" id="form-input-5" placeholder="This is a placeholder">
-                          <span class="form__input-group-button"><button type="submit" class="button button--secondary button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
-                        </div>
-                      </div>
+                          <div class="form__group">
+                            <label class="form__label" for="form-textarea-1">Textarea</label>
+                            <textarea class="form__control" id="form-textarea-1" rows="4" placeholder="This is a placeholder"></textarea>
+                          </div>
 
-                      <div class="form__group">
-                        <label class="form__label" for="form-input-6">Input group</label>
-                        <div class="form__input-group">
-                          <span class="form__input-group-button"><button type="submit" class="button button--primary button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
-                          <input type="text" class="form__control form__control--medium" id="form-input-6" placeholder="Search location">
-                        </div>
-                      </div>
-                    </fieldset>
-                  </form>
+                          <div class="form__group">
+                            <label class="form__label" for="form-input-5">Input group</label>
+                            <div class="form__input-group">
+                              <input type="text" class="form__control form__control--medium" id="form-input-5" placeholder="This is a placeholder">
+                              <span class="form__input-group-button"><button type="submit" class="button button--secondary button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+                            </div>
+                          </div>
+
+                          <div class="form__group">
+                            <label class="form__label" for="form-input-6">Input group</label>
+                            <div class="form__input-group">
+                              <span class="form__input-group-button"><button type="submit" class="button button--primary button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+                              <input type="text" class="form__control form__control--medium" id="form-input-6" placeholder="Search location">
+                            </div>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
 
                 </div>
                 <!--/ section main content -->
