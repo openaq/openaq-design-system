@@ -8,7 +8,7 @@
 
 .exhibit {
   @extend .clearfix;
-  box-shadow: 0 6px 0 0 $base-semi-alpha-color, 0 0 0 2px $base-alpha-color;
+  box-shadow: 0 0 0 2px $base-alpha-color;
   border-radius: $base-border-radius;
   background: #fff;
   font-size: 1rem;
@@ -97,12 +97,19 @@
   [data-hook="react:drops"] .button {
     margin: 0 0.5rem 0.5rem 0;
   }
+
+  > .card {
+    margin: 0 0 2rem 0;
+  }
+
   > .drop {
     float: left;
     margin: 0 1.5rem 1.5rem 0;
+
     .drop__toggle {
       float: left;
     }
+
     .drop__content {
       position: relative;
       float: left;

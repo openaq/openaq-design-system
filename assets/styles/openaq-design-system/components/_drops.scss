@@ -34,7 +34,7 @@
   font-size: 1rem;
   line-height: 1.5;
   background: #fff;
-  box-shadow: 0 2px 12px 2px $base-alpha-color, 0 0 0 2px $base-alpha-color;
+  box-shadow: 0 4px 16px 8px $base-alpha-color;
   border-radius: $base-border-radius;
 
   /* Animation */
@@ -200,7 +200,7 @@
   @extend .clearfix;
   list-style: none;
   margin: (-$global-spacing) (-$global-spacing) $global-spacing (-$global-spacing);
-  box-shadow: 0 1px 0 0 $base-alpha-color;
+  box-shadow: 0 2px 0 0 $base-alpha-color;
   padding: ($global-spacing / 2) 0;
   max-width: 16rem;
   font-weight: $base-font-regular;
@@ -274,17 +274,13 @@
    ========================================================================== */
 
 .drop__inset {
-  background: tint($base-color, 96%);
+  background: tint($base-color, 92%);
   color: tint($base-font-color, 32%);
-  box-shadow: inset 0 1px 0 0 $base-alpha-color, inset 0 -1px 0 0 $base-alpha-color;
   margin: (-$global-spacing) (-$global-spacing) $global-spacing (-$global-spacing);
   padding: $global-spacing;
-  &:first-child {
-    box-shadow: inset 0 -1px 0 0 $base-alpha-color;
-  }
+
   &:last-child {
     margin-bottom: (-$global-spacing);
-    box-shadow: inset 0 1px 0 0 $base-alpha-color;
   }
   &:only-child {
     box-shadow: none;

@@ -7,7 +7,7 @@
   font-size: 1rem;
   line-height: 1.5;
   background: tint($base-color, 92%);
-  box-shadow: 0 2px 12px 2px $base-alpha-color, 0 0 0 2px $base-alpha-color;
+  box-shadow: 0 2px 12px 2px $base-alpha-color;
   border-radius: $base-border-radius;
 
   &__headline,
