@@ -238,6 +238,22 @@ abbr[title] {
   color: rgba($base-font-color, 0.48);
 }
 
+.heading-deco {
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 2.5rem;
+    height: 2px;
+    content: "";
+    background: rgba($base-font-color, 0.48);
+  }
+}
+
 h1 {
   @include heading(1.75rem);   // 28
 }
