@@ -70,13 +70,19 @@
 /* Base */
 
 .button--base {
-  @include button-variation("filled", "dark", tint($base-color, 32%));
+  @include button-variation("filled", "dark", $base-color);
+}
+
+/* Base Bounded */
+
+.button--base-bounded {
+  @include button-variation("bounded", null, $base-color);
 }
 
 /* Base Unbounded */
 
 .button--base-unbounded {
-  @include button-variation("unbounded", null, $base-font-color);
+  @include button-variation("unbounded", null, $base-color);
 }
 
 /* Achromic */
@@ -97,6 +103,12 @@
   @include button-variation("filled", "dark", $primary-color);
 }
 
+/* Primary Bounded */
+
+.button--primary-bounded {
+  @include button-variation("bounded", null, $primary-color);
+}
+
 /* Primary Unbounded */
 
 .button--primary-unbounded {
@@ -107,6 +119,12 @@
 
 .button--secondary {
   @include button-variation("filled", "dark", $secondary-color);
+}
+
+/* Secondary Bounded */
+
+.button--secondary-bounded {
+  @include button-variation("bounded", null, $secondary-color);
 }
 
 /* Secondary Unbounded */
@@ -146,7 +164,7 @@
 .button--large,
 .button-group--large .button {
   line-height: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   min-width: 2.5rem;
 }
@@ -156,7 +174,7 @@
 .button--xlarge,
 .button-group--xlarge .button {
   line-height: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   min-width: 3rem;
 }
@@ -213,7 +231,7 @@
     border-radius: 0;
   }
   > .button + .button {
-    margin-left: -1px;
+    margin-left: -2px;
   }
 }
 
@@ -240,6 +258,6 @@
     border-radius: 0;
   }
   > .button + .button {
-    margin-top: -1px;
+    margin-top: -2px;
   }
 }

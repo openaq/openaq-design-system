@@ -15,11 +15,11 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: $base-font-color;
-  background: #fff;
+  background: rgba($base-color, 0.08);
+  box-shadow: inset 0 0 0 2px rgba($base-color, 0);
   border: 0;
   border-radius: $base-border-radius;
   font-family: inherit;
-  box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
 
   /* Placeholder */
   &::placeholder {
@@ -38,7 +38,7 @@
 
   &:focus {
     outline: 0;
-    box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.32);
+    box-shadow: inset 0 0 0 2px rgba($base-color, 0.32);
   }
 
   /* Animation */
@@ -49,8 +49,18 @@
 /* Select */
 
 select.form__control {
-  box-shadow: inset 0 -3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
   cursor: pointer;
+  color: #fff;
+  font-weight: $base-font-bold;
+  background: $base-font-color;
+
+  &:hover {
+    background: shade($base-font-color, 4%);
+  }
+
+  &:active {
+    background: shade($base-font-color, 8%);
+  }
 }
 
 /* Textarea */
@@ -128,14 +138,16 @@ textarea.form__control {
 
 .form__input-group-button:first-child > .button,
 .form__input-group-button:first-child > .button-group {
+  position: relative;
   z-index: 2;
-  margin-right: -1px;
+  margin-right: -2px;
 }
 
 .form__input-group-button:last-child > .button,
 .form__input-group-button:last-child > .button-group {
+  position: relative;
   z-index: 2;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .form__input-group .form__control:first-child,
@@ -282,8 +294,8 @@ label[for] {
     left: 0;;
     height: 1.5rem;
     width: 1.5rem;
-    box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.16);
-    background: #fff;
+    background: rgba($base-color, 0.08);
+    box-shadow: inset 0 0 0 2px rgba($base-color, 0);
     transition: all 0.24s ease 0s;
 
     &:before {
@@ -299,7 +311,7 @@ label[for] {
   &:focus,
   &:active {
     .form__option__ui {
-      box-shadow: inset 0 3px 0 0 rgba($base-color, 0.08), inset 0 0 0 1px rgba($base-color, 0.32);
+      box-shadow: inset 0 0 0 2px rgba($base-color, 0.32);
     }
   }
 

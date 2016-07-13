@@ -9,31 +9,31 @@
     <title>Sandbox — OpenAQ Design System</title>
 
     <!-- Twitter -->
-    <!-- <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@hotosm" />
     <meta name="twitter:title" content="Sandbox — OpenAQ Design System">
     <meta name="twitter:description" content="Testing OpenAQ Design System." />
-    <meta name="twitter:image:src" content="assets/graphics/meta/default-meta-image.png" /> -->
+    <meta name="twitter:image:src" content="assets/graphics/meta/default-meta-image.png" />
     <!--/ Twitter --> 
 
     <!-- OG -->
-    <!-- <meta property="og:site_name" content="Sandbox — OpenAQ Design System" />
+    <meta property="og:site_name" content="Sandbox — OpenAQ Design System" />
     <meta property="og:title" content="Sandbox — OpenAQ Design System" />
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Testing OpenAQ Design System." />
-    <meta property="og:image" content="assets/graphics/meta/default-meta-image.png" /> -->
+    <meta property="og:image" content="assets/graphics/meta/default-meta-image.png" />
     <!--/ OG -->
 
     <link rel="shortcut icon" href="assets/graphics/meta/favicon.ico" type="image/x-icon" />
-    <!-- <link rel="apple-touch-icon" href="assets/graphics/meta/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="assets/graphics/meta/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="assets/graphics/meta/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="assets/graphics/meta/apple-touch-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/graphics/meta/apple-touch-icon-76x76.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="assets/graphics/meta/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon" sizes="120x120" href="assets/graphics/meta/apple-touch-icon-120x120.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="assets/graphics/meta/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/graphics/meta/apple-touch-icon-152x152.png" /> -->
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/graphics/meta/apple-touch-icon-152x152.png" />
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" />
 
@@ -80,6 +80,32 @@
 
                 <!-- section main content -->
                 <div class="section__main-content">
+
+                  <!-- BUTTONS -->
+                  <h2>Buttons</h2>
+                  <button class="button button--achromic" type="button"><span>Achromic</span></button>
+                  <button class="button button--base" type="submit"><span>Base</span></button>
+                  <a class="button button--primary" role="button"><span>Primary</span></a>
+                  <button class="button button--secondary" type="button"><span>Secondary</span></button>
+                  <button class="button button--base-unbounded" type="button"><span>Base unbounded</span></button>
+                  <button class="button button--primary-unbounded" type="button"><span>Primary unbounded</span></button>
+                  <button class="button button--secondary-unbounded" type="button"><span>Secondary unbounded</span></button>
+                  <a class="button button--base-bounded" role="button"><span>Base bounded</span></a>
+                  <button class="button button--primary-bounded" type="button"><span>Primary bounded</span></button>
+                  <button class="button button--secondary-bounded" type="button"><span>Secondary bounded</span></button>
+                  <hr>
+                  <button class="button button--primary-bounded button--small" type="button"><span>Small</span></button>
+                  <button class="button button--primary-bounded button--medium" type="button"><span>Medium</span></button>
+                  <button class="button button--primary-bounded button--large" type="button"><span>Large</span></button>
+                  <button class="button button--primary-bounded button--xlarge" type="button"><span>Xlarge</span></button>
+                  <hr>
+                  <div class="button-group button-group--horizontal" role="group" aria-label="...">
+                    <button class="button button--primary button--active" type="button"><span>Left</span></button>
+                    <button class="button button--primary" type="button"><span>Middle</span></button>
+                    <button class="button button--primary" type="button"><span>Right</span></button>
+                  </div>
+                  <hr>
+                  <!-- / BUTTONS -->
 
                   <!-- SCROLLAREA -->
                   <h2>Scroll Area</h2>
@@ -198,14 +224,14 @@
                         <label class="form__label" for="form-input-5">Input group</label>
                         <div class="form__input-group">
                           <input type="text" class="form__control form__control--medium" id="form-input-5" placeholder="This is a placeholder">
-                          <span class="form__input-group-button"><button type="submit" class="button button--achromic button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+                          <span class="form__input-group-button"><button type="submit" class="button button--secondary button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
                         </div>
                       </div>
 
                       <div class="form__group">
                         <label class="form__label" for="form-input-6">Input group</label>
                         <div class="form__input-group">
-                          <span class="form__input-group-button"><button type="submit" class="button button--achromic button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
+                          <span class="form__input-group-button"><button type="submit" class="button button--primary button--text-hidden button--medium button--example-icon"><span>Button</span></button></span>
                           <input type="text" class="form__control form__control--medium" id="form-input-6" placeholder="Search location">
                         </div>
                       </div>
@@ -223,7 +249,7 @@
 
       <footer class="page__footer" role="contentinfo">
         <div class="inner">
-          <p>Made with love by <a href="https://developmentseed.org" title="Visit Development Seed website">Development Seed</a> and <a href="http://hot.openstreetmap.org/" title="Visit the Humanitarian OpenStreetMap Team website">HOT</a>.</p>
+          <p>Made with love by <a href="https://developmentseed.org" title="Visit Development Seed website">Development Seed</a> and <a href="https://openaq.org/" title="Visit the OpenAQ website">OpenAQ</a>.</p>
         </div>
       </footer>
     </div>
