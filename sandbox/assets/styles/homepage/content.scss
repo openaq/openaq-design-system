@@ -1,6 +1,12 @@
 /* ==========================================================================
-   Content: Sandbox
+   Homepage: Content
    ========================================================================== */
+
+.page--homepage {
+  .inpage__header {
+    background-image: url(../graphics/content/page-hero-default.png);
+  }
+}
 
 .showcase {
   @include media(medium-up) {

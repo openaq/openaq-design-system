@@ -26,15 +26,15 @@
 @import "openaq-design-system";
 
 
-/* Layout
+/* Global
    ========================================================================== */
 
-@import "layout/pages";
-@import "layout/inpages";
-@import "layout/folds";
+@import "global/pages";
+@import "global/inpages";
+@import "global/folds";
 
 
-/* Content
+/* Homepage
    ========================================================================== */
 
-@import "content/p-sandbox";
+@import "homepage/content";

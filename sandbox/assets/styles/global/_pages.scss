@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Pages
+   Global: Pages
    ========================================================================== */
 
 .page {
@@ -15,7 +15,7 @@
   background: transparent;
   color: $base-font-color;
   padding: $global-spacing 0;
-  box-shadow: 0 2px 0 0 $base-alpha-color;
+  box-shadow: 0 2px 0 0 $base-semi-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;
@@ -73,5 +73,17 @@
 
   *:last-child {
     margin-bottom: 0;
+  }
+}
+
+
+/* Dark theme modifier
+   ========================================================================== */
+
+.page--dark {
+  .page__header {
+    @extend .antialiased;
+    color: #fff;
+    box-shadow: 0 2px 0 0 rgba(#fff, 0.08);
   }
 }
