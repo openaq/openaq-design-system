@@ -2,7 +2,7 @@
    Main
    ========================================================================== */
 
-/* Libraries
+/* Third-party
    ========================================================================== */
 
 /**
@@ -19,15 +19,22 @@
 
 @import "jeet/jeet";
 
-/**
- * OpenAerialMap Design System
- */
+
+/* OpenAQ Design System
+   ========================================================================== */
 
 @import "openaq-design-system";
 
 
-/* Custom
+/* Layout
    ========================================================================== */
 
-@import "structure";
-@import "content";
+@import "layout/pages";
+@import "layout/inpages";
+@import "layout/folds";
+
+
+/* Content
+   ========================================================================== */
+
+@import "content/p-sandbox";

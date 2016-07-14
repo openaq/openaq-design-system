@@ -5,18 +5,27 @@
 /* Colors
    ========================================================================== */
 
-$base-color: #496A90;                                   // Blue
-$primary-color: #36AA90;                                // Green
-$secondary-color: #EA9D1E;                              // Yellow
+$base-color: #496A90;                                   // Kashmir Blue
+$primary-color: #36AA90;                                // Keppel
+$secondary-color: #AEAAD3;                              // Wistful
 
-$danger-color: #C86471;                                 // Contessa
-$success-color: $primary-color;                         // Green
-$warning-color: $secondary-color;                       // Yellow
-$info-color: $base-color;                               // Blue
+/* State colors */
+
+$danger-color: #e74c3c;                                 // Alizarin (Red-ish)
+$success-color: #27ae60;                                // Nephritis (Green)
+$warning-color: #f39c12;                                // Orange
+$info-color: #2980b9;                                   // Belize Hole (Blue)
+
+/* Helper colors */
 
 $link-color: $primary-color;
 $base-alpha-color: rgba($base-color, 0.12);
 $base-semi-alpha-color: rgba($base-color, 0.08);
+
+/* Infographic colors */
+
+$infographic-color-a: #C86471;                          // Contessa
+$infographic-color-b: #EA9D1E;                          // Yellow
 
 
 /* Typography
@@ -72,5 +81,3 @@ $large-range: (992px, 1199px);
 $xlarge-range: (1200px);
 
 $screen: "only screen";
-
-

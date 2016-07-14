@@ -1,6 +1,18 @@
 /* ==========================================================================
-   Content
+   Content: Sandbox
    ========================================================================== */
+
+.showcase {
+  @include media(medium-up) {
+    @include col(9/12);
+    @include shift(1.5/12);
+  }
+
+  @include media(large-up) {
+    @include col(8/12);
+    @include shift(2/12);
+  }
+}
 
 
 /* Exhibit
@@ -80,7 +92,7 @@
 }
 
 
-/* Design System / Components: misc
+/* Exhibit: Misc
    ========================================================================== */
 
 .button--example-icon:before {
