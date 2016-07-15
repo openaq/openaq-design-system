@@ -11,6 +11,9 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require('gulp-util');
+var exit = require('gulp-exit');
+var rev = require('gulp-rev');
+var revReplace = require('gulp-rev-replace');
 var notifier = require('node-notifier');
 var cp = require('child_process');
 var OPENAQ_ADDONS = require('./gulp-addons');
@@ -164,6 +167,14 @@ gulp.task('openaq:icons', function (done) {
 // --------------------------- Helper tasks -----------------------------------//
 // ----------------------------------------------------------------------------//
 
+gulp.task('build', ['vendorScripts', 'javascript'], function () {
+  gulp.start(['html', 'images', 'extras'], function () {
+    return gulp.src('dist/**/*')
+      .pipe($.size({title: 'build', gzip: true}))
+      .pipe(exit());
+  });
+});
+
 gulp.task('styles', function () {
   return gulp.src('sandbox/assets/styles/main.scss')
     .pipe($.plumber(function (e) {
@@ -184,4 +195,41 @@ gulp.task('styles', function () {
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))
     .pipe(reload({stream: true}));
+});
+
+
+gulp.task('html', ['styles'], function () {
+  return gulp.src('sandbox/*.html')
+    .pipe($.useref({searchPath: ['.tmp', 'sandbox', '.']}))
+    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.css', $.csso()))
+    .pipe($.if(/\.(css|js)$/, rev()))
+    .pipe(revReplace())
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('images', function () {
+  return gulp.src(['sandbox/assets/graphics/**/*', OPENAQ_ADDONS.graphicsPath + '/**/*'])
+    .pipe($.cache($.imagemin([
+      $.imagemin.gifsicle({interlaced: true}),
+      $.imagemin.jpegtran({progressive: true}),
+      $.imagemin.optipng({optimizationLevel: 5}),
+      // don't remove IDs from SVGs, they are often used
+      // as hooks for embedding and styling
+      $.imagemin.svgo({plugins: [{cleanupIDs: false}]})
+    ])))
+    .pipe(gulp.dest('dist/assets/graphics'));
+});
+
+gulp.task('extras', function () {
+  return gulp.src([
+    'sandbox/**/*',
+    '!sandbox/*.html',
+    '!sandbox/assets/graphics/**',
+    '!sandbox/assets/vendor/**',
+    '!sandbox/assets/styles/**',
+    '!sandbox/assets/scripts/**'
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist'));
 });
