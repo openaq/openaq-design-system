@@ -47,10 +47,11 @@ Add the module path to the `includePaths` of gulp-sass. Should look something li
 }))
 ```
 
-The `openaq-design-system` uses **Open Sans** which is available on [Google Fonts](https://goo.gl/FZ0Ave).  
+The `openaq-design-system` uses **Roboto** (body) and **Montserrat** (headings) which is available on [Google Fonts](https://goo.gl/FZ0Ave).  
 It needs to be included in the app:
 ```
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+
 ```
 
 **USAGE**  

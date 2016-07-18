@@ -34,17 +34,21 @@ $infographic-color-b: #EA9D1E;                          // Yellow
 $root-font-size: 16px;
 
 $base-font-color: $base-color;
-$base-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-style: normal;
-$base-font-light: 100;
-$base-font-regular: 200;
-$base-font-bold: 600;
+$base-font-light: 300;
+$base-font-regular: 400;
+$base-font-bold: 700;
 $base-font-weight: $base-font-regular;
 $base-font-size: 1rem;
 $base-line-height: 1.5;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
+$heading-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-regular: 400;
+$heading-font-bold: 700;
+$heading-font-weight: $heading-font-bold;
 
 /* Decoration
    ========================================================================== */

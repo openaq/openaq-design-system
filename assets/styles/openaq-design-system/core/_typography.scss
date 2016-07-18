@@ -208,8 +208,8 @@ abbr[title] {
    ========================================================================== */
 
 .heading, h1, h2, h3, h4, h5, h6 {
-  font-family: $base-font-family;
-  font-weight: $base-font-bold;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
   margin-top: 0;
   margin-bottom: $global-spacing;
 }
@@ -233,8 +233,9 @@ abbr[title] {
 }
 
 .heading-alt {
+  font-family: $base-font-family;
   text-transform: uppercase;
-  font-weight: $base-font-regular;
+  font-weight: normal;
   color: rgba($base-font-color, 0.48);
 }
 
