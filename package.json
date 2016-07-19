@@ -77,16 +77,16 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "react": "^15.0.1",
-    "react-addons-css-transition-group": "^15.0.2",
+    "react": ">15.0.1",
+    "react-addons-css-transition-group": ">15.0.2",
     "react-scrollbar": "git+https://github.com/danielfdsilva/reactScrollbar.git#3c3976fc82359c1b46bace48d89ce716ba748dca",
-    "react-dom": "^15.0.1",
+    "react-dom": ">15.0.1",
     "react-tether": "^0.5.1"
   },
   "peerDependencies": {
-    "react": "^15.0.1",
-    "react-addons-css-transition-group": "^15.0.2",
-    "react-dom": "^15.0.1",
+    "react": ">15.0.1",
+    "react-addons-css-transition-group": ">15.0.2",
+    "react-dom": ">15.0.1",
     "react-tether": "^0.5.1"
   }
 }
