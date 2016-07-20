@@ -56,7 +56,6 @@
 @import "openaq-design-system/components/cards";
 @import "openaq-design-system/components/panels";
 @import "openaq-design-system/components/alerts";
-@import "openaq-design-system/components/pagination";
 @import "openaq-design-system/components/modals";
 
 
@@ -64,3 +63,4 @@
    ========================================================================== */
 
 @import "openaq-design-system/vendor/react-scrollbar";
+@import "openaq-design-system/vendor/react-paginate";
