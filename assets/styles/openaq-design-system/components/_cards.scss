@@ -115,3 +115,63 @@
     margin-bottom: 0;
   }
 }
+
+
+/* Card Horizontal Modifer
+   ========================================================================== */
+
+.card--horizontal {
+
+  .card__thumbnail {
+    max-height: 16rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include media(medium-up) {
+    display: table;
+    width: 100%;
+
+    .card__media,
+    .card__copy {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .card__media {
+      width: 48%;
+
+      &:first-child {
+        padding-right: $global-spacing;
+      }
+
+      &:last-child {
+        padding-left: $global-spacing;
+      }
+    }
+
+    .card__thumbnail {
+      max-height: none;
+    }
+  }
+
+}
+
+.card__media,
+.card__copy {
+  .card--horizontal--align-top & {
+    vertical-align: top;
+  }
+
+  .card--horizontal--align-bottom & {
+    vertical-align: bottom;
+  }
+
+  .card--horizontal--align-middle & {
+    vertical-align: middle;
+  }
+}
