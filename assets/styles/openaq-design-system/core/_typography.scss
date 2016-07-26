@@ -233,9 +233,9 @@ abbr[title] {
 }
 
 .heading-alt {
-  font-family: $base-font-family;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-regular;
   text-transform: uppercase;
-  font-weight: normal;
   color: rgba($base-font-color, 0.48);
 }
 
