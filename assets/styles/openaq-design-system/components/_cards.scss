@@ -117,45 +117,48 @@
 }
 
 
-/* Card Horizontal
+/* Card Horizontal Modifer
    ========================================================================== */
 
 .card--horizontal {
+
+  .card__thumbnail {
+    max-height: 16rem;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
   @include media(medium-up) {
     display: table;
     width: 100%;
 
     .card__media,
-    .card__contents-container {
+    .card__copy {
       display: table-cell;
-      vertical-align: middle;
+      vertical-align: top;
     }
 
     .card__media {
+      width: 48%;
+
       &:first-child {
-        padding-right: 1.5rem;
+        padding-right: $global-spacing;
       }
 
       &:last-child {
-        padding-left: 1.5rem;
+        padding-left: $global-spacing;
       }
-
-    .card__thumbnail  > img {
-        display: block;
-        max-width: 15rem;
-        width: auto;
-      }
-    }
-
-    .card__contents-container {
-      width: 100%;
     }
   }
 
 }
 
 .card__media,
-.card__contents-container {
+.card__copy {
   .card--horizontal--align-top & {
     vertical-align: top;
   }
