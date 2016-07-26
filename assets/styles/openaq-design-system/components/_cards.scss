@@ -153,6 +153,10 @@
         padding-left: $global-spacing;
       }
     }
+
+    .card__thumbnail {
+      max-height: none;
+    }
   }
 
 }
