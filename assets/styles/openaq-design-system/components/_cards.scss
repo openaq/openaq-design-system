@@ -97,10 +97,9 @@
 }
 
 .card__subtitle {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-  opacity: 0.64;
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 
