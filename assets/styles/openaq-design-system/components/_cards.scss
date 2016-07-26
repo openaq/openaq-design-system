@@ -143,7 +143,7 @@
     }
 
     .card__media {
-      width: 48%;
+      // width: 48%;
 
       &:first-child {
         padding-right: $global-spacing;
@@ -156,6 +156,10 @@
 
     .card__thumbnail {
       max-height: none;
+      > img {
+        width: auto;
+        max-width: 15rem;
+      }
     }
   }
 
