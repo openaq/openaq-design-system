@@ -115,3 +115,56 @@
     margin-bottom: 0;
   }
 }
+
+
+/* Card Horizontal
+   ========================================================================== */
+
+.card--horizontal {
+  @include media(medium-up) {
+    display: table;
+    width: 100%;
+
+    .card__media,
+    .card__contents-container {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .card__media {
+      &:first-child {
+        padding-right: 1.5rem;
+      }
+
+      &:last-child {
+        padding-left: 1.5rem;
+      }
+
+    .card__thumbnail  > img {
+        display: block;
+        max-width: 15rem;
+        width: auto;
+      }
+    }
+
+    .card__contents-container {
+      width: 100%;
+    }
+  }
+
+}
+
+.card__media,
+.card__contents-container {
+  .card--horizontal--align-top & {
+    vertical-align: top;
+  }
+
+  .card--horizontal--align-bottom & {
+    vertical-align: bottom;
+  }
+
+  .card--horizontal--align-middle & {
+    vertical-align: middle;
+  }
+}
