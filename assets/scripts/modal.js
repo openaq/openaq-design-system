@@ -60,8 +60,8 @@ var Modal = React.createClass({
   //   };
   // },
 
-  toggleBodyClass: function (revealed) {
-    let bd = document.getElementsByTagName('body')[0];
+  toggleUnscrollableClass: function (revealed) {
+    let bd = document.documentElement;
     if (revealed) {
       bd.classList.add('unscrollable-y');
     } else {
@@ -70,15 +70,15 @@ var Modal = React.createClass({
   },
 
   componentDidUpdate: function () {
-    this.toggleBodyClass(this.props.revealed);
+    this.toggleUnscrollableClass(this.props.revealed);
   },
 
   componentDidMount: function () {
-    this.toggleBodyClass(this.props.revealed);
+    this.toggleUnscrollableClass(this.props.revealed);
   },
 
-  componentWillUnount: function () {
-    this.toggleBodyClass(false);
+  componentWillUnmount: function () {
+    this.toggleUnscrollableClass(false);
   },
 
   getDefaultProps: function () {
