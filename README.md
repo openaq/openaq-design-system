@@ -67,7 +67,13 @@ Now you can include it in the main scss file:
 
 ### assets/icons
 The `openaq-design-system` includes svg icons that are compiled into a webfont and included in the styles.  
-To use them check the `_openaq-ds-icons.scss` for the class names.
+To use the icons, check the `_openaq-ds-icons.scss` for the class names.
+
+The icons and webfont are compiled using [collecticons-processor](https://github.com/developmentseed/collecticons-processor) with the following options:
+
+``` shell
+collecticons compile ./assets/icons --class-name openaq-ds-icon --font-types woff --font-embed --font-name 'OpenAQ DS Icons' --style-name openaq-ds-icons --style-dest ./assets/styles/openaq-design-system/core --no-preview
+```
 
 ### assets/graphics
 Graphics that are to be shared among projects.
