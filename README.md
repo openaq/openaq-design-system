@@ -8,9 +8,9 @@ For information on how to develop the `openaq-design-system` checkout the [DEVEL
 
 Style guide and UI components library that aims to standardize the look and feel across all OpenAQ-related applications, while defining coding best practices and conventions.
 
-Install it as an `npm` module: (module not available yet. use direct link)
+Install it as an `node module`: (Not available on `npm`, use direct link)
 ```
-Good things come to those who wait...
+npm install https://github.com/openaq/openaq-design-system#v1.0.0
 ```
 For the most recent version omit the tag.
 
