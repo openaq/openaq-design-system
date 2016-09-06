@@ -14,15 +14,11 @@
   z-index: 10;
   background: transparent;
   color: $base-font-color;
-  padding: $global-spacing 0;
+  padding: $global-spacing / 2 0;
   box-shadow: 0 2px 0 0 $base-semi-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;
-  }
-  
-  @include media(medium-up) {
-    padding: ($global-spacing * 2) 0;
   }
 }
 
@@ -30,7 +26,6 @@
 
 .page__headline {
   float: left;
-  margin: -0.5rem 0;
 }
 
 .page__title {
@@ -44,6 +39,10 @@
     display: inline-block;
     vertical-align: top;
     color: inherit;
+
+    span {
+      @extend .visually-hidden;
+    }
   }
 }
 
