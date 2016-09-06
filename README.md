@@ -1,7 +1,5 @@
 # OpenAQ Design System
 
-**Work in progress.** Use at your own risk!  
-
 The following guide only explains how to include the `openaq-design-system` in a new project.
 
 For information on how to develop the `openaq-design-system` checkout the [DEVELOPMENT.md](DEVELOPMENT.md)  
@@ -10,9 +8,9 @@ For information on how to develop the `openaq-design-system` checkout the [DEVEL
 
 Style guide and UI components library that aims to standardize the look and feel across all OpenAQ-related applications, while defining coding best practices and conventions.
 
-Install it as an `npm` module: (module not available yet. use direct link)
+Install it as an `node module`: (Not available on `npm`, use direct link)
 ```
-Good things come to those who wait...
+npm install https://github.com/openaq/openaq-design-system#v1.0.0
 ```
 For the most recent version omit the tag.
 
@@ -47,7 +45,7 @@ Add the module path to the `includePaths` of gulp-sass. Should look something li
 }))
 ```
 
-The `openaq-design-system` uses **Roboto** (body) and **Montserrat** (headings) which is available on [Google Fonts](https://goo.gl/FZ0Ave).  
+The `openaq-design-system` uses **Roboto** (body) and **Montserrat** (headings) which are available on [Google Fonts](https://goo.gl/FZ0Ave).  
 It needs to be included in the app:
 ```
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -69,10 +67,20 @@ Now you can include it in the main scss file:
 The `openaq-design-system` includes svg icons that are compiled into a webfont and included in the styles.  
 To use the icons, check the `_openaq-ds-icons.scss` for the class names.
 
-The icons and webfont are compiled using [collecticons-processor](https://github.com/developmentseed/collecticons-processor) with the following options:
+The icons are compiled into a webfont using [collecticons-processor](https://github.com/developmentseed/collecticons-processor) allowing the icons to be used as `scss` extents:
 
-``` shell
-collecticons compile ./assets/icons --class-name openaq-ds-icon --font-types woff --font-embed --font-name 'OpenAQ DS Icons' --style-name openaq-ds-icons --style-dest ./assets/styles/openaq-design-system/core --no-preview
+```
+<button class="bttn-add">Add</button>
+```
+```
+.bttn-add:before { // or .bttn-add:after {
+  @extend %collecticon-add;
+}
+```
+
+or inline:
+```
+<button><i class="ocollecticon-add"></i> Add</button>
 ```
 
 ### assets/graphics

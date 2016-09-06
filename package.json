@@ -1,6 +1,6 @@
 {
   "name": "openaq-design-system",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "OpenAQ Design System",
   "repository": {
     "type": "git",
@@ -52,6 +52,7 @@
     "eslint-config-standard": "^5.1.0",
     "eslint-plugin-promise": "^1.1.0",
     "eslint-plugin-react": "^3.16.1",
+    "eslint-plugin-standard": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.2",
     "gulp-csso": "^2.0.0",
