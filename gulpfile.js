@@ -197,7 +197,6 @@ gulp.task('styles', function () {
     .pipe(reload({stream: true}));
 });
 
-
 gulp.task('html', ['styles'], function () {
   return gulp.src('sandbox/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'sandbox', '.']}))
