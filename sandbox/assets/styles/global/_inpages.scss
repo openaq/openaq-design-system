@@ -56,18 +56,18 @@ $page-header-y: $global-spacing * 5;
   }
 
   &__headline {
-    @include col(12/12);
+    @include column(12/12);
 
     > *:last-child {
       margin-bottom: 0;
     }
 
     @include media(medium-up) {
-      @include col(10/12);
+      @include column(10/12);
     }
 
     @include media(large-up) {
-      @include col(8/12);
+      @include column(8/12);
     }
   }
 
