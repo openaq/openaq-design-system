@@ -10,7 +10,7 @@ Style guide and UI components library that aims to standardize the look and feel
 
 Install it as an `node module`: (Not available on `npm`, use direct link)
 ```
-npm install https://github.com/openaq/openaq-design-system#v1.0.0
+npm install https://github.com/openaq/openaq-design-system#v3.0.0
 ```
 For the most recent version omit the tag.
 
@@ -41,7 +41,7 @@ Add the module path to the `includePaths` of gulp-sass. Should look something li
 .pipe($.sass({
   outputStyle: 'expanded',
   precision: 10,
-  includePaths: require('node-bourbon').with('node_modules/jeet/scss', require('openaq-design-system/gulp-addons').scssPath)
+  includePaths: require('node-bourbon').includePaths.concat('node_modules/jeet/scss', require('openaq-design-system/gulp-addons').scssPath)
 }))
 ```
 
@@ -58,7 +58,7 @@ Now you can include it in the main scss file:
 // Bourbon is a dependency
 @import "bourbon";
 
-@import "jeet/index";
+@import "jeet";
 
 @import "openaq-design-system";
 ```
@@ -106,9 +106,12 @@ browserSync({
 You also need to ensure that the images are copied over on build.
 This ensures that the graphics are copied over when building the project.
 ```js
-gulp.task('images', function () {
-  return gulp.src(['app/assets/graphics/**/*', require('openaq-design-system/gulp-addons').graphicsPath + '/**/*'])
-    .pipe($.cache($.imagemin({
+function imagesImagemin () {
+  return gulp.src([
+    'app/assets/graphics/**/*',
+    require('openaq-design-system/gulp-addons').graphicsPath + '/**/*'
+  ])
+    .pipe($.imagemin([
 ```
 
 **USAGE**  
