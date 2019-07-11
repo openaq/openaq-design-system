@@ -5,9 +5,9 @@
 /* Colors
    ========================================================================== */
 
-$base-color: #496A90;                                   // Kashmir Blue
-$primary-color: #36AA90;                                // Keppel
-$secondary-color: #AEAAD3;                              // Wistful
+$base-color: #232F3B;                                   // Soil
+$primary-color: #198CFF;                                // Sky
+$secondary-color: #FAA204;                              // Sun
 
 /* State colors */
 
@@ -35,7 +35,7 @@ $infographic-color-c: #968AD3;
 $root-font-size: 16px;
 
 $base-font-color: $base-color;
-$base-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Source Sans Pro", sans-serif;
 $base-font-style: normal;
 $base-font-light: 300;
 $base-font-regular: 400;
@@ -46,10 +46,10 @@ $base-line-height: 1.5;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
-$heading-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-family: "Oxygen", sans-serif;
 $heading-font-regular: 400;
 $heading-font-bold: 700;
-$heading-font-weight: $heading-font-bold;
+$heading-font-weight: $heading-font-regular;
 
 /* Decoration
    ========================================================================== */
