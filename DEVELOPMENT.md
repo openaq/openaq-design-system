@@ -45,14 +45,14 @@ These files can then be liked in the doc's files and used.
 Svg icons to be compiled into a webfont. The resulting compiled file must be committed with the rest of the styles.  
 To manually compile the `openaq-design-system` icons run:
 ```
-$ npm run openaq-icons
+$ yarn openaq-icons
 ```
 
 ### Sandbox
 The sandbox site resides in `sandbox/`.
 
 ```
-$ npm run serve
+$ yarn serve
 ```
 Compiles the sass files, javascript, and launches the server making the site available at `http://localhost:3000/`  
 The system will watch files and execute tasks whenever one of them changes.  
