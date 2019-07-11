@@ -12,13 +12,18 @@
 .page__header {
   position: relative;
   z-index: 10;
-  background: transparent;
+  background: #fff;
   color: $base-font-color;
-  padding: $global-spacing / 2 0;
-  box-shadow: 0 2px 0 0 $base-semi-alpha-color;
+  padding: $global-spacing 0;
+  background: #FFFFFF;
+  box-shadow: 0 4px 16px 0 $base-semi-alpha-color;
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
 
   > .inner {
     @extend .row, .row--centered;
+    flex: 1;
   }
 }
 
@@ -65,24 +70,12 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: rgba($base-font-color, 0.64);
-  
+
   > .inner {
     @extend .row, .row--centered;
   }
 
   *:last-child {
     margin-bottom: 0;
-  }
-}
-
-
-/* Dark theme modifier
-   ========================================================================== */
-
-.page--dark {
-  .page__header {
-    @extend .antialiased;
-    color: #fff;
-    box-shadow: 0 2px 0 0 rgba(#fff, 0.08);
   }
 }
