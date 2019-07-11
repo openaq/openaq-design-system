@@ -1,1 +1,1 @@
-module.exports = require('react-scrollbar/dist/no-css').default;
+module.exports = require('react-scrollbar').default;
