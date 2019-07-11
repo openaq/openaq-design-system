@@ -52,7 +52,7 @@ const readPackage = () => JSON.parse(fs.readFileSync('package.json'));
 // ---------------------------------------------------------------------------//
 
 function clean () {
-  return del(['.tmp', 'dist']);
+  return del(['.tmp', 'build']);
 }
 
 function serve () {
@@ -83,7 +83,10 @@ function serve () {
     'sandbox/assets/styles/**/*.scss',
     'assets/styles/**/*.scss'
   ], styles);
-  gulp.watch('sandbox/assets/scripts/**/**', javascript);
+  gulp.watch([
+    'sandbox/assets/scripts/**/**',
+    'assets/scripts/**/**'
+  ], javascript);
   gulp.watch('package.json', vendorScripts);
 }
 
@@ -109,9 +112,11 @@ module.exports.default = gulp.series(
     imagesImagemin
   ),
   extras,
+  packjs,
   finish
 );
 module.exports.openAqIcons = openAqIcons;
+module.exports.packjs = packjs;
 
 // /////////////////////////////////////////////////////////////////////////////
 // ------------------------- Browserify tasks --------------------------------//
@@ -124,15 +129,19 @@ module.exports.openAqIcons = openAqIcons;
 function javascript () {
   // Ensure package is updated.
   const pkg = readPackage();
+  const external = (pkg.dependencies ? Object.keys(pkg.dependencies) : [])
+    .concat(pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : []);
+
   return browserify({
     entries: ['./sandbox/assets/scripts/main.js'],
+    transform: pkg.browserify['transform-sandbox'],
     debug: true,
     cache: {},
     packageCache: {},
     bundleExternal: false,
     fullPaths: true
   })
-    .external(pkg.dependencies ? Object.keys(pkg.dependencies) : [])
+    .external(external)
     .bundle()
     .on('error', function (e) {
       notifier.notify({
@@ -159,9 +168,13 @@ function javascript () {
 function vendorScripts () {
   // Ensure package is updated.
   const pkg = readPackage();
+  const external = (pkg.dependencies ? Object.keys(pkg.dependencies) : [])
+    .concat(pkg.peerDependencies ? Object.keys(pkg.peerDependencies) : []);
+
   var vb = browserify({
+    transform: pkg.browserify['transform-sandbox'],
     debug: true,
-    require: pkg.dependencies ? Object.keys(pkg.dependencies) : []
+    require: external
   });
   return vb.bundle()
     .on('error', log.bind(log, 'Browserify Error'))
@@ -173,6 +186,21 @@ function vendorScripts () {
     .pipe(bs.stream());
 }
 
+function packjs () {
+  return gulp.src('./assets/scripts/**/**.js')
+  .pipe($.babel({
+    presets: [
+      '@babel/preset-env',
+      '@babel/preset-react'
+    ],
+    plugins: [
+      '@babel/plugin-transform-spread',
+      '@babel/plugin-proposal-object-rest-spread'
+    ]
+  }))
+  .pipe($.uglify({ compress: { comparisons: false, collapse_vars: false } }))
+  .pipe(gulp.dest('./dist'));
+}
 // /////////////////////////////////////////////////////////////////////////////
 // ------------------------- Collecticon tasks -------------------------------//
 // --------------------- (Font generation related) ---------------------------//
@@ -196,7 +224,7 @@ function openAqIcons () {
 // ----------------------------------------------------------------------------//
 
 function finish () {
-  return gulp.src('dist/**/*')
+  return gulp.src('build/**/*')
     .pipe($.size({ title: 'build', gzip: true }));
 }
 
@@ -245,7 +273,7 @@ function html () {
     .pipe($.if('*.css', $.csso()))
     .pipe($.if(/\.(css|js)$/, $.rev()))
     .pipe($.revRewrite())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('build'));
 }
 
 function imagesImagemin () {
@@ -261,7 +289,7 @@ function imagesImagemin () {
       // as hooks for embedding and styling.
       $.imagemin.svgo({ plugins: [{ cleanupIDs: false }] })
     ]))
-    .pipe(gulp.dest('dist/assets/graphics'));
+    .pipe(gulp.dest('build/assets/graphics'));
 }
 
 function extras () {
@@ -274,7 +302,7 @@ function extras () {
     '!sandbox/assets/scripts/**'
   ], {
     dot: true
-  }).pipe(gulp.dest('dist'));
+  }).pipe(gulp.dest('build'));
 }
 
 /**

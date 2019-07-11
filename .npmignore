@@ -1,8 +1,9 @@
 sandbox
 .gitignore
 .travis.yml
-.build_scripts
+.circleci
 .eslintrc
 .gitattributes
 gulpfile.js
 .tmp
+build
