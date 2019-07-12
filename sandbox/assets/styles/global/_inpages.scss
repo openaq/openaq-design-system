@@ -47,17 +47,17 @@ $page-header-y: $global-spacing * 5;
 
   &__title {
     @extend .heading;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
     @include media(medium-up) {
-      font-size: 3rem;
-      line-height: 3.5rem;
+      font-size: 2.5rem;
+      line-height: 3rem;
     }
 
     @include media(large-up) {
-      font-size: 4rem;
-      line-height: 4.5rem;
+      font-size: 3.5rem;
+      line-height: 4rem;
     }
   }
 
@@ -74,16 +74,17 @@ $page-header-y: $global-spacing * 5;
   }
 
   &__introduction {
-    color: rgba($base-font-color, 0.64);
-    font-size: 1.25rem;
-    line-height: 2rem;
+    color: rgba($base-font-color, 0.60);
+    font-size: 1rem;
+    line-height: 1.75rem;
+
     > *:last-child {
       margin-bottom: 0;
     }
 
     @include media(medium-up) {
-      font-size: 1.5rem;
-      line-height: 2.25rem;
+      font-size: 1.25rem;
+      line-height: 2rem;
     }
   }
 
@@ -110,6 +111,6 @@ $page-header-y: $global-spacing * 5;
   }
 
   .inpage__introduction {
-    color: rgba(#fff, 0.64);
+    color: #fff;
   }
 }
