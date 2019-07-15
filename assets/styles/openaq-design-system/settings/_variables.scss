@@ -35,7 +35,7 @@ $infographic-color-c: #968AD3;
 
 $root-font-size: 16px;
 
-$base-font-color: $base-color;
+$base-font-color: tint($base-color, 36%);
 $base-font-family: "Source Sans Pro", sans-serif;
 $base-font-style: normal;
 $base-font-light: 300;
@@ -47,6 +47,7 @@ $base-line-height: 1.5;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
+$heading-font-color: $base-color;
 $heading-font-family: "Oxygen", sans-serif;
 $heading-font-regular: 400;
 $heading-font-bold: 700;
