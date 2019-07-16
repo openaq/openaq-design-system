@@ -343,7 +343,7 @@ label[for] {
     }
 
     &:before {
-      @extend %openaq-ds-icon-sm-tick;
+      @extend %openaq-ds-icon-tick--small;
       color: rgba($base-color, 0.80);
     }
   }

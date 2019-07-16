@@ -121,6 +121,6 @@
   @extend .button, .button--base-unbounded, .button--small, .button--text-hidden;
 
   &::before {
-    @extend %openaq-ds-icon-sm-xmark;
+    @extend %openaq-ds-icon-xmark--small;
   }
 }

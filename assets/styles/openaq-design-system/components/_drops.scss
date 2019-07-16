@@ -10,7 +10,7 @@
 .drop__toggle {
   &--caret {
     &:after {
-      @extend %openaq-ds-icon-sm-chevron-down;
+      @extend %openaq-ds-icon-chevron-down--small;
       font-size: 1rem;
       line-height: inherit;
       vertical-align: top;
@@ -236,7 +236,7 @@
     outline: 0;
     font-weight: $base-font-bold;
     &:after {
-      @extend %openaq-ds-icon-sm-tick;
+      @extend %openaq-ds-icon-tick--small;
       position: absolute;
       z-index: 1;
       top: $global-spacing / 4;

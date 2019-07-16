@@ -95,6 +95,6 @@
     opacity: 1;
   }
   &:before {
-    @extend %openaq-ds-icon-sm-xmark;
+    @extend %openaq-ds-icon-xmark--small;
   }
 }
