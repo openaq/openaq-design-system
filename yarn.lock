@@ -2072,10 +2072,10 @@ collapse-white-space@^1.0.2:
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-1.0.5.tgz#c2495b699ab1ed380d29a1091e01063e75dbbe3a"
   integrity sha512-703bOOmytCYAX9cXYqoikYIx6twmFCXsnzRQheBcTG3nzKYBR4P/+wkYeH+Mvj7qUz8zZDtdyzbxfnEi/kYzRQ==
 
-collecticons-processor@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/collecticons-processor/-/collecticons-processor-4.0.1.tgz#2a3f87cadce097fb56c37910d79abe8cc7e2acfb"
-  integrity sha512-2SQeXtYI/uK4DyIzLxvbxSRJ67/bgFnpILc6f2LobIPvJDKLIE98pM5h8SNnIVhWDxHMDLcxrtuad2Fpp6Nlgw==
+collecticons-processor@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/collecticons-processor/-/collecticons-processor-4.1.0.tgz#d1531fded47f2025043d5c535a6e3ec30f95c629"
+  integrity sha512-c8vt/biMxIBHQUudtvjOBfS3BQh1BNLr9jipnuGnIzYB3KP3jDxeCDAZ/dbQK4Pf+Qtbpphl+lzRfY5eJRKapg==
   dependencies:
     commander "^2.19.0"
     ejs "^2.6.1"

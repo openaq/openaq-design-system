@@ -215,7 +215,8 @@ function openAqIcons () {
     styleDest: 'assets/styles/openaq-design-system/core',
     styleName: '_openaq-ds-icons',
     className: 'openaq-ds-icon',
-    preview: false
+    preview: false,
+    rescale: true
   });
 }
 

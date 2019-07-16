@@ -27,7 +27,7 @@
   "engines": {
     "node": "10.x"
   },
-  "browserify": {   
+  "browserify": {
     "transform-sandbox": [
       [
         "babelify",
@@ -45,7 +45,7 @@
       "require-globify",
       "envify"
     ]
-  },  
+  },
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.5.4",
@@ -55,7 +55,7 @@
     "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
     "browserify": "^16.3.0",
-    "collecticons-processor": "^4.0.0",
+    "collecticons-processor": "^4.1.0",
     "del": "^5.0.0",
     "envify": "^4.1.0",
     "eslint": "^6.0.1",
