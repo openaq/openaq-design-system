@@ -235,9 +235,11 @@ abbr[title] {
 
 .heading-alt {
   font-family: $heading-font-family;
-  font-weight: $heading-font-regular;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.125em;
   text-transform: uppercase;
-  color: rgba($base-font-color, 0.48);
 }
 
 .heading-deco {
