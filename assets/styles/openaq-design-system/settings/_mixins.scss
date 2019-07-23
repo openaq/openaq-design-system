@@ -95,39 +95,41 @@
   $bg-color-hover: null;
   $bg-color-active: null;
   $border-shadow-color: null;
-  $inner-shadow-color: null;
+  $drop-shadow: false;
 
   @if $style == "filled" {
+    $drop-shadow: true;
+
     @if $brightness == "light" {
       $text-color: $base-font-color;
       $bg-color: $color;
       $bg-color-hover: shade($color, 4%);
       $bg-color-active: shade($color, 8%);
-      $border-shadow-color: rgba($base-color, 0.16);
-      $inner-shadow-color: rgba($base-color, 0.12);
+      $border-shadow-color: rgba($base-color, 0.08);
     }
+
     @else if $brightness == "dark" {
       $text-color: #fff;
       $bg-color: $color;
       $bg-color-hover: shade($color, 8%);
       $bg-color-active: shade($color, 16%);
-      $border-shadow-color: rgba($base-color, 0.24);
-      $inner-shadow-color: rgba($base-color, 0.24);
-
-      @extend .antialiased;
+      $border-shadow-color: rgba($base-color, 0.16);
     }
+
     @else {
       @error "Invalid brightness property for button variation.";
     }
   }
+
   @else if $style == "bounded" or $style == "unbounded" {
     $text-color: $color;
     $bg-color: rgba($color, 0);
     $bg-color-hover: rgba($color, 0.08);
     $bg-color-active: rgba($color, 0.16);
-    
+
     @if $style == "bounded" {
       box-shadow: inset 0 0 0 2px $border-shadow-color;
+
       .drop--open > &,
       &.button--active,
       &:active {
@@ -135,21 +137,42 @@
       }
     }
   }
+
+  @else if $style == "ghost" {
+    $drop-shadow: true;
+    $text-color: $color;
+    $bg-color: #fff;
+    $bg-color-hover: tint($color, 92%);
+    $bg-color-active: tint($color, 88%);
+  }
+
   @else {
     @error "Invalid style property for button variation.";
   }
 
   background-color: $bg-color;
-  &, &:visited {
+
+  @if $drop-shadow {
+    box-shadow: 0 8px 16px 0 rgba($base-color, 0.16);
+  }
+
+  &,
+  &:visited {
     color: $text-color;
   }
+
   &:hover {
     background-color: $bg-color-hover;
   }
+
   .drop--open > &,
   &.button--active,
   &.button--active:hover,
   &:active {
     background-color: $bg-color-active;
+
+    @if $drop-shadow {
+      box-shadow: 0 4px 8px 0 rgba($base-color, 0.08);
+    }
   }
 }

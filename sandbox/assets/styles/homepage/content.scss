@@ -61,6 +61,8 @@
 }
 
 .exhibit__content {
+  border-radius: $base-border-radius;
+  
   &--dark {
     @extend .antialiased;
     background: $base-color;
