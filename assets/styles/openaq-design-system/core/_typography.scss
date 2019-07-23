@@ -74,7 +74,6 @@ ol {
 }
 
 dt {
-  @extend .heading-alt;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -89,9 +88,11 @@ dd {
 
 .dl-horizontal {
   @extend .clearfix;
+
   dt, dd {
     float: left;
   }
+
   dt {
     width: 32%;
     clear: left;
@@ -99,10 +100,12 @@ dd {
     padding-bottom: $global-spacing / 8;
     padding-right: $global-spacing / 2;
   }
+
   dd {
     width: 68%;
     padding-left: $global-spacing / 2;
   }
+
   dd + dd {
     margin-left: 32%;
   }
