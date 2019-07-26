@@ -61,17 +61,17 @@ $heading-font-weight: $heading-font-regular;
 $base-border-radius: 0.25rem;
 $full-border-radius: 60rem;
 
+$full-border-radius: 320rem;
+
+$base-border-width: 1px;
 
 /* Sizing, spacing and media queries
    ========================================================================== */
 
-/* Sizing */
-
-$page-header-y: 0 !default;
-
 /* Spacing */
 
 $global-spacing: 1rem;
+$contained-spacing: 1.5rem;
 
 /* Rows */
 

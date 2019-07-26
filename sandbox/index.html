@@ -173,21 +173,23 @@
 
                   <h2>Cards</h2>
                   <div class="exhibit">
-                    <div class="exhibit__content">
+                    <div class="exhibit__content prose prose--responsive">
                       <article class="card">
                         <a href="#" class="card__contents" title="Click me">
                           <figure class="card__media">
-                            <div class="card__thumbnail">
+                            <div class="card__cover">
                               <img alt="Card thumb" width="768" height="384" src="http://placehold.it/768x384" />
                             </div>
                           </figure>
-                          <div class="card__copy">
-                            <header class="card__header">
-                              <h1 class="card__title">This is a full clickable card</h1>
-                              <p class="card__subtitle">Lorem ipsum</p>
-                            </header>
-                            <div class="card__body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin eros. Sed ultricies velit massa, vitae rutrum nulla varius ut. In feugiat congue leo.</p>
+                          <header class="card__header">
+                            <div class="card__headline">
+                              <h1 class="card__title">This is a fully clickable card</h1>
+                              <p class="card__subtitle">Card subtitle</p>
+                            </div>
+                          </header>
+                          <div class="card__body">
+                            <div class="card__prose">
+                              <p>Lorem ipsum dolor sit amet.</p>
                             </div>
                           </div>
                         </a>
@@ -196,45 +198,29 @@
                       <article class="card">
                         <div class="card__contents">
                           <figure class="card__media">
-                            <div class="card__thumbnail">
-                              <img alt="Card thumb" width="768" height="384" src="http://placehold.it/768x384" />
-                            </div>
+                            <a title="View card content" class="link-wrapper" href="#">
+                              <div class="card__cover">
+                                <img alt="Card thumb" width="768" height="384" src="http://placehold.it/768x384" />
+                              </div>
+                            </a>
                           </figure>
-                          <div class="card__copy">
-                            <header class="card__header">
-                              <h1 class="card__title"><a href="#" title="Click me">This is a regular card</a></h1>
-                            </header>
-                            <div class="card__body">
-                              <dl>
-                                <dt>Term 1</dt>
-                                <dd>Value 1</dd>
-                                <dt>Term 2</dt>
-                                <dd>Value 2</dd>
-                              </dl>
+                          <header class="card__header">
+                            <div class="card__headline">
+                              <p class="card__subtitle">Card subtitle <a title="View content" href="#">containing a link</a></p>
+                              <a title="View card content" class="link-wrapper" href="#">
+                                <h1 class="card__title">This is a regular card</h1>
+                              </a>
                             </div>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class='card card--horizontal'>
-                        <div class='card__contents'>
-                          <figure class='card__media'>
-                            <div class='card__thumbnail'>
-                              <img width='320' height='320' src='http://placehold.it/320x320' alt='Card thumb' />
+                            <div class="card__header-toolbar">
+                              <ul class="toolbar__menu">
+                                <li class="toolbar__menu-item toolbar__menu-item--sep"><button class="tba-ellipsis tba--text-hidden" type="button" title="View card options"><span>Options</span></button></li>
+                                <li class="toolbar__menu-item"><a href="#" title="Edit card" class="tba-pencil tba--text-hidden"><span>Edit</span></a></li>
+                              </ul>
                             </div>
-                          </figure>
-                          <div class="card__copy">
-                            <header class='card__header'>
-                              <h1 class='card__title'><a title='Click me' href='#'>This is an horizontal card</a></h1>
-                            </header>
-                            <div class='card__body'>
-                              <dl>
-                                <dt>Term 1</dt>
-                                <dd>Value 1</dd>
-                                <dt>Term 2</dt>
-                                <dd>Value 2</dd>
-                              </dl>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ab ut provident, placeat, repellat ea ex dolorum delectus voluptate unde eos magnam. Eaque nemo eius, voluptate accusantium accusamus, mollitia necessitatibus.</p>
+                          </header>
+                          <div class="card__body">
+                            <div class="card__prose">
+                              <p>Lorem ipsum dolor sit amet.</p>
                             </div>
                           </div>
                         </div>
