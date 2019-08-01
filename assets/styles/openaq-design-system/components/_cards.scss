@@ -212,9 +212,6 @@ a.card__contents {
   height: 2.5rem;
 }
 
-.card__thumb,
 .card__cover {
-  position: relative;
-  min-height: 3rem;
-  margin: 0;
+  margin: -$contained-spacing;
 }
