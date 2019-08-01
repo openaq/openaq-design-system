@@ -85,11 +85,14 @@ a.card__contents {
 }
 
 .card__subtitle {
-  @extend .heading-alt;
   position: relative;
-  color: rgba($base-font-color, 0.64);
-  font-size: 0.875rem;
+  font-family: $heading-font-family;
+  font-weight: 700;
+  font-size: 0.75rem;
   line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  color: $base-color;
   margin: ($global-spacing / 4) 0;
 
   &:first-child {
