@@ -1,6 +1,6 @@
 {
   "name": "openaq-design-system",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "OpenAQ Design System",
   "repository": {
     "type": "git",
@@ -90,19 +90,14 @@
     "stylelint-config-recommended": "^2.2.0",
     "through2": "^3.0.1",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0",
-    "react": "^15.0.0",
-    "react-addons-css-transition-group": "^15.0.0",
-    "react-dom": "^15.0.0",
-    "react-tether": "^0.5.1"
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "react-scrollbar": "git+https://github.com/danielfdsilva/reactScrollbar.git#3c3976fc82359c1b46bace48d89ce716ba748dca"
-  },
-  "peerDependencies": {
-    "react": "^15.0.0",
+    "create-react-class": "^15.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
     "react-addons-css-transition-group": "^15.0.0",
-    "react-dom": "^15.0.0",
+    "react-dom": "^17.0.1",
     "react-tether": "^0.5.1"
   }
 }
