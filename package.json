@@ -24,9 +24,6 @@
     "build": "DS_ENV=production NODE_ENV=production  gulp",
     "test": "echo \"No tests\" && exit 0"
   },
-  "engines": {
-    "node": "10.x"
-  },
   "browserify": {
     "transform-sandbox": [
       [
