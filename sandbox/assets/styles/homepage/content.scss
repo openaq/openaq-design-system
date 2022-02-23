@@ -4,19 +4,19 @@
 
 .page--homepage {
   .inpage__header {
-    background-image: url(../graphics/content/page-hero-default.png);
+    // background-image: url(../graphics/content/page-hero-default.png);
   }
 }
 
 .showcase {
   @include media(medium-up) {
-    @include col(9/12);
-    @include shift(1.5/12);
+    @include column(9/12);
+    @include move(1.5/12);
   }
 
   @include media(large-up) {
-    @include col(8/12);
-    @include shift(2/12);
+    @include column(8/12);
+    @include move(2/12);
   }
 }
 
@@ -61,6 +61,8 @@
 }
 
 .exhibit__content {
+  border-radius: $base-border-radius;
+  
   &--dark {
     @extend .antialiased;
     background: $base-color;

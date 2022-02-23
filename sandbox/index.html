@@ -14,7 +14,7 @@
     <meta name="twitter:title" content="Sandbox — OpenAQ Design System">
     <meta name="twitter:description" content="Testing OpenAQ Design System." />
     <meta name="twitter:image:src" content="assets/graphics/meta/default-meta-image.png" />
-    <!--/ Twitter --> 
+    <!--/ Twitter -->
 
     <!-- OG -->
     <meta property="og:site_name" content="Sandbox — OpenAQ Design System" />
@@ -25,17 +25,11 @@
     <meta property="og:image" content="assets/graphics/meta/default-meta-image.png" />
     <!--/ OG -->
 
-    <link rel="shortcut icon" href="assets/graphics/meta/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="assets/graphics/meta/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/graphics/meta/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/graphics/meta/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/graphics/meta/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/graphics/meta/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/graphics/meta/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/graphics/meta/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/graphics/meta/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/graphics/meta/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/graphics/meta/android-chrome.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/graphics/meta/apple-touch-icon.png" />
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 
     <!-- build:css assets/styles/vendor.css -->
     <!-- endbuild -->
@@ -43,20 +37,22 @@
     <!-- build:css assets/styles/main.css -->
     <link rel="stylesheet" href="assets/styles/main.css">
     <!-- endbuild -->
-  
+
   </head>
   <body>
 
     <!-- page -->
-    <div class="page page--homepage">
+    <div class="page page--dark page--homepage">
 
       <header class="page__header" role="banner">
         <div class="inner">
           <div class="page__headline">
-            <h1 class="page__title"><a href="/" title="Visit homepage">
-              <img src="assets/graphics/layout/logo.svg" alt="OpenAQ logotype" height="48" />
-              <span>OpenAQ</span>
-            </a></h1>
+            <h1 class="page__title">
+              <a href="/" title="Visit homepage">
+                <img src="assets/graphics/layout/oaq-logo-col-pos.svg" alt="OpenAQ logotype" width="72" height="40" />
+                <span>OpenAQ</span>
+              </a>
+            </h1>
           </div>
           <nav class="page__prime-nav">
             <h2 class="page__prime-nav-title"><a href="#nav-block-browse"><span>Menu</span></a></h2>
@@ -85,7 +81,7 @@
                   <p>Testing OpenAQ Design System.</p>
                 </div>
               </div>
-            </div>         
+            </div>
           </header>
 
           <div class="inpage__body">
@@ -126,7 +122,6 @@
                   <h2>Buttons</h2>
                   <div class="exhibit">
                     <div class="exhibit__content">
-                      <button class="button button--achromic" type="button"><span>Achromic</span></button>
                       <button class="button button--base" type="submit"><span>Base</span></button>
                       <a class="button button--primary" role="button"><span>Primary</span></a>
                       <button class="button button--secondary" type="button"><span>Secondary</span></button>
@@ -152,9 +147,20 @@
                     <div class="exhibit__content">
                       <button class="button button--primary button--large button--block" type="button"><span>Block</span></button>
                       <button class="button button--primary-bounded button--large button--semi-fluid" type="button"><span>Semi fluid</span></button>
+                      <button class="button button--primary-bounded button--large button--capsule" type="button"><span>Capsule</span></button>
                     </div>
                   </div>
-                    
+
+                  <div class="exhibit">
+                    <div class="exhibit__content exhibit__content--dark">
+                      <button class="button button--white-unbounded" type="button"><span>White Unbounded</span></button>
+                      <button class="button button--white-bounded" type="button"><span>White Bounded</span></button>
+                      <button class="button button--base-ghost" type="button"><span>Base ghost</span></button>
+                      <button class="button button--primary-ghost" type="button"><span>Primary ghost</span></button>
+                      <button class="button button--secondary-ghost" type="button"><span>Secondary ghost</span></button>
+                    </div>
+                  </div>
+
                   <div class="exhibit">
                     <div class="exhibit__content">
                       <div class="button-group button-group--horizontal" role="group" aria-label="...">
@@ -167,21 +173,23 @@
 
                   <h2>Cards</h2>
                   <div class="exhibit">
-                    <div class="exhibit__content">
+                    <div class="exhibit__content prose prose--responsive">
                       <article class="card">
                         <a href="#" class="card__contents" title="Click me">
                           <figure class="card__media">
-                            <div class="card__thumbnail">
+                            <div class="card__cover">
                               <img alt="Card thumb" width="768" height="384" src="http://placehold.it/768x384" />
                             </div>
                           </figure>
-                          <div class="card__copy">
-                            <header class="card__header">
-                              <h1 class="card__title">This is a full clickable card</h1>
-                              <p class="card__subtitle">Lorem ipsum</p>
-                            </header>
-                            <div class="card__body">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sollicitudin eros. Sed ultricies velit massa, vitae rutrum nulla varius ut. In feugiat congue leo.</p>
+                          <header class="card__header">
+                            <div class="card__headline">
+                              <h1 class="card__title">This is a fully clickable card</h1>
+                              <p class="card__subtitle">Card subtitle</p>
+                            </div>
+                          </header>
+                          <div class="card__body">
+                            <div class="card__prose">
+                              <p>Lorem ipsum dolor sit amet.</p>
                             </div>
                           </div>
                         </a>
@@ -190,45 +198,29 @@
                       <article class="card">
                         <div class="card__contents">
                           <figure class="card__media">
-                            <div class="card__thumbnail">
-                              <img alt="Card thumb" width="768" height="384" src="http://placehold.it/768x384" />
-                            </div>
+                            <a title="View card content" class="link-wrapper" href="#">
+                              <div class="card__cover">
+                                <img alt="Card thumb" width="768" height="384" src="http://placehold.it/768x384" />
+                              </div>
+                            </a>
                           </figure>
-                          <div class="card__copy">
-                            <header class="card__header">
-                              <h1 class="card__title"><a href="#" title="Click me">This is a regular card</a></h1>
-                            </header>
-                            <div class="card__body">
-                              <dl>
-                                <dt>Term 1</dt>
-                                <dd>Value 1</dd>
-                                <dt>Term 2</dt>
-                                <dd>Value 2</dd>
-                              </dl>
+                          <header class="card__header">
+                            <div class="card__headline">
+                              <p class="card__subtitle">Card subtitle <a title="View content" href="#">containing a link</a></p>
+                              <a title="View card content" class="link-wrapper" href="#">
+                                <h1 class="card__title">This is a regular card</h1>
+                              </a>
                             </div>
-                          </div>
-                        </div>
-                      </article>
-
-                      <article class='card card--horizontal'>
-                        <div class='card__contents'>
-                          <figure class='card__media'>
-                            <div class='card__thumbnail'>
-                              <img width='320' height='320' src='http://placehold.it/320x320' alt='Card thumb' />
+                            <div class="card__header-toolbar">
+                              <ul class="toolbar__menu">
+                                <li class="toolbar__menu-item toolbar__menu-item--sep"><button class="tba-ellipsis tba--text-hidden" type="button" title="View card options"><span>Options</span></button></li>
+                                <li class="toolbar__menu-item"><a href="#" title="Edit card" class="tba-pencil tba--text-hidden"><span>Edit</span></a></li>
+                              </ul>
                             </div>
-                          </figure>
-                          <div class="card__copy">
-                            <header class='card__header'>
-                              <h1 class='card__title'><a title='Click me' href='#'>This is an horizontal card</a></h1>
-                            </header>
-                            <div class='card__body'>
-                              <dl>
-                                <dt>Term 1</dt>
-                                <dd>Value 1</dd>
-                                <dt>Term 2</dt>
-                                <dd>Value 2</dd>
-                              </dl>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ab ut provident, placeat, repellat ea ex dolorum delectus voluptate unde eos magnam. Eaque nemo eius, voluptate accusantium accusamus, mollitia necessitatibus.</p>
+                          </header>
+                          <div class="card__body">
+                            <div class="card__prose">
+                              <p>Lorem ipsum dolor sit amet.</p>
                             </div>
                           </div>
                         </div>
@@ -272,7 +264,7 @@
                     </div>
 
                     <div class="exhibit__content">
-                      <div data-hook="react:drops"><!-- React rendered content --></div>  
+                      <div data-hook="react:drops"><!-- React rendered content --></div>
                     </div>
 
                   </div>
@@ -290,7 +282,7 @@
                       <div data-hook='modal'></div>
                     </div>
                   </div>
-                    
+
                   <h2>Forms</h2>
                   <div class="exhibit">
                     <div class="exhibit__content">
@@ -417,7 +409,7 @@
                 </div>
                 <!--/ showcase -->
 
-              </div>                
+              </div>
             </div>
             <!--/ fold -->
 

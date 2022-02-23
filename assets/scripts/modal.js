@@ -1,16 +1,18 @@
 'use strict';
 import React from 'react';
+import { PropTypes as T } from 'prop-types';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import createReactClass from 'create-react-class';
 
-var Modal = React.createClass({
+var Modal = createReactClass({
   displayName: 'Modal',
 
   propTypes: {
-    id: React.PropTypes.string.isRequired,
-    revealed: React.PropTypes.bool,
-    className: React.PropTypes.string,
-    onOverlayClick: React.PropTypes.func,
-    onCloseClick: React.PropTypes.func,
+    id: T.string.isRequired,
+    revealed: T.bool,
+    className: T.string,
+    onOverlayClick: T.func,
+    onCloseClick: T.func,
 
     children: function (props, propName, componentName) {
       let types = ['ModalHeader', 'ModalBody', 'ModalFooter'];
@@ -152,11 +154,11 @@ var Modal = React.createClass({
   }
 });
 
-var ModalHeader = React.createClass({
+var ModalHeader = createReactClass({
   displayName: 'ModalHeader',
 
   propTypes: {
-    children: React.PropTypes.node
+    children: T.node
   },
 
   render: function () {
@@ -168,11 +170,11 @@ var ModalHeader = React.createClass({
   }
 });
 
-var ModalBody = React.createClass({
+var ModalBody = createReactClass({
   displayName: 'ModalBody',
 
   propTypes: {
-    children: React.PropTypes.node
+    children: T.node
   },
 
   render: function () {
@@ -184,11 +186,11 @@ var ModalBody = React.createClass({
   }
 });
 
-var ModalFooter = React.createClass({
+var ModalFooter = createReactClass({
   displayName: 'ModalFooter',
 
   propTypes: {
-    children: React.PropTypes.node
+    children: T.node
   },
 
   render: function () {

@@ -1,115 +1,179 @@
 /* ==========================================================================
-   Cards
+   Global: Cards
    ========================================================================== */
 
 .card {
+  display: flex;
   position: relative;
-  text-align: initial;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  text-align: left;
+  flex: 1;
+  min-width: 0;
+
+  /* Animation */
+  animation: reveal 0.8s ease 0s 1;
 }
 
 .card__contents {
+  @extend %card-skin;
   position: relative;
   z-index: 1;
-  display: block;
-  background: #fff;
-  box-shadow: 0 0 0 2px $base-alpha-color;
-  border-radius: $base-border-radius;
-  backface-visibility: hidden;
-  padding: $global-spacing;
-  overflow: hidden;
-
-  &, &:visited {
-    color: inherit;
-  }
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
 
   /* Animation */
   transition: all 0.16s ease 0s;
 
   .card--active & {
-    box-shadow: 0 0 0 2px rgba($base-color, 0.32);
+    box-shadow: 0 4px 16px 2px rgba($primary-color, 0.32);
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a.card__contents {
+  color: inherit;
+
+  &:hover {
+    @extend %card-skin--active;
+    transform: translate(0, -0.125rem);
+    opacity: 1;
+  }
+
+  &:active {
+    transform: translate(0, 0);
   }
 }
 
 
-/* Card media
-   ========================================================================== */
-
-.card__media {
-  position: relative;
-  margin: 0 (- $global-spacing) ($global-spacing / 2) (- $global-spacing);
-
-  img {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: all 0.32s ease 0s;
-  }
-
-  &:first-child {
-    margin-top: - $global-spacing;
-  }
-
-  &:last-child {
-    margin-bottom: - $global-spacing;
-  }
-
-}
-
-.card__thumbnail {
-  position: relative;
-  overflow: hidden;
-  background: tint($base-color, 96%);
-  margin: $global-spacing / 4;
-  border-radius: $base-border-radius;
-  min-height: 4rem;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    content: "";
-    box-shadow: inset 0 0 0 2px $base-semi-alpha-color;
-    pointer-events: none;
-  }
-}
-
-/* Card header
+/* Header
    ========================================================================== */
 
 .card__header {
-  margin-bottom: $global-spacing;
+  display: flex;
+  align-items: flex-start;
+  padding: $contained-spacing;
+  min-width: 0;
 
+  .card__media + & {
+    padding-top: 0;
+  }
+
+  .link-wrapper {
+    color: inherit;
+  }
+}
+
+.card__headline {
   > *:last-child {
     margin-bottom: 0;
   }
 }
 
 .card__title {
-  @include heading(1.25rem);
+  @include heading(1.25rem, medium-up);
   margin: 0;
+  flex: 1;
+
+  a {
+    color: inherit;
+  }
 }
 
 .card__subtitle {
-  @extend .heading-alt;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  position: relative;
+  font-family: $heading-font-family;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  color: $base-color;
+  margin: ($global-spacing / 4) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 
-/* Card body
+/* Body
    ========================================================================== */
 
 .card__body {
-  margin-bottom: $global-spacing / 2;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  flex: 1;
+  width: 100%;
+  padding: $contained-spacing;
+
+  .card__header + & {
+    padding-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card__prose {
+  flex: 1;
+  color: $base-font-color;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card__details {
+  flex: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 $global-spacing $global-spacing $global-spacing;
+
+  > * {
+    grid-column: auto / span 6;
+    margin: 0;
+  }
+
+  dt {
+    font-size: 0.75rem;
+  }
+
+  dd {
+    font-size: 0.875rem;
+    font-weight: $base-font-bold;
+
+    &:nth-of-type(1) {
+      order: 3;
+    }
+
+    &:nth-of-type(2) {
+      order: 4;
+    }
+  }
+}
+
+
+/* Footer
+   ========================================================================== */
+
+.card__footer {
+  margin-top: auto;
+  padding: $contained-spacing;
+
+  .card__body + & {
+    padding-top: 0;
+  }
 
   > *:last-child {
     margin-bottom: 0;
@@ -117,65 +181,40 @@
 }
 
 
-/* Card Horizontal Modifer
+/*  Header toolbar
    ========================================================================== */
 
-.card--horizontal {
-
-  .card__thumbnail {
-    max-height: 16rem;
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  @include media(medium-up) {
-    display: table;
-    width: 100%;
-
-    .card__media,
-    .card__copy {
-      display: table-cell;
-      vertical-align: top;
-    }
-
-    .card__media {
-      // width: 48%;
-
-      &:first-child {
-        padding-right: $global-spacing;
-      }
-
-      &:last-child {
-        padding-left: $global-spacing;
-      }
-    }
-
-    .card__thumbnail {
-      max-height: none;
-      > img {
-        width: auto;
-        max-width: 15rem;
-      }
-    }
-  }
-
+.card__header-toolbar {
+  @extend .toolbar, .toolbar--small;
+  justify-content: flex-end;
+  flex: 1 1 auto;
 }
 
-.card__media,
-.card__copy {
-  .card--horizontal--align-top & {
+
+/* Media
+   ========================================================================== */
+
+.card__media {
+  position: relative;
+  padding: $contained-spacing;
+  margin: 0;
+
+  .link-wrapper {
+    display: block;
+  }
+
+  img {
     vertical-align: top;
+    max-width: 100%;
+    height: auto;
   }
+}
 
-  .card--horizontal--align-bottom & {
-    vertical-align: bottom;
-  }
+.card__badge {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 
-  .card--horizontal--align-middle & {
-    vertical-align: middle;
-  }
+.card__cover {
+  margin: -$contained-spacing;
 }

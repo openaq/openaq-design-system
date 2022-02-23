@@ -3,20 +3,22 @@
    ========================================================================== */
 
 .button {
-  @include user-select(none);
+  @extend .antialiased;
+  user-select: none;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0.25rem 0.75rem;
   min-width: 2rem;
-  background: none; 
+  background: none;
   text-shadow: none;
   border: 0;
+  font-family: $heading-font-family;
   border-radius: $base-border-radius;
-  font-weight: $base-font-bold;
+  font-weight: $heading-font-bold;
   cursor: pointer;
 
   /* States */
@@ -67,6 +69,18 @@
 /* Button color modifiers
    ========================================================================== */
 
+/* White Bounded */
+
+.button--white-bounded {
+  @include button-variation("bounded", null, #fff);
+}
+
+/* Base Unbounded */
+
+.button--white-unbounded {
+  @include button-variation("unbounded", null, #fff);
+}
+
 /* Base */
 
 .button--base {
@@ -83,6 +97,12 @@
 
 .button--base-unbounded {
   @include button-variation("unbounded", null, $base-color);
+}
+
+/* Base Ghost */
+
+.button--base-ghost {
+  @include button-variation("ghost", "light", $base-color);
 }
 
 /* Achromic */
@@ -115,6 +135,12 @@
   @include button-variation("unbounded", null, $primary-color);
 }
 
+/* Primary Ghost */
+
+.button--primary-ghost {
+  @include button-variation("ghost", "light", $primary-color);
+}
+
 /* Secondary */
 
 .button--secondary {
@@ -131,6 +157,12 @@
 
 .button--secondary-unbounded {
   @include button-variation("unbounded", null, $secondary-color);
+}
+
+/* Secondary Ghost */
+
+.button--secondary-ghost {
+  @include button-variation("ghost", "light", $secondary-color);
 }
 
 
@@ -154,7 +186,7 @@
 .button--medium,
 .button-group--medium .button {
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0.25rem 0.75rem;
   min-width: 2rem;
 }
@@ -164,7 +196,7 @@
 .button--large,
 .button-group--large .button {
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0.5rem 1rem;
   min-width: 2.5rem;
 }
@@ -174,7 +206,7 @@
 .button--xlarge,
 .button-group--xlarge .button {
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 0.5rem 1rem;
   min-width: 3rem;
 }
@@ -209,6 +241,11 @@
 .button--semi-fluid {
   min-width: 16rem;
 }
+
+.button--capsule {
+  border-radius: $full-border-radius;
+}
+
 
 /* ==========================================================================
    Button groups

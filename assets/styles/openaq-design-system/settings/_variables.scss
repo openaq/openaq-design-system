@@ -5,9 +5,10 @@
 /* Colors
    ========================================================================== */
 
-$base-color: #496A90;                                   // Kashmir Blue
-$primary-color: #36AA90;                                // Keppel
-$secondary-color: #AEAAD3;                              // Wistful
+$base-color: #232F3B;                                   // Soil
+$primary-color: #198CFF;                                // Day Sky
+$secondary-color: #FAA204;                              // Sun
+$tertiary-color: #002A8C;                               // Night Sky
 
 /* State colors */
 
@@ -34,8 +35,8 @@ $infographic-color-c: #968AD3;
 
 $root-font-size: 16px;
 
-$base-font-color: $base-color;
-$base-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-color: tint($base-color, 40%);
+$base-font-family: "Source Sans Pro", sans-serif;
 $base-font-style: normal;
 $base-font-light: 300;
 $base-font-regular: 400;
@@ -46,10 +47,11 @@ $base-line-height: 1.5;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
-$heading-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-color: $base-color;
+$heading-font-family: "Oxygen", sans-serif;
 $heading-font-regular: 400;
 $heading-font-bold: 700;
-$heading-font-weight: $heading-font-bold;
+$heading-font-weight: $heading-font-regular;
 
 /* Decoration
    ========================================================================== */
@@ -59,17 +61,17 @@ $heading-font-weight: $heading-font-bold;
 $base-border-radius: 0.25rem;
 $full-border-radius: 60rem;
 
+$full-border-radius: 320rem;
+
+$base-border-width: 1px;
 
 /* Sizing, spacing and media queries
    ========================================================================== */
 
-/* Sizing */
-
-$page-header-y: 0 !default;
-
 /* Spacing */
 
 $global-spacing: 1rem;
+$contained-spacing: 1.5rem;
 
 /* Rows */
 

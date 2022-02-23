@@ -109,5 +109,5 @@ nbproject
 temp
 tmp
 .tmp
-dist
+build
 _site

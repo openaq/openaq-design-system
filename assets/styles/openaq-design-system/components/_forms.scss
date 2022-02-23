@@ -15,10 +15,9 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: $base-font-color;
-  background: rgba($base-color, 0.08);
+  background: rgba($base-color, 0.06);
   box-shadow: inset 0 0 0 2px rgba($base-color, 0);
   border: 0;
-  border-radius: $base-border-radius;
   font-family: inherit;
 
   /* Placeholder */
@@ -38,7 +37,7 @@
 
   &:focus {
     outline: 0;
-    box-shadow: inset 0 0 0 2px rgba($base-color, 0.32);
+    box-shadow: inset 0 0 0 2px rgba($base-color, 0.16);
   }
 
   /* Animation */
@@ -155,8 +154,7 @@ textarea.form__control {
 .form__input-group-button:first-child > .button-group > .button,
 .form__input-group-button:first-child > .dropdown-toggle,
 .form__input-group-button:last-child > .button-group:not(:last-child) > .button {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 0;
 }
 
 .form__input-group .form__control:last-child,
@@ -164,8 +162,7 @@ textarea.form__control {
 .form__input-group-button:first-child > .button:not(:first-child),
 .form__input-group-button:last-child > .button,
 .form__input-group-button:last-child > .button-group > .button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0;
 }
 
 .form__input-group .form__control {
@@ -173,6 +170,7 @@ textarea.form__control {
   float: left;
   width: 100%;
   margin-bottom: 0;
+
   &:focus {
     z-index: 2;
   }
@@ -338,12 +336,8 @@ label[for] {
 
 .form__option--custom-checkbox {
   .form__option__ui {
-    &, &:before {
-      border-radius: $base-border-radius;
-    }
-
     &:before {
-      @extend %openaq-ds-icon-sm-tick;
+      @extend %openaq-ds-icon-tick--small;
       color: rgba($base-color, 0.80);
     }
   }

@@ -1,23 +1,25 @@
 'use strict';
 import React from 'react';
+import { PropTypes as T } from 'prop-types';
 import TetherComponent from 'react-tether';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import createReactClass from 'create-react-class';
 
-const Dropdown = React.createClass({
+const Dropdown = createReactClass({
   displayName: 'Dropdown',
 
   propTypes: {
-    triggerElement: React.PropTypes.oneOf(['a', 'button']),
-    triggerClassName: React.PropTypes.string,
-    triggerActiveClassName: React.PropTypes.string,
-    triggerTitle: React.PropTypes.string,
-    triggerText: React.PropTypes.string.isRequired,
+    triggerElement: T.oneOf(['a', 'button']),
+    triggerClassName: T.string,
+    triggerActiveClassName: T.string,
+    triggerTitle: T.string,
+    triggerText: T.string.isRequired,
 
-    direction: React.PropTypes.oneOf(['up', 'down']),
-    alignment: React.PropTypes.oneOf(['left', 'center', 'right']),
+    direction: T.oneOf(['up', 'down']),
+    alignment: T.oneOf(['left', 'center', 'right']),
 
-    className: React.PropTypes.string,
-    children: React.PropTypes.node
+    className: T.string,
+    children: T.node
   },
 
   _bodyListener: function (e) {

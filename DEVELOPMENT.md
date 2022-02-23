@@ -11,13 +11,13 @@ The main purpose of this system is to modularize the assets, therefore is import
 ## Development environment
 The development environment is the same for both parts and has the following dependencies:
 
-- Node (v4.2.x) & Npm ([nvm](https://github.com/creationix/nvm) usage is advised)
+- Node (v10) & yarn ([nvm](https://github.com/creationix/nvm) usage is advised)
 
 > The versions mentioned are the ones used during development. It could work with newer ones.
 
 After these basic requirements are met, run the following commands in the website's folder:
 ```
-$ npm install
+$ yarn
 ```
 
 ### Design system development
@@ -45,14 +45,14 @@ These files can then be liked in the doc's files and used.
 Svg icons to be compiled into a webfont. The resulting compiled file must be committed with the rest of the styles.  
 To manually compile the `openaq-design-system` icons run:
 ```
-$ npm run openaq-icons
+$ yarn openaq-icons
 ```
 
 ### Sandbox
 The sandbox site resides in `sandbox/`.
 
 ```
-$ npm run serve
+$ yarn serve
 ```
 Compiles the sass files, javascript, and launches the server making the site available at `http://localhost:3000/`  
 The system will watch files and execute tasks whenever one of them changes.  
@@ -79,9 +79,8 @@ import componentName from '../../../assets/scripts/componentName';
 **Important:** If you need to install new node modules, install them as **dependencies** if they are for the `openaq-design-system` and as **devDependencies** if they're for the sandbox.
 
 ## Deployment
-The .travis.yml file enables the usage of [Travis](http://travis.org) as a test and deployment system.  
-In this particular case, Travis will only publish new versions to the npm registry.
+The .circleci/config.yml file enables the usage of [Circle CI](http://circleci.com/) as a test and deployment system.
 
 ## Linting
 Code follows the `semistandard` code style and should be linted.
-- `npm run lint` - will run linter and warn of any errors.
+- `yarn lint` - will run linter and warn of any errors.
