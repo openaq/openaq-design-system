@@ -1,0 +1,11 @@
+{
+  "name": "docs",
+  "private": true,
+  "repository": "openaq/openaq-design-system",
+  "scripts": {
+    "build": "sass --load-path ../src ./src/main.scss ./dist/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

@@ -1,0 +1,155 @@
+@use '../variables' as *;
+
+@mixin font-base {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: $smoke180;
+}
+
+// display
+
+@mixin display1 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+//heading
+
+@mixin heading1 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@mixin heading2 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+@mixin heading3 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+// subtitle
+
+@mixin subtitle1 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@mixin subtitle2 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@mixin subtitle3 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+// body
+
+@mixin body1 {
+  @include font-base;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@mixin body2 {
+  @include font-base;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@mixin body3 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@mixin body4 {
+  @include font-base;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@mixin body5 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+//link
+
+@mixin link1 {
+  @include font-base;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+@mixin link2 {
+  @include font-base;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+@mixin link3 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+@mixin link4 {
+  @include font-base;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration-line: underline;
+}
+
+@mixin link5 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration-line: underline;
+}
+
+// button
+
+@mixin button1 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@mixin button2 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+// navigation
+
+@mixin navigation1 {
+  @include font-base;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@mixin navigation2 {
+  @include font-base;
+  font-weight: 700;
+  font-size: 16px;
+}

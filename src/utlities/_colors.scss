@@ -1,0 +1,86 @@
+@use '../variables' as *;
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-status-ok {
+  background-color: $status-ok-color;
+}
+
+.bg-status-alert {
+  background-color: $status-alert-color;
+}
+
+.bg-status-warning {
+  background-color: $status-warning-color;
+}
+
+@each $value, $hex in $skys {
+  .bg-sky-#{$value} {
+    background-color: #{$hex};
+  }
+
+  .text-sky-#{$value} {
+    color: #{$hex};
+  }
+}
+
+@each $value, $hex in $lavenders {
+  .bg-lavender-#{$value} {
+    background-color: #{$hex};
+  }
+  .text-lavender-#{$value} {
+    color: #{$hex};
+  }
+}
+
+@each $value, $hex in $oceans {
+  .bg-ocean-#{$value} {
+    background-color: #{$hex};
+  }
+
+  .text-ocean-#{$value} {
+    background-color: #{$hex};
+  }
+}
+
+@each $value, $hex in $mantes {
+  .bg-mantis-#{$value} {
+    background-color: #{$hex};
+  }
+
+  .text-mantis-#{$value} {
+    background-color: #{$hex};
+  }
+}
+
+@each $value, $hex in $corns {
+  .bg-corn-#{$value} {
+    background-color: #{$hex};
+  }
+
+  .text-corn-#{$value} {
+    background-color: #{$hex};
+  }
+}
+
+@each $value, $hex in $fires {
+  .bg-fire-#{$value} {
+    background-color: #{$hex};
+  }
+
+  .text-fire-#{$value} {
+    background-color: #{$hex};
+  }
+}
+
+@each $value, $hex in $smokes {
+  .bg-smoke-#{$value} {
+    background-color: #{$hex};
+  }
+
+  .text-smoke-#{$value} {
+    background-color: #{$hex};
+  }
+}
