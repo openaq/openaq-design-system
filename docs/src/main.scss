@@ -1,20 +1,32 @@
 @use 'variables' as *;
 @import 'openaq.scss';
 
+html body {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.header {
-  height: 100px;
-  width: 100vw;
-  background-color: white;
-}
-
 .main {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: calc(100vh - 80px);
+
+  .side-nav {
+    top: 100px;
+    flex: 1;
+    border-right: 1px solid $smoke10;
+  }
+
+  .content {
+    flex: 4;
+    overflow-y: auto;
+  }
 }
 
 .circle {
@@ -32,7 +44,12 @@
 }
 
 .background-block {
-  padding: 20px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.text-block {
+  padding: 8px;
   margin: 10px;
 }
 
@@ -113,9 +130,16 @@
 }
 
 article {
-  margin: 50px 0;
+  max-width: 700px;
+  margin: 0 auto;
 
   section {
     margin: 40px 0;
   }
+}
+
+.code {
+  background-color: $smoke30;
+  padding: 10px;
+  color: $smoke180;
 }

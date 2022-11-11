@@ -1,0 +1,52 @@
+@use './variables' as *;
+
+.checkbox {
+  appearance: none;
+  background-color: $ocean10;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid $ocean120;
+  border-radius: 6px;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+
+  &::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    clip-path: polygon(
+      25% 47%,
+      39.5% 62%,
+      75% 26%,
+      79% 25%,
+      83% 26.5%,
+      84% 30%,
+      83% 34%,
+      43% 73%,
+      41% 75%,
+      37% 74.2%,
+      17% 54%,
+      16% 50%,
+      17% 47%,
+      21% 46%
+    );
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 0.1s transform ease-in-out;
+    box-shadow: inset 1em 1em $ocean120;
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+
+  &:focus {
+    outline: 1px solid $ocean120;
+    outline-offset: 0.15em;
+  }
+}

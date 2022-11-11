@@ -41,7 +41,7 @@
   }
 
   .text-ocean-#{$value} {
-    background-color: #{$hex};
+    color: #{$hex};
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   .text-mantis-#{$value} {
-    background-color: #{$hex};
+    color: #{$hex};
   }
 }
 
@@ -61,7 +61,7 @@
   }
 
   .text-corn-#{$value} {
-    background-color: #{$hex};
+    color: #{$hex};
   }
 }
 
@@ -71,7 +71,7 @@
   }
 
   .text-fire-#{$value} {
-    background-color: #{$hex};
+    color: #{$hex};
   }
 }
 
@@ -81,6 +81,6 @@
   }
 
   .text-smoke-#{$value} {
-    background-color: #{$hex};
+    color: #{$hex};
   }
 }
