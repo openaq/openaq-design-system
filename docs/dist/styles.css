@@ -334,6 +334,30 @@
   color: #e8ebed;
 }
 
+.bg-us-epa-good {
+  background-color: #00e400;
+}
+
+.bg-us-epa-moderate {
+  background-color: #ffff00;
+}
+
+.bg-us-epa-sensitive-groups {
+  background-color: #ff7e00;
+}
+
+.bg-us-epa-unhealthy {
+  background-color: #ff0000;
+}
+
+.bg-us-epa-very-unhealthy {
+  background-color: #8f3f97;
+}
+
+.bg-us-epa-hazardous {
+  background-color: #7e0023;
+}
+
 .type-display-1 {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
@@ -765,10 +789,10 @@ html body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .circle span {
   font-size: 10px;
-  align-items: center;
 }
 
 .background-block {

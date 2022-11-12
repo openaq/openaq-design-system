@@ -84,3 +84,27 @@
     color: #{$hex};
   }
 }
+
+.bg-us-epa-good {
+  background-color: $us-epa-green;
+}
+
+.bg-us-epa-moderate {
+  background-color: $us-epa-yellow;
+}
+
+.bg-us-epa-sensitive-groups {
+  background-color: $us-epa-orange;
+}
+
+.bg-us-epa-unhealthy {
+  background-color: $us-epa-red;
+}
+
+.bg-us-epa-very-unhealthy {
+  background-color: $us-epa-purple;
+}
+
+.bg-us-epa-hazardous {
+  background-color: $us-epa-maroon;
+}

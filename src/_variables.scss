@@ -133,3 +133,15 @@ $primary-color: $sky100;
 $status-ok-color: $mantis100;
 $status-alert-color: $corn100;
 $status-warning-color: $fire100;
+
+// aqi
+
+// us epa
+// https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf
+
+$us-epa-green: #00e400;
+$us-epa-yellow: #ffff00;
+$us-epa-orange: #ff7e00;
+$us-epa-red: #ff0000;
+$us-epa-purple: #8f3f97;
+$us-epa-maroon: #7e0023;
