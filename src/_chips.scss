@@ -1,0 +1,14 @@
+@use './mixins/chip' as *;
+@use './variables' as *;
+
+.chip-primary {
+  @include chip($skys);
+}
+
+.chip-secondary-ocean {
+  @include chip($oceans);
+}
+
+.chip-secondary-lavender {
+  @include chip($lavenders);
+}

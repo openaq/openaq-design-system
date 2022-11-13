@@ -1,126 +1,125 @@
 @use '../variables' as *;
 
-@mixin font-base {
+@mixin font-base($color: $smoke180) {
   font-family: 'Space Grotesk', sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
-  color: $smoke180;
+  color: $color;
 }
 
 // display
 
-@mixin display1 {
-  @include font-base;
+@mixin display1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 48px;
 }
 
 //heading
 
-@mixin heading1 {
-  @include font-base;
+@mixin heading1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 32px;
 }
 
-@mixin heading2 {
-  @include font-base;
+@mixin heading2($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 21px;
 }
 
-@mixin heading3 {
-  @include font-base;
+@mixin heading3($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 18px;
 }
 
 // subtitle
 
-@mixin subtitle1 {
-  @include font-base;
+@mixin subtitle1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 24px;
 }
 
-@mixin subtitle2 {
-  @include font-base;
+@mixin subtitle2($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 16px;
 }
 
-@mixin subtitle3 {
-  @include font-base;
+@mixin subtitle3($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 14px;
 }
 
 // body
 
-@mixin body1 {
-  @include font-base;
+@mixin body1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 400;
   font-size: 14px;
 }
 
-@mixin body2 {
-  @include font-base;
+@mixin body2($color: $smoke180) {
+  @include font-base($color);
   font-weight: 500;
   font-size: 14px;
 }
 
-@mixin body3 {
-  @include font-base;
+@mixin body3($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 14px;
 }
 
-@mixin body4 {
-  @include font-base;
+@mixin body4($color: $smoke180) {
+  @include font-base($color);
   font-weight: 400;
   font-size: 12px;
 }
 
-@mixin body5 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-style: normal;
+@mixin body5($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 12px;
 }
 
 //link
 
-@mixin link1 {
-  @include font-base;
+@mixin link1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 400;
   font-size: 14px;
   text-decoration-line: underline;
 }
 
-@mixin link2 {
-  @include font-base;
+@mixin link2($color: $smoke180) {
+  @include font-base($color);
   font-weight: 500;
   font-size: 14px;
   text-decoration-line: underline;
 }
 
-@mixin link3 {
-  @include font-base;
+@mixin link3($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 14px;
   text-decoration-line: underline;
 }
 
-@mixin link4 {
-  @include font-base;
+@mixin link4($color: $smoke180) {
+  @include font-base($color);
   font-weight: 400;
   font-size: 12px;
   text-decoration-line: underline;
 }
 
-@mixin link5 {
-  @include font-base;
+@mixin link5($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 12px;
   text-decoration-line: underline;
@@ -128,28 +127,28 @@
 
 // button
 
-@mixin button1 {
-  @include font-base;
+@mixin button1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 14px;
 }
 
-@mixin button2 {
-  @include font-base;
+@mixin button2($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 16px;
 }
 
 // navigation
 
-@mixin navigation1 {
-  @include font-base;
+@mixin navigation1($color: $smoke180) {
+  @include font-base($color);
   font-weight: 500;
   font-size: 16px;
 }
 
-@mixin navigation2 {
-  @include font-base;
+@mixin navigation2($color: $smoke180) {
+  @include font-base($color);
   font-weight: 700;
   font-size: 16px;
 }

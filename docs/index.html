@@ -75,14 +75,13 @@
                 <a href="#buttons" class="type-link-1">Buttons</a>
               </li>
               <li>
-                <a href="#buttons" class="type-link-1">Cards</a>
+                <a href="#cards" class="type-link-1">Cards</a>
               </li>
               <li>
-                <a href="#buttons" class="type-link-1">Inputs</a>
+                <a href="#chips" class="type-link-1">Chips</a>
               </li>
-
               <li>
-                <a href="#buttons" class="type-link-1">Buttons</a>
+                <a href="#inputs" class="type-link-1">Inputs</a>
               </li>
             </ul>
           </li>
@@ -427,6 +426,8 @@
         <article>
           <a id="components"></a>
           <h1 class="type-heading-1">Components</h1>
+
+
           <section>
             <a id="badges"></a>
             <h2 class="type-heading-2">Badges</h2>
@@ -478,7 +479,10 @@
                 <button class="btn btn-primary">Primary</button>
               </div>
               <div>
-                <button class="btn btn-primary">Primary</button>
+                <button class="icon-btn btn-primary">
+                    Primary
+                    <span class="material-symbols-outlined"> arrow_forward </span>
+                </button>
               </div>
               <div>
                 <button class="btn btn-secondary">Secondary</button>
@@ -518,6 +522,47 @@
               </div>
               <div></div>
             </div>
+          </section>
+          <section>
+            <a id="cards"></a>
+            <h2 class="type-heading-2">Cards</h2>
+            <div style="display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" alt="" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card-title">Card Title</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus at vitae ab quia facilis quidem, necessitatibus earum aliquam harum ratione eum aperiam iste fugiat, tempora minima culpa? Incidunt, totam!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" alt="" class="card__img">
+                    <div class="card__body">
+                        <h2 class="card-title"">Card Title</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus at vitae ab quia facilis quidem, necessitatibus earum aliquam harum ratione eum aperiam iste fugiat, tempora minima culpa? Incidunt, totam!</p>
+                    </div>
+                    <footer class="card__footer">
+                        <p>This is a footer</p>
+
+                    </footer>
+                </div>
+        </div>
+          </section>
+          <section>
+            <a id="chips"></a>
+            <h2 class="type-heading-2">Chips</h2>
+
+            <div class="chip-primary">API<span class="material-symbols-outlined">
+                data_object
+            </span></div>
+            <div class="chip-secondary-ocean">API<span class="material-symbols-outlined">
+                data_object
+            </span></div>
+            <div class="chip-secondary-lavender">API<span class="material-symbols-outlined">
+                data_object
+            </span></div>
           </section>
           <section>
             <h2>Inputs</h2>
