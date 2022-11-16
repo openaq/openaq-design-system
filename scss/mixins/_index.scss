@@ -1,2 +1,4 @@
-@forward 'typography';
-@forward 'box-shadow';
+@forward '../mixins/box-shadow';
+@forward '../mixins/card';
+@forward '../mixins/chip';
+@forward '../mixins/typography';
