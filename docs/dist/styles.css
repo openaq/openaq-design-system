@@ -1007,6 +1007,12 @@ html body {
   overflow-y: auto;
 }
 
+.c {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
 .circle {
   height: 60px;
   width: 60px;
@@ -1110,6 +1116,37 @@ article section {
   background-color: #d4d8dd;
   padding: 10px;
   color: #30363c;
+}
+
+.color-grid {
+  display: grid;
+  aspect-ratio: 3/1;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+.color-grid .brand-cell {
+  grid-column: 1;
+  grid-row: 1/7;
+}
+.color-grid .base-interactive-cell {
+  grid-column: 2;
+  grid-row: 1/4;
+}
+.color-grid .base-data-cell {
+  grid-column: 2;
+  grid-row: 4/7;
+}
+.color-grid .status-ok-cell {
+  grid-column: 3;
+  grid-row: 1/3;
+}
+.color-grid .status-alert-cell {
+  grid-column: 3;
+  grid-row: 3/5;
+}
+.color-grid .status-warning-cell {
+  grid-column: 3;
+  grid-row: 5/7;
 }
 
 /*# sourceMappingURL=styles.css.map */

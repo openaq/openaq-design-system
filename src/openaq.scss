@@ -1,11 +1,11 @@
-@use './resets' as *;
-@use './badges';
-@use './buttons';
-@use './cards' as *;
-@use './chips' as *;
-@use './header' as *;
-@use './inputs' as *;
-@use './mixins';
+@forward './resets';
+@forward './badges';
+@forward './buttons';
+@forward './cards';
+@forward './chips';
+@forward './header';
+@forward './inputs';
+@forward './mixins';
 
-@use './utlities' as *;
-@use './variables' as *;
+@forward './utlities';
+@forward './variables';

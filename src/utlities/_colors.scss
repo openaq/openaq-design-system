@@ -1,7 +1,15 @@
 @use '../variables' as *;
 
-.bg-primary {
-  background-color: $primary-color;
+.bg-brand {
+  background-color: $brand-color;
+}
+
+.bg-base-interactive {
+  background-color: $base-interactive-color;
+}
+
+.bg-base-data {
+  background-color: $base-data-color;
 }
 
 .bg-status-ok {

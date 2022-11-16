@@ -1,2 +1,2 @@
-@use './colors' as *;
-@use './types' as *;
+@forward 'colors';
+@forward 'types';
