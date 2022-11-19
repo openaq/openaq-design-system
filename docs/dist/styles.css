@@ -185,6 +185,27 @@ html body {
   border: none;
 }
 
+.bubble-lg {
+  height: 230px;
+  width: 230px;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #8f81ee 0%, rgba(106, 92, 216, 0) 100%);
+}
+
+.bubble-md {
+  height: 135px;
+  width: 135px;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #8f81ee 0%, rgba(106, 92, 216, 0) 100%);
+}
+
+.bubble-sm {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #8f81ee 0%, rgba(106, 92, 216, 0) 100%);
+}
+
 .card {
   display: flex;
   flex-direction: column;
