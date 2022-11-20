@@ -17,6 +17,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   background-color: white;
 }
 
@@ -28,6 +29,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   display: inline-block;
@@ -69,6 +71,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   text-decoration: none;
@@ -94,6 +97,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   text-decoration: none;
@@ -256,6 +260,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 21px;
 }
@@ -268,6 +273,7 @@ body {
   color: #7e8c9a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   padding-top: 10px;
@@ -285,6 +291,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   display: inline-flex;
@@ -310,6 +317,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   display: inline-flex;
@@ -335,6 +343,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   display: inline-flex;
@@ -413,6 +422,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   padding: 8px 20px;
@@ -428,6 +438,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   opacity: 1;
@@ -464,371 +475,371 @@ body {
 }
 
 .bg-brand {
-  background-color: #198cff;
+  background-color: #198cff !important;
 }
 
 .bg-base-interactive {
-  background-color: #3fc2c0;
+  background-color: #3fc2c0 !important;
 }
 
 .bg-base-data {
-  background-color: #6a5cd8;
+  background-color: #6a5cd8 !important;
 }
 
 .bg-status-ok {
-  background-color: #89c053;
+  background-color: #89c053 !important;
 }
 
 .bg-status-alert {
-  background-color: #f5b945;
+  background-color: #f5b945 !important;
 }
 
 .bg-status-warning {
-  background-color: #dd443c;
+  background-color: #dd443c !important;
 }
 
 .bg-sky-120 {
-  background-color: #1e64ab;
+  background-color: #1e64ab !important;
 }
 
 .text-sky-120 {
-  color: #1e64ab;
+  color: #1e64ab !important;
 }
 
 .bg-sky-100 {
-  background-color: #198cff;
+  background-color: #198cff !important;
 }
 
 .text-sky-100 {
-  color: #198cff;
+  color: #198cff !important;
 }
 
 .bg-sky-60 {
-  background-color: #66b3ff;
+  background-color: #66b3ff !important;
 }
 
 .text-sky-60 {
-  color: #66b3ff;
+  color: #66b3ff !important;
 }
 
 .bg-sky-30 {
-  background-color: #b3d9ff;
+  background-color: #b3d9ff !important;
 }
 
 .text-sky-30 {
-  color: #b3d9ff;
+  color: #b3d9ff !important;
 }
 
 .bg-sky-10 {
-  background-color: #eef7ff;
+  background-color: #eef7ff !important;
 }
 
 .text-sky-10 {
-  color: #eef7ff;
+  color: #eef7ff !important;
 }
 
 .bg-lavender-180 {
-  background-color: #241050;
+  background-color: #241050 !important;
 }
 
 .text-lavender-180 {
-  color: #241050;
+  color: #241050 !important;
 }
 
 .bg-lavender-120 {
-  background-color: #584dae;
+  background-color: #584dae !important;
 }
 
 .text-lavender-120 {
-  color: #584dae;
+  color: #584dae !important;
 }
 
 .bg-lavender-100 {
-  background-color: #6a5cd8;
+  background-color: #6a5cd8 !important;
 }
 
 .text-lavender-100 {
-  color: #6a5cd8;
+  color: #6a5cd8 !important;
 }
 
 .bg-lavender-80 {
-  background-color: #7867eb;
+  background-color: #7867eb !important;
 }
 
 .text-lavender-80 {
-  color: #7867eb;
+  color: #7867eb !important;
 }
 
 .bg-lavender-60 {
-  background-color: #8f81ee;
+  background-color: #8f81ee !important;
 }
 
 .text-lavender-60 {
-  color: #8f81ee;
+  color: #8f81ee !important;
 }
 
 .bg-lavender-40 {
-  background-color: #a497fd;
+  background-color: #a497fd !important;
 }
 
 .text-lavender-40 {
-  color: #a497fd;
+  color: #a497fd !important;
 }
 
 .bg-lavender-30 {
-  background-color: #bcb2fe;
+  background-color: #bcb2fe !important;
 }
 
 .text-lavender-30 {
-  color: #bcb2fe;
+  color: #bcb2fe !important;
 }
 
 .bg-lavender-20 {
-  background-color: #cec7ff;
+  background-color: #cec7ff !important;
 }
 
 .text-lavender-20 {
-  color: #cec7ff;
+  color: #cec7ff !important;
 }
 
 .bg-lavender-10 {
-  background-color: #dedafb;
+  background-color: #dedafb !important;
 }
 
 .text-lavender-10 {
-  color: #dedafb;
+  color: #dedafb !important;
 }
 
 .bg-ocean-120 {
-  background-color: #33a3a1;
+  background-color: #33a3a1 !important;
 }
 
 .text-ocean-120 {
-  color: #33a3a1;
+  color: #33a3a1 !important;
 }
 
 .bg-ocean-100 {
-  background-color: #3fc2c0;
+  background-color: #3fc2c0 !important;
 }
 
 .text-ocean-100 {
-  color: #3fc2c0;
+  color: #3fc2c0 !important;
 }
 
 .bg-ocean-60 {
-  background-color: #85dbd9;
+  background-color: #85dbd9 !important;
 }
 
 .text-ocean-60 {
-  color: #85dbd9;
+  color: #85dbd9 !important;
 }
 
 .bg-ocean-30 {
-  background-color: #b0e8e6;
+  background-color: #b0e8e6 !important;
 }
 
 .text-ocean-30 {
-  color: #b0e8e6;
+  color: #b0e8e6 !important;
 }
 
 .bg-ocean-10 {
-  background-color: #e6f8f8;
+  background-color: #e6f8f8 !important;
 }
 
 .text-ocean-10 {
-  color: #e6f8f8;
+  color: #e6f8f8 !important;
 }
 
 .bg-mantis-120 {
-  background-color: #669537;
+  background-color: #669537 !important;
 }
 
 .text-mantis-120 {
-  color: #669537;
+  color: #669537 !important;
 }
 
 .bg-mantis-100 {
-  background-color: #89c053;
+  background-color: #89c053 !important;
 }
 
 .text-mantis-100 {
-  color: #89c053;
+  color: #89c053 !important;
 }
 
 .bg-mantis-60 {
-  background-color: #b2d78e;
+  background-color: #b2d78e !important;
 }
 
 .text-mantis-60 {
-  color: #b2d78e;
+  color: #b2d78e !important;
 }
 
 .bg-mantis-30 {
-  background-color: #cbe8ca;
+  background-color: #cbe8ca !important;
 }
 
 .text-mantis-30 {
-  color: #cbe8ca;
+  color: #cbe8ca !important;
 }
 
 .bg-mantis-10 {
-  background-color: #e3f3e3;
+  background-color: #e3f3e3 !important;
 }
 
 .text-mantis-10 {
-  color: #e3f3e3;
+  color: #e3f3e3 !important;
 }
 
 .bg-corn-120 {
-  background-color: #ce9217;
+  background-color: #ce9217 !important;
 }
 
 .text-corn-120 {
-  color: #ce9217;
+  color: #ce9217 !important;
 }
 
 .bg-corn-100 {
-  background-color: #f5b945;
+  background-color: #f5b945 !important;
 }
 
 .text-corn-100 {
-  color: #f5b945;
+  color: #f5b945 !important;
 }
 
 .bg-corn-60 {
-  background-color: #fdcd56;
+  background-color: #fdcd56 !important;
 }
 
 .text-corn-60 {
-  color: #fdcd56;
+  color: #fdcd56 !important;
 }
 
 .bg-corn-30 {
-  background-color: #fee172;
+  background-color: #fee172 !important;
 }
 
 .text-corn-30 {
-  color: #fee172;
+  color: #fee172 !important;
 }
 
 .bg-corn-10 {
-  background-color: #fbf8f3;
+  background-color: #fbf8f3 !important;
 }
 
 .text-corn-10 {
-  color: #fbf8f3;
+  color: #fbf8f3 !important;
 }
 
 .bg-fire-120 {
-  background-color: #6c6160;
+  background-color: #6c6160 !important;
 }
 
 .text-fire-120 {
-  color: #6c6160;
+  color: #6c6160 !important;
 }
 
 .bg-fire-100 {
-  background-color: #dd443c;
+  background-color: #dd443c !important;
 }
 
 .text-fire-100 {
-  color: #dd443c;
+  color: #dd443c !important;
 }
 
 .bg-fire-60 {
-  background-color: #f07973;
+  background-color: #f07973 !important;
 }
 
 .text-fire-60 {
-  color: #f07973;
+  color: #f07973 !important;
 }
 
 .bg-fire-30 {
-  background-color: #f5a7a3;
+  background-color: #f5a7a3 !important;
 }
 
 .text-fire-30 {
-  color: #f5a7a3;
+  color: #f5a7a3 !important;
 }
 
 .bg-fire-10 {
-  background-color: #fbdcda;
+  background-color: #fbdcda !important;
 }
 
 .text-fire-10 {
-  color: #fbdcda;
+  color: #fbdcda !important;
 }
 
 .bg-smoke-180 {
-  background-color: #30363c;
+  background-color: #30363c !important;
 }
 
 .text-smoke-180 {
-  color: #30363c;
+  color: #30363c !important;
 }
 
 .bg-smoke-120 {
-  background-color: #5a6672;
+  background-color: #5a6672 !important;
 }
 
 .text-smoke-120 {
-  color: #5a6672;
+  color: #5a6672 !important;
 }
 
 .bg-smoke-100 {
-  background-color: #7e8c9a;
+  background-color: #7e8c9a !important;
 }
 
 .text-smoke-100 {
-  color: #7e8c9a;
+  color: #7e8c9a !important;
 }
 
 .bg-smoke-60 {
-  background-color: #a9b0bb;
+  background-color: #a9b0bb !important;
 }
 
 .text-smoke-60 {
-  color: #a9b0bb;
+  color: #a9b0bb !important;
 }
 
 .bg-smoke-30 {
-  background-color: #d4d8dd;
+  background-color: #d4d8dd !important;
 }
 
 .text-smoke-30 {
-  color: #d4d8dd;
+  color: #d4d8dd !important;
 }
 
 .bg-smoke-10 {
-  background-color: #e8ebed;
+  background-color: #e8ebed !important;
 }
 
 .text-smoke-10 {
-  color: #e8ebed;
+  color: #e8ebed !important;
 }
 
 .bg-us-epa-good {
-  background-color: #00e400;
+  background-color: #00e400 !important;
 }
 
 .bg-us-epa-moderate {
-  background-color: #ffff00;
+  background-color: #ffff00 !important;
 }
 
 .bg-us-epa-sensitive-groups {
-  background-color: #ff7e00;
+  background-color: #ff7e00 !important;
 }
 
 .bg-us-epa-unhealthy {
-  background-color: #ff0000;
+  background-color: #ff0000 !important;
 }
 
 .bg-us-epa-very-unhealthy {
-  background-color: #8f3f97;
+  background-color: #8f3f97 !important;
 }
 
 .bg-us-epa-hazardous {
-  background-color: #7e0023;
+  background-color: #7e0023 !important;
 }
 
 .type-display-1 {
@@ -839,6 +850,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 48px;
 }
@@ -851,6 +863,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 32px;
 }
@@ -863,6 +876,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 21px;
 }
@@ -875,6 +889,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 18px;
 }
@@ -887,6 +902,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 24px;
 }
@@ -899,6 +915,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 16px;
 }
@@ -911,6 +928,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
 }
@@ -923,6 +941,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
 }
@@ -935,6 +954,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
 }
@@ -947,6 +967,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
 }
@@ -959,6 +980,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 400;
   font-size: 12px;
 }
@@ -971,6 +993,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 12px;
 }
@@ -983,6 +1006,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   text-decoration-line: underline;
@@ -996,6 +1020,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   text-decoration-line: underline;
@@ -1009,6 +1034,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   text-decoration-line: underline;
@@ -1022,6 +1048,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 400;
   font-size: 12px;
   text-decoration-line: underline;
@@ -1035,6 +1062,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 12px;
   text-decoration-line: underline;
@@ -1048,6 +1076,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 14px;
 }
@@ -1060,6 +1089,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 16px;
 }
@@ -1072,6 +1102,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
 }
@@ -1084,6 +1115,7 @@ body {
   color: #30363c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
   font-weight: 700;
   font-size: 16px;
 }
