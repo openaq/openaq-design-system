@@ -1,4 +1,5 @@
-@use './mixis/typography' as *;
+@use './mixins/typography';
+@use './variables';
 
 *,
 *::before,
@@ -12,6 +13,6 @@ html body {
 }
 
 body {
-  @include font-base($smoke180);
+  @include typography.font-base(variables.$smoke180);
   background-color: white;
 }
