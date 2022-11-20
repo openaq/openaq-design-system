@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   color: $color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // display
