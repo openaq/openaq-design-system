@@ -24,6 +24,20 @@
   }
 }
 
+.circle-lg {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    font-size: 14px;
+  }
+}
+
 .circle {
   height: 60px;
   width: 60px;
