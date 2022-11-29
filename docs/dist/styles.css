@@ -283,7 +283,7 @@ body {
   padding: 5px 20px;
 }
 
-.chip-primary {
+.chip-brand {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
   margin: 0;
@@ -303,13 +303,13 @@ body {
   border-radius: 100px;
 }
 
-.chip-primary * {
+.chip-brand * {
   color: #1e64ab;
   font-weight: 700;
   font-size: 16px;
 }
 
-.chip-secondary-ocean {
+.chip-base-data {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
   margin: 0;
@@ -329,13 +329,13 @@ body {
   border-radius: 100px;
 }
 
-.chip-secondary-ocean * {
+.chip-base-data * {
   color: #33a3a1;
   font-weight: 700;
   font-size: 16px;
 }
 
-.chip-secondary-lavender {
+.chip-base-interactive {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
   margin: 0;
@@ -355,7 +355,7 @@ body {
   border-radius: 100px;
 }
 
-.chip-secondary-lavender * {
+.chip-base-interactive * {
   color: #584dae;
   font-weight: 700;
   font-size: 16px;
@@ -368,6 +368,12 @@ body {
   background-color: white;
   border-bottom: 1px solid #f2f4f7;
   height: 80px;
+}
+
+hr.hr {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px dashed #d4d8dd;
 }
 
 .checkbox {

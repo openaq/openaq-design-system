@@ -1,14 +1,14 @@
 @use './mixins/chip' as *;
-@use './variables' as *;
+@use './variables';
 
-.chip-primary {
-  @include chip($skys);
+.chip-brand {
+  @include chip(variables.$skys);
 }
 
-.chip-secondary-ocean {
-  @include chip($oceans);
+.chip-base-data {
+  @include chip(variables.$oceans);
 }
 
-.chip-secondary-lavender {
-  @include chip($lavenders);
+.chip-base-interactive {
+  @include chip(variables.$lavenders);
 }
