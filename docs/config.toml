@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://openaq.github.io/openaq-design-system/'
 languageCode = 'en-us'
 title = 'OpenAQ Design System'
 theme = 'openaq-design-system-docs'

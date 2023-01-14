@@ -7,19 +7,20 @@ on:
 jobs:
   deploy:
     if: "!contains(github.event.head_commit.message, 'ci skip')"
+
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: ./docs
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
             
       - name: Build
         uses: openaq/hugo-build-action@main
-        with:
-          working-directory: ./docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          working-directory: ./docs
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
