@@ -14,11 +14,12 @@ jobs:
             
       - name: Build
         uses: openaq/hugo-build-action@main
-        working-directory: ./docs
+        with:
+          working-directory: ./docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        working-directory: ./docs
         with:
+          working-directory: ./docs
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
