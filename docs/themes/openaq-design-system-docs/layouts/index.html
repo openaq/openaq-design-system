@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ partial "menu.html" . }}
+<div class="content">
+    <h1 class="type-display-1">OpenAQ Design System</h1>
+    {{ .Content }}
+</div>
+{{ partial "toc.html" . }}
+
+
+{{ end }}

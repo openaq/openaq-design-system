@@ -16,3 +16,11 @@ body {
   @include typography.font-base(variables.$smoke180);
   background-color: white;
 }
+
+a {
+  color: variables.$sky120;
+
+  &:visited {
+    color: variables.$lavender120;
+  }
+}
