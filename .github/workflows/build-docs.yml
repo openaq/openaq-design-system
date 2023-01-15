@@ -15,12 +15,11 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v2
-            
-      - uses: openaq/hugo-build-action@main
 
-      - name: Build
-        working-directory: ./docs
-        run: hugo
+      - name: Build 
+        uses: openaq/hugo-build-action@main
+        with:
+          args: --source docs
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
