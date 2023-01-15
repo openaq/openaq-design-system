@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Utilities on OpenAQ Design System</title>
+    <link>https://openaq.github.io/openaq-design-system/pages/utilities/</link>
+    <description>Recent content in Utilities on OpenAQ Design System</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://openaq.github.io/openaq-design-system/pages/utilities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colors</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/utilities/colors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/utilities/colors/</guid>
+      <description>Colors are available as utilities classes beoth for background-color and color for text:
+Background color Background colors are available as a utility class by prefixing the color name with &amp;ldquo;bg-&amp;rdquo;, e.g. bg-smoke-180
+Base colors .bg-brand .bg-status-ok .bg-status-alert .bg-status-warning &amp;lt;div class=&amp;#34;text-white bg-primary&amp;#34;&amp;gt; .bg-primary &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;text-white bg-status-ok&amp;#34;&amp;gt; .bg-status-ok &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;text-white bg-status-alert&amp;#34;&amp;gt; .bg-status-alert &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;text-white bg-status-warning&amp;#34;&amp;gt; .bg-status-warning &amp;lt;/div&amp;gt; Full color palette .bg-sky-120 .bg-sky-100 .bg-sky-60 .bg-sky-30 .bg-sky-10 &amp;lt;div class=&amp;#34;text-white bg-sky-120&amp;#34;&amp;gt; .bg-sky-120 &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;text-white bg-sky-100&amp;#34;&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/utilities/typography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/utilities/typography/</guid>
+      <description> .type-display-1 .type-heading-1 .type-heading-2 .type-heading-3 .type-subtitle-1 .type-subtitle-2 .type-subtitle-3 .type-body-1
+.type-body-2
+.type-body-3
+.type-body-4
+.type-body-5
+Link 1 Link 2 Link 3 Link 4 Link 5 &amp;lt;h1 class=&amp;#34;type-display-1&amp;#34;&amp;gt;.type-display-1&amp;lt;/h1&amp;gt; &amp;lt;h1 class=&amp;#34;type-heading-1&amp;#34;&amp;gt;.type-heading-1&amp;lt;/h1&amp;gt; &amp;lt;h2 class=&amp;#34;type-heading-2&amp;#34;&amp;gt;.type-heading-2&amp;lt;/h2&amp;gt; &amp;lt;h3 class=&amp;#34;type-heading-3&amp;#34;&amp;gt;.type-heading-3&amp;lt;/h3&amp;gt; &amp;lt;span class=&amp;#34;type-subtitle-1&amp;#34;&amp;gt;.type-subtitle-1&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;type-subtitle-2&amp;#34;&amp;gt;.type-subtitle-2&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;type-subtitle-3&amp;#34;&amp;gt;.type-subtitle-3&amp;lt;/span&amp;gt; &amp;lt;p class=&amp;#34;type-body-1&amp;#34;&amp;gt;.type-body-1&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;type-body-2&amp;#34;&amp;gt;.type-body-2&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;type-body-3&amp;#34;&amp;gt;.type-body-3&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;type-body-4&amp;#34;&amp;gt;.type-body-4&amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;type-body-5&amp;#34;&amp;gt;.type-body-5&amp;lt;/p&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;type-link-1&amp;#34;&amp;gt;Link 1&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;type-link-2&amp;#34;&amp;gt;Link 2&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;type-link-3&amp;#34;&amp;gt;Link 3&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;type-link-4&amp;#34;&amp;gt;Link 4&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;type-link-5&amp;#34;&amp;gt;Link 5&amp;lt;/a&amp;gt; </description>
+    </item>
+    
+  </channel>
+</rss>

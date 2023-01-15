@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on OpenAQ Design System</title>
+    <link>https://openaq.github.io/openaq-design-system/pages/overview/</link>
+    <description>Recent content in Overview on OpenAQ Design System</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://openaq.github.io/openaq-design-system/pages/overview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Color</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/overview/color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/overview/color/</guid>
+      <description>Primary color palette The full color palette provides a wide range of colors. Three colors should be used at the primary colors which are aliases for colors within the color palette: Brand Base data Base interactive Status OK Status Alert Status Warning &#34;Brand&#34;/sky-100 - Brand is the primary color, matching the OpenAQ logo color &#34;Base data&#34;/lavender-100 - Base data is the primary color for data, charts, etc &#34;Base interactive&#34;/ocean-100 - Base interactive can be used as a secondary color for data, charts etc and as a interactive color &#34;</description>
+    </item>
+    
+    <item>
+      <title>Typography</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/overview/typography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/overview/typography/</guid>
+      <description>Space Grotesk is the primary font face used in the OpenAQ design system. Text color should default to smoke-120 when on a white background, but other colors can be used in different circumstances with appropriate semantic meaning and visible contrast.
+https://fonts.google.com/specimen/Space+Grotesk Display 1 Heading 1 Heading 2 Heading 3 Subtitle 1 Subtitle 2 Subtitle 3
+Body 1
+Body 2
+Body 3
+Body 4
+Body 5
+Link 1 Link 2 Link 3 Link 4 Link 5</description>
+    </item>
+    
+    <item>
+      <title>Icons</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/overview/icons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/overview/icons/</guid>
+      <description>OpenAQ uses Material Symbols as the baseline icon set. When the lilbrary does not cover a specific requirement, it is permissible to create custom icons in line with the same style.
+menu menu remove remove add add expand_less expand_less expand_more expand_more check check close close arrow_forward arrow_forward skip_next skip_next cloud_download cloud_download sim_card_download sim_card_download star star star_border star_border &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; menu &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; remove &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; add &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; expand_less &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; expand_more &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; check &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; close &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; arrow_forward &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-icons&amp;#34;&amp;gt;skip_next &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-icons&amp;#34;&amp;gt; cloud_download &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-icons&amp;#34;&amp;gt; sim_card_download &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-icons&amp;#34;&amp;gt; star &amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;material-icons&amp;#34;&amp;gt; star_border &amp;lt;/span&amp;gt; </description>
+    </item>
+    
+  </channel>
+</rss>

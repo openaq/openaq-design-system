@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Components on OpenAQ Design System</title>
+    <link>https://openaq.github.io/openaq-design-system/pages/components/</link>
+    <description>Recent content in Components on OpenAQ Design System</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://openaq.github.io/openaq-design-system/pages/components/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Badges</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/badges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/badges/</guid>
+      <description> Ok Ok check Alert Alert info Warning Warning warning &amp;lt;div class=&amp;#34;badge badge--status-ok&amp;#34;&amp;gt; Ok &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;badge badge--status-ok&amp;#34;&amp;gt; Ok &amp;lt;span class=&amp;#34;material-symbols-outlined text-white&amp;#34;&amp;gt; check &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;badge badge--status-alert&amp;#34;&amp;gt; Alert &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;badge badge--status-alert&amp;#34;&amp;gt; Alert &amp;lt;span class=&amp;#34;material-symbols-outlined text-white&amp;#34;&amp;gt; info &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;badge badge--status-warning&amp;#34;&amp;gt; Warning &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;badge badge--status-warning&amp;#34;&amp;gt; Warning &amp;lt;span class=&amp;#34;material-symbols-outlined text-white&amp;#34;&amp;gt; warning &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Bubble</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/bubble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/bubble/</guid>
+      <description>Bubbles are purely decorative elements used in the OpenAQ website and OpenAQ explorer application.
+&amp;lt;div class=&amp;#34;bubble-sm&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bubble-md&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;bubble-lg&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; Mixin In addition to the base classes, bubbles can be created with a mixin. The mixin takes a diameter parameter with a default of 230px, the same at the large bubble.
+@use &amp;#39;openaq-design-system/mixins&amp;#39; as mixins; @include mixins.bubble(300) </description>
+    </item>
+    
+    <item>
+      <title>Buttons</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/buttons/</guid>
+      <description>There are 3 types of button available in the design system:
+Primary Secondary Tertiary All buttons share the base btn class in addition to their specific sub-variant class, btn-primary btn-secondary btn-tertiary. e.g.:
+class=&amp;quot;btn btn-primary&amp;quot;
+Buttons can style any block element, but when the semantic use case is a button, the &amp;lt;button&amp;gt; tag is preffered.
+Each variant also supports a sub-variant to hadle text and an icon, which essentially changes the button from a display:flex; justify-content:center; to display:flex; justify-content:space-between;</description>
+    </item>
+    
+    <item>
+      <title>Cards</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/card/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/card/</guid>
+      <description>&amp;lt;div class=&amp;#34;card&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;card__body&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Card Title Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure natus at vitae ab quia facilis quidem, necessitatibus earum aliquam harum ratione eum aperiam iste fugiat, tempora minima culpa? Incidunt, totam!</description>
+    </item>
+    
+    <item>
+      <title>Chips</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/chips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/chips/</guid>
+      <description>Chips can be useful for styling concepts such as topics and can be used to filter content when used on a &amp;lt;a&amp;gt;, linking to content pages with the filtered content.
+API data_object API data_object API data_object &amp;lt;div class=&amp;#34;chip-brand&amp;#34;&amp;gt; API &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; data_object &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;chip-base-data&amp;#34;&amp;gt; API &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; data_object &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;chip-base-interactive&amp;#34;&amp;gt; API &amp;lt;span class=&amp;#34;material-symbols-outlined&amp;#34;&amp;gt; data_object &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; Mixin Chips can be created with a sass mixin. The mixin takes a color Map (defaults to $skys) as an input parameter.</description>
+    </item>
+    
+    <item>
+      <title>Horizontal Rule</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/horizontal-rule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/horizontal-rule/</guid>
+      <description>The horizontal rule add style to the native &amp;lt;hr&amp;gt; element. This is helpful for delineating content separate content blocks.
+&amp;lt;hr class=&amp;#34;hr&amp;#34;&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Inputs</title>
+      <link>https://openaq.github.io/openaq-design-system/pages/components/inputs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://openaq.github.io/openaq-design-system/pages/components/inputs/</guid>
+      <description> Checkbox Select PM2.5 PM10 O₃ Text input Text input (valid) Search input &amp;lt;input class=&amp;#34;checkbox&amp;#34; type=&amp;#34;checkbox&amp;#34; name=&amp;#34;demo-checkbox&amp;#34; id=&amp;#34;demo-checkbox&amp;#34; checked/&amp;gt; &amp;lt;select name=&amp;#34;demo-select&amp;#34; id=&amp;#34;demo-select&amp;#34; class=&amp;#34;select&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;pm25&amp;#34;&amp;gt;PM2.5&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;pm25&amp;#34;&amp;gt;PM10&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;pm25&amp;#34;&amp;gt;O₃&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; placeholder=&amp;#34;Type here&amp;#34; pattern=&amp;#34;[A-Za-z]{5,}&amp;#34; name=&amp;#34;text-input&amp;#34; id=&amp;#34;text-input&amp;#34; class=&amp;#34;text-input&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; placeholder=&amp;#34;Type here&amp;#34; name=&amp;#34;text-input&amp;#34; id=&amp;#34;text-input&amp;#34; class=&amp;#34;text-input text-input--valid&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; placeholder=&amp;#34;Search&amp;#34; name=&amp;#34;search-input&amp;#34; id=&amp;#34;search-input&amp;#34; class=&amp;#34;search-input&amp;#34;&amp;gt; </description>
+    </item>
+    
+  </channel>
+</rss>

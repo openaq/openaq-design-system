@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.108.0">
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1"
@@ -57,7 +56,6 @@
   </svg>
 </header><main class="main">
 
-
 <aside class="menu">
     <ul class="section-list">
     
@@ -106,8 +104,67 @@
 </aside>
 
 <div class="content">
-    <h1 class="type-display-1">OpenAQ Design System</h1>
-    
+    <h1>Inputs</h1>
+    <div style="
+width: 600px;
+display: grid;
+grid-template-columns: 1fr 3fr;
+row-gap: 10px;">
+<div>Checkbox</div>      
+<div>   
+<input class="checkbox" type="checkbox" name="demo-checkbox" id="demo-checkbox" checked/>
+</div>
+<div>Select</div>      
+<div>   
+<select name="demo-select" id="demo-select" class="select">
+    <option value="pm25">PM2.5</option>
+    <option value="pm25">PM10</option>
+    <option value="pm25">O₃</option>
+</select>
+</div>
+<div>Text input</div>   
+<div>
+<input 
+type="text" 
+placeholder="Type here"
+pattern="[A-Za-z]{5,}" name="text-input" id="text-input" class="text-input">
+</div>
+<div>Text input (valid)</div>  
+<div><input 
+    type="text" 
+    placeholder="Type here"
+    name="text-input" id="text-input" class="text-input text-input--valid">
+</div>
+<div>Search input</div>  
+<div><input 
+    type="text" 
+    placeholder="Search"
+    name="search-input" id="search-input" class="search-input">
+</div>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">input</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;checkbox&#34;</span> <span style="color:#309">type</span><span style="color:#555">=</span><span style="color:#c30">&#34;checkbox&#34;</span> <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;demo-checkbox&#34;</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;demo-checkbox&#34;</span> <span style="color:#309">checked</span>/&gt;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">select</span> <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;demo-select&#34;</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;demo-select&#34;</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;select&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#309;font-weight:bold">option</span> <span style="color:#309">value</span><span style="color:#555">=</span><span style="color:#c30">&#34;pm25&#34;</span>&gt;PM2.5&lt;/<span style="color:#309;font-weight:bold">option</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#309;font-weight:bold">option</span> <span style="color:#309">value</span><span style="color:#555">=</span><span style="color:#c30">&#34;pm25&#34;</span>&gt;PM10&lt;/<span style="color:#309;font-weight:bold">option</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#309;font-weight:bold">option</span> <span style="color:#309">value</span><span style="color:#555">=</span><span style="color:#c30">&#34;pm25&#34;</span>&gt;O₃&lt;/<span style="color:#309;font-weight:bold">option</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#309;font-weight:bold">select</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">input</span> 
+</span></span><span style="display:flex;"><span><span style="color:#309">type</span><span style="color:#555">=</span><span style="color:#c30">&#34;text&#34;</span> 
+</span></span><span style="display:flex;"><span><span style="color:#309">placeholder</span><span style="color:#555">=</span><span style="color:#c30">&#34;Type here&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#309">pattern</span><span style="color:#555">=</span><span style="color:#c30">&#34;[A-Za-z]{5,}&#34;</span> <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;text-input&#34;</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;text-input&#34;</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;text-input&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">input</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#309">type</span><span style="color:#555">=</span><span style="color:#c30">&#34;text&#34;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#309">placeholder</span><span style="color:#555">=</span><span style="color:#c30">&#34;Type here&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;text-input&#34;</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;text-input&#34;</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;text-input text-input--valid&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">input</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#309">type</span><span style="color:#555">=</span><span style="color:#c30">&#34;text&#34;</span> 
+</span></span><span style="display:flex;"><span>    <span style="color:#309">placeholder</span><span style="color:#555">=</span><span style="color:#c30">&#34;Search&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#309">name</span><span style="color:#555">=</span><span style="color:#c30">&#34;search-input&#34;</span> <span style="color:#309">id</span><span style="color:#555">=</span><span style="color:#c30">&#34;search-input&#34;</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;search-input&#34;</span>&gt;
+</span></span></code></pre></div>
 </div>
 <aside class="toc">
 
@@ -115,8 +172,6 @@
         <nav id="TableOfContents"></nav>
     </div>
 </aside>
-
-
 
         </main></body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.108.0">
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1"
@@ -57,7 +56,6 @@
   </svg>
 </header><main class="main">
 
-
 <aside class="menu">
     <ul class="section-list">
     
@@ -106,17 +104,54 @@
 </aside>
 
 <div class="content">
-    <h1 class="type-display-1">OpenAQ Design System</h1>
-    
+    <h1>Chips</h1>
+    <p>Chips can be useful for styling concepts such as topics and can be used to filter content when used on a <code>&lt;a&gt;</code>, linking to content pages with the filtered content.</p>
+<div class="chip-brand">API<span class="material-symbols-outlined">
+    data_object
+</span></div>
+<div class="chip-base-data">API<span class="material-symbols-outlined">
+    data_object
+</span></div>
+<div class="chip-base-interactive">API<span class="material-symbols-outlined">
+    data_object
+</span>
+</div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">div</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;chip-brand&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    API
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#309;font-weight:bold">span</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;material-symbols-outlined&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        data_object
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#309;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#309;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">div</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;chip-base-data&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    API
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#309;font-weight:bold">span</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;material-symbols-outlined&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        data_object
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#309;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#309;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#309;font-weight:bold">div</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;chip-base-interactive&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    API
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#309;font-weight:bold">span</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;material-symbols-outlined&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        data_object
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#309;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#309;font-weight:bold">div</span>&gt;
+</span></span></code></pre></div><h2 id="mixin">Mixin</h2>
+<p>Chips can be created with a sass mixin. The mixin takes a color Map (defaults to <code>$skys</code>) as an input parameter. The chip background is given the 10 lightness of the color and text is given the 120 lightness.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#069;font-weight:bold">@use</span> <span style="color:#c30">&#39;openaq-design-system/variables&#39;</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">variables</span>;
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">@use</span> <span style="color:#c30">&#39;openaq-design-system/mixins&#39;</span> <span style="color:#069;font-weight:bold">as</span> <span style="color:#0cf;font-weight:bold">mixins</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#069;font-weight:bold">@include</span><span style="color:#99f"> mixins</span><span style="color:#555">.</span><span style="color:#c0f">chip</span>(variables<span style="color:#555">.</span><span style="color:#033">$oceans</span>)
+</span></span></code></pre></div>
 </div>
 <aside class="toc">
 
     <div class="toc-list">
-        <nav id="TableOfContents"></nav>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mixin">Mixin</a></li>
+  </ul>
+</nav>
     </div>
 </aside>
-
-
 
         </main></body>
 </html>
