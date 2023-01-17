@@ -50,13 +50,13 @@
 @mixin subtitle2($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @mixin subtitle3($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 // body
@@ -64,31 +64,31 @@
 @mixin body1($color: $smoke180) {
   @include font-base($color);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @mixin body2($color: $smoke180) {
   @include font-base($color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @mixin body3($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @mixin body4($color: $smoke180) {
   @include font-base($color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 @mixin body5($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 //link
@@ -96,35 +96,35 @@
 @mixin link1($color: $smoke180) {
   @include font-base($color);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration-line: underline;
 }
 
 @mixin link2($color: $smoke180) {
   @include font-base($color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration-line: underline;
 }
 
 @mixin link3($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration-line: underline;
 }
 
 @mixin link4($color: $smoke180) {
   @include font-base($color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration-line: underline;
 }
 
 @mixin link5($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration-line: underline;
 }
 
@@ -133,13 +133,13 @@
 @mixin button1($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @mixin button2($color: $smoke180) {
   @include font-base($color);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 // navigation
