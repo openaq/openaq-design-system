@@ -47,6 +47,11 @@
       pointer-events: none;
     }
 
+    &:disabled {
+      background-color: $smoke30;
+      pointer-events: none;
+    }
+
     &:hover {
       background-color: $ocean100;
     }
