@@ -35,6 +35,8 @@
   }
 
   &:placeholder-shown {
+    outline: none !important;
+    border: 1px solid $smoke30;
     background-image: none;
   }
 
