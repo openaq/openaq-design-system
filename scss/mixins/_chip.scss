@@ -1,0 +1,19 @@
+@use '../variables' as *;
+@use './typography' as *;
+
+@mixin chip($color: $skys) {
+  @include subtitle3;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: map-get($color, '10');
+  color: map-get($color, '120');
+  padding: 11.5px 20px;
+  border-radius: 100px;
+
+  * {
+    color: map-get($color, '120');
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

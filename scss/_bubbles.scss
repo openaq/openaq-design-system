@@ -1,0 +1,13 @@
+@use './mixins/bubble' as *;
+
+.bubble-lg {
+  @include bubble(230);
+}
+
+.bubble-md {
+  @include bubble(135);
+}
+
+.bubble-sm {
+  @include bubble(45);
+}

@@ -1,0 +1,122 @@
+@use '../variables' as *;
+
+.bg-brand {
+  background-color: $brand-color !important;
+}
+
+.bg-base-interactive {
+  background-color: $base-interactive-color !important;
+}
+
+.bg-base-data {
+  background-color: $base-data-color !important;
+}
+
+.bg-status-ok {
+  background-color: $status-ok-color !important;
+}
+
+.bg-status-alert {
+  background-color: $status-alert-color !important;
+}
+
+.bg-status-warning {
+  background-color: $status-warning-color !important;
+}
+
+@each $value, $hex in $skys {
+  .bg-sky-#{$value} {
+    background-color: #{$hex} !important;
+  }
+
+  .text-sky-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+@each $value, $hex in $lavenders {
+  .bg-lavender-#{$value} {
+    background-color: #{$hex} !important;
+  }
+  .text-lavender-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+@each $value, $hex in $oceans {
+  .bg-ocean-#{$value} {
+    background-color: #{$hex} !important;
+  }
+
+  .text-ocean-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+@each $value, $hex in $mantes {
+  .bg-mantis-#{$value} {
+    background-color: #{$hex} !important;
+  }
+
+  .text-mantis-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+@each $value, $hex in $corns {
+  .bg-corn-#{$value} {
+    background-color: #{$hex} !important;
+  }
+
+  .text-corn-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+@each $value, $hex in $fires {
+  .bg-fire-#{$value} {
+    background-color: #{$hex} !important;
+  }
+
+  .text-fire-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+@each $value, $hex in $smokes {
+  .bg-smoke-#{$value} {
+    background-color: #{$hex} !important;
+  }
+
+  .text-smoke-#{$value} {
+    color: #{$hex} !important;
+  }
+}
+
+.text-white {
+  color: white !important;
+}
+
+.bg-us-epa-good {
+  background-color: $us-epa-green !important;
+}
+
+.bg-us-epa-moderate {
+  background-color: $us-epa-yellow !important;
+}
+
+.bg-us-epa-sensitive-groups {
+  background-color: $us-epa-orange !important;
+}
+
+.bg-us-epa-unhealthy {
+  background-color: $us-epa-red !important;
+}
+
+.bg-us-epa-very-unhealthy {
+  background-color: $us-epa-purple !important;
+}
+
+.bg-us-epa-hazardous {
+  background-color: $us-epa-maroon !important;
+}

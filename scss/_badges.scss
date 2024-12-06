@@ -1,0 +1,35 @@
+@use './mixins/typography' as *;
+@use './variables' as *;
+
+.badge {
+  @include subtitle3;
+  display: inline-block;
+  height: 20px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 8px;
+  line-height: 20px;
+  padding: 0 10px;
+
+  * {
+    display: inline-block;
+    vertical-align: -4px;
+    line-height: 18px;
+    font-size: 18px;
+  }
+
+  &--status-ok {
+    background-color: $status-ok-color;
+    color: white;
+  }
+
+  &--status-alert {
+    background-color: $status-alert-color;
+    color: white;
+  }
+
+  &--status-warning {
+    background-color: $status-warning-color;
+    color: white;
+  }
+}

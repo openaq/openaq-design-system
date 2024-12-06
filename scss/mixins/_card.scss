@@ -1,0 +1,17 @@
+@use './box-shadow' as *;
+@use '../variables' as *;
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: white;
+  border: 1px solid $smoke10;
+  border-radius: 22px;
+  overflow: hidden;
+
+  &:hover {
+    @include box-shadow;
+  }
+}

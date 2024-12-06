@@ -1,0 +1,12 @@
+@use '../variables' as *;
+
+@mixin bubble($diameter: 230) {
+  height: $diameter * 1px;
+  width: $diameter * 1px;
+  border-radius: 100%;
+  background: linear-gradient(
+    135deg,
+    $lavender60 0%,
+    rgba($lavender100, 0) 100%
+  );
+}

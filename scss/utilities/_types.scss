@@ -1,0 +1,85 @@
+@use '../mixins/typography' as *;
+
+.type-display-1 {
+  @include display1;
+}
+
+.type-heading-1 {
+  @include heading1;
+}
+
+.type-heading-2 {
+  @include heading2;
+}
+
+.type-heading-3 {
+  @include heading3;
+}
+
+.type-subtitle-1 {
+  @include subtitle1;
+}
+
+.type-subtitle-2 {
+  @include subtitle2;
+}
+
+.type-subtitle-3 {
+  @include subtitle3;
+}
+
+.type-body-1 {
+  @include body1;
+}
+
+.type-body-2 {
+  @include body2;
+}
+
+.type-body-3 {
+  @include body3;
+}
+
+.type-body-4 {
+  @include body4;
+}
+
+.type-body-5 {
+  @include body5;
+}
+
+.type-link-1 {
+  @include link1;
+}
+
+.type-link-2 {
+  @include link2;
+}
+
+.type-link-3 {
+  @include link3;
+}
+
+.type-link-4 {
+  @include link4;
+}
+
+.type-link-5 {
+  @include link5;
+}
+
+.type-button-1 {
+  @include button1;
+}
+
+.type-button-2 {
+  @include button2;
+}
+
+.type-navigation-1 {
+  @include navigation1;
+}
+
+.type-navigation-2 {
+  @include navigation2;
+}

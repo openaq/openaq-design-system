@@ -1,0 +1,30 @@
+@use './mixins/card' as *;
+@use './mixins/typography' as *;
+@use './variables' as *;
+
+.card {
+  @include card;
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__body {
+    flex: 1;
+    padding: 20px;
+
+    .card-title {
+      @include heading2;
+    }
+
+    .card-text {
+      @include body1($smoke100);
+      padding-top: 10px;
+    }
+  }
+
+  &__footer {
+    padding: 5px 20px;
+  }
+}
