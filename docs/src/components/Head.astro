@@ -1,0 +1,10 @@
+---
+import Default from "@astrojs/starlight/components/Head.astro";
+import ThemeProvider from "./ThemeProvider.astro";
+---
+
+<Default {...Astro.props}><slot /></Default>
+<script is:inline>
+  document.documentElement.dataset.theme = "light";
+</script>
+<ThemeProvider />

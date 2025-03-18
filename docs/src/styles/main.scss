@@ -1,0 +1,133 @@
+@use "openaq-design-system/scss/resets";
+@use "openaq-design-system/scss/mixins/index.scss" as mixins;
+@use "openaq-design-system/scss/utilities/index.scss";
+@use "openaq-design-system/scss/variables" as var;
+@use "openaq-design-system/scss/badges";
+@use "openaq-design-system/scss/bubbles";
+@use "openaq-design-system/scss/buttons";
+@use "openaq-design-system/scss/cards";
+@use "openaq-design-system/scss/header";
+@use "openaq-design-system/scss/horizontal-rule";
+@use "openaq-design-system/scss/inputs";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  color: var.$smoke120;
+}
+
+.astro-v37mnknz,
+.astro-4yphtoen,
+.social-icons {
+  display: none;
+}
+
+.sidebar-pane,
+.astro-doynk5tl {
+  background-color: var.$white;
+}
+.circle-lg {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  span {
+    font-size: 10px;
+  }
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+
+.menu {
+  flex: 2;
+}
+
+.content {
+  flex: 6;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  padding: 0 15px;
+}
+
+.toc {
+  flex: 2;
+}
+
+.background-block {
+  padding: 15px;
+  margin: 10px;
+}
+
+.text-block {
+  padding: 8px;
+  margin: 10px;
+}
+
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight {
+  pre {
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 25px 35px;
+
+    .language-scss {
+      span {
+        margin: 1px 0;
+      }
+    }
+  }
+}
+
+.badge-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.badge {
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+  gap: 5px;
+}
+
+.badge-icon {
+  fill: white;
+  font-size: 1.2rem;
+}
+
+.badge--status-ok {
+  margin-top: 1rem;
+}
