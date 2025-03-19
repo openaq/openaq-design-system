@@ -41,8 +41,13 @@ export default defineConfig({
           label: "Components",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Components Overview", slug: "components" },
             { label: "Badges", slug: "components/badges" },
+            { label: "Bubbles", slug: "components/bubbles" },
+            { label: "Buttons", slug: "components/buttons" },
+            { label: "Cards", slug: "components/card" },
+            { label: "Chips", slug: "components/chips" },
+            { label: "Horizontal-rule", slug: "components/horizontal-rule" },
+            { label: "Inputs", slug: "components/inputs" },
           ],
         },
         {
