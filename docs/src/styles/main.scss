@@ -11,6 +11,10 @@ span {
   color: var.$smoke120;
 }
 
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+  color: var.$smoke120;
+}
+
 .astro-v37mnknz,
 .astro-4yphtoen,
 .social-icons {

@@ -34,7 +34,9 @@ export default defineConfig({
           label: "Overview",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Design System Overview", slug: "overview" },
+            { label: "Color", slug: "overview/color" },
+            { label: "Typography", slug: "overview/typography" },
+            { label: "Icons", slug: "overview/icons" },
           ],
         },
         {
