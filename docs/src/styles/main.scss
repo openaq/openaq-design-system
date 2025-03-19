@@ -85,11 +85,9 @@
 /*** BADGES SECTION ***/
 
 .badge-wrapper {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
   gap: 10px;
-  margin: 15px 0;
+  padding-bottom: 20px;
 }
 
 .badge {
@@ -109,6 +107,23 @@
 .badge-icon {
   fill: white;
   font-size: 1.2rem;
+}
+
+/*** BUBBLES SECTION ***/
+
+.bubbles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  padding-block: 20px;
+}
+
+.bubbles-mixin-wrapper > p {
+  padding-block: 20px;
+}
+
+.bubbles-mixin-heading {
+  padding-top: 20px;
 }
 
 /*** FOOTER ***/
