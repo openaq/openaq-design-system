@@ -2,33 +2,6 @@
 @use "../../../scss/variables" as var;
 @use "../../../scss/openaq.scss";
 
-h1,
-h2,
-h3,
-h4,
-h5,
-span {
-  color: var.$smoke120;
-}
-
-.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-  color: var.$smoke120;
-}
-
-.astro-v37mnknz,
-.astro-4yphtoen,
-.social-icons {
-  display: none;
-}
-
-.astro-3ii7xxms {
-  color: var.$smoke120;
-}
-
-.sidebar-pane,
-.astro-doynk5tl {
-  background-color: var.$white;
-}
 .circle-lg {
   height: 100px;
   width: 100px;
@@ -109,9 +82,12 @@ span {
   }
 }
 
+/*** BADGES SECTION ***/
+
 .badge-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   margin: 15px 0;
 }
@@ -123,11 +99,118 @@ span {
   gap: 5px;
 }
 
+.badge--status-ok,
+.badge--status-alert,
+.badge--status-warning {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 .badge-icon {
   fill: white;
   font-size: 1.2rem;
 }
 
-.badge--status-ok {
-  margin-top: 1rem;
+/*** FOOTER ***/
+
+footer {
+  width: 52vw;
+  margin-left: 10px;
+}
+
+.pagination-links {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.link-title {
+  color: var.$smoke120;
+}
+
+/*** BUTTONS SECTION ***/
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+}
+.icon-btn {
+  display: flex;
+  align-items: center;
+}
+.right-arrow-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.button-section-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 10px;
+  padding-bottom: 20px;
+}
+
+/*** CONTENT PANEL ***/
+
+.content-panel {
+  margin: 0;
+  padding: 0;
+}
+
+.sl-container {
+  margin: 0;
+}
+
+.sl-markdown-content {
+  width: 49.5vw;
+  margin: 45px;
+}
+
+/*** GLOBAL STYLES ***/
+
+h1:where(.astro-j6tvhyss) {
+  margin-left: 45px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  color: var.$smoke120;
+}
+
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+  color: var.$smoke120;
+}
+
+.sl-markdown-content
+  :not(a, strong, em, del, span, input, code, br)
+  + :not(a, strong, em, del, span, input, code, br, :where(.not-content *)) {
+  margin: 0;
+}
+
+.astro-3ii7xxms {
+  color: var.$smoke120;
+}
+
+/*** INLINE CODE ***/
+
+.sl-markdown-content code:not(:where(.not-content *)) {
+  background-color: var.$white;
+}
+
+/*** HIDDEN ELEMENTS ***/
+
+.astro-v37mnknz,
+.astro-4yphtoen,
+.social-icons {
+  display: none;
+}
+
+/*** SIDEBAR LEFT ***/
+
+.sidebar-pane,
+.astro-doynk5tl {
+  background-color: var.$white;
 }

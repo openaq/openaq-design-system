@@ -2,6 +2,8 @@
 title: "Buttons"
 ---
 
+import { Icon } from "@astrojs/starlight/components";
+
 There are 3 types of button available in the design system:
 
 - **Primary**
@@ -17,11 +19,7 @@ Buttons can style any block element, but when the semantic use case is a button,
 Each variant also supports a sub-variant to hadle text and an icon, which essentially changes the button from a `display:flex; justify-content:center;` to `display:flex; justify-content:space-between;`
 
 <div
-style="
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-row-gap: 10px;
-"
+class="button-section-wrapper"
 >
 <div></div>
 <div>Primary</div>
@@ -35,19 +33,20 @@ row-gap: 10px;
 <div>
   <button class="btn btn-primary">Primary</button>
 </div>
-<div>
+<div class="button-wrapper">
   <button class="icon-btn btn-primary">
-    Primary
-    <span class="material-symbols-outlined"> arrow_forward </span>
+    <span>Primary</span>
+    <Icon class="right-arrow-icon" name="right-arrow" />
   </button>
 </div>
 <div>
   <button class="btn btn-secondary">Secondary</button>
 </div>
-<div>
+
+<div class="button-wrapper">
   <button class="icon-btn btn-secondary">
-    Secondary
-    <span class="material-symbols-outlined"> arrow_forward </span>
+    <span>Secondary</span>
+    <Icon name="right-arrow" class="right-arrow-icon" />
   </button>
 </div>
 <div>
@@ -56,7 +55,8 @@ row-gap: 10px;
 <div>
   <button class="btn btn-tertiary">
     Tertiary
-    <span class="material-symbols-outlined"> arrow_forward </span>
+    <Icon class="right-arrow-icon" name="right-arrow" />
+
   </button>
 </div>
 
@@ -70,7 +70,7 @@ row-gap: 10px;
 </button>
 </div>
 <div>
-<button class="icon-btn btn-primary btn-primary--disabled">Primary <span class="material-symbols-outlined"> arrow_forward </span></button>
+<button class="icon-btn btn-primary btn-primary--disabled">Primary<Icon class="right-arrow-icon" name="right-arrow" /></button>
 </div>
 <div>
 <button
@@ -83,8 +83,8 @@ row-gap: 10px;
 <button
 class="btn btn-secondary btn-secondary--disabled"
 >
-Secondary
-<span class="material-symbols-outlined"> arrow_forward </span>
+<span>Secondary</span>
+<Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 </div>
 <div>
@@ -99,7 +99,8 @@ Secondary
 class="icon-btn btn-tertiary btn-tertiary--disabled"
 >
 Tertiary
-<span class="material-symbols-outlined"> arrow_forward </span>
+<Icon name="right-arrow" class="right-arrow-icon"/>
+
 </button>
 </div>
 </div>
@@ -109,41 +110,41 @@ Tertiary
 
 <button class="icon-btn btn-primary">
   Primary
-  <span class="material-symbols-outlined"> arrow_forward </span>
+  <Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 
 <button class="btn btn-secondary">Secondary</button>
 
 <button class="icon-btn btn-secondary">
   Secondary
-  <span class="material-symbols-outlined"> arrow_forward </span>
+  <Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 
 <button class="btn btn-tertiary">Tertiary</button>
 
 <button class="btn btn-tertiary">
   Tertiary
-  <span class="material-symbols-outlined"> arrow_forward </span>
+  <Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 
 <button class="btn btn-primary btn-primary--disabled" disabled>Primary</button>
 
 <button class="icon-btn btn-primary btn-primary--disabled">
   Primary
-  <span class="material-symbols-outlined"> arrow_forward </span>
+  <Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 
 <button class="btn btn-secondary btn-secondary--disabled">Secondary</button>
 
 <button class="btn btn-secondary btn-secondary--disabled">
   Secondary
-  <span class="material-symbols-outlined"> arrow_forward </span>
+  <Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 
 <button class="btn btn-tertiary btn-tertiary--disabled">Tertiary</button>
 
 <button class="icon-btn btn-tertiary btn-tertiary--disabled">
   Tertiary
-  <span class="material-symbols-outlined"> arrow_forward </span>
+  <Icon name="right-arrow" class="right-arrow-icon" />
 </button>
 ```
