@@ -192,6 +192,16 @@ footer {
   padding-block: 20px;
 }
 
+/*** INPUTS SECTION ***/
+
+.inputs-wrapper {
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 10px;
+  padding-bottom: 20px;
+}
+
 /*** CONTENT PANEL ***/
 
 .content-panel {
