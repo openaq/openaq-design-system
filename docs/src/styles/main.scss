@@ -158,6 +158,34 @@ footer {
   padding-top: 20px;
 }
 
+/*** CHIPS SECTION ***/
+
+.chip-wrapper {
+  display: flex;
+  gap: 10px;
+  padding-block: 20px;
+}
+
+.chip-brand > p {
+  font-size: 14px;
+}
+
+.chip-base-data > p {
+  font-size: 14px;
+}
+
+.chip-base-interactive > p {
+  font-size: 14px;
+}
+
+.chips-mixin-heading {
+  padding-block: 20px;
+}
+
+.chips-mixin-wrapper > p {
+  padding-bottom: 20px;
+}
+
 /*** CONTENT PANEL ***/
 
 .content-panel {
