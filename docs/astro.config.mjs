@@ -56,7 +56,8 @@ export default defineConfig({
           label: "Utilities",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Utilities Overview", slug: "utilities" },
+            { label: "Colors", slug: "utilities/colors" },
+            { label: "Typography", slug: "utilities/typography" },
           ],
         },
       ],
