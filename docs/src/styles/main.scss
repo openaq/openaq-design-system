@@ -186,6 +186,12 @@ footer {
   padding-bottom: 20px;
 }
 
+/*** HORIZONTAL RULE SECTION ***/
+
+.hr-wrapper {
+  padding-block: 20px;
+}
+
 /*** CONTENT PANEL ***/
 
 .content-panel {
@@ -206,6 +212,11 @@ footer {
 
 h1:where(.astro-j6tvhyss) {
   margin-left: 45px;
+}
+
+h1,
+nav {
+  padding-top: 20px;
 }
 
 h1,
@@ -239,8 +250,8 @@ span {
 
 /*** HIDDEN ELEMENTS ***/
 
-.astro-v37mnknz,
 .astro-4yphtoen,
+.astro-v37mnknz,
 .social-icons {
   display: none;
 }
@@ -250,4 +261,18 @@ span {
 .sidebar-pane,
 .astro-doynk5tl {
   background-color: var.$white;
+}
+
+.astro-3ii7xxms[aria-current="page"],
+.astro-3ii7xxms[aria-current="page"]:hover,
+.astro-3ii7xxms[aria-current="page"]:focus {
+  font-weight: 600;
+  color: var(--sl-color-text-invert);
+  background-color: var.$sky10;
+}
+
+/*** SIDEBAR HEADER ***/
+
+.header {
+  background-color: var.$sky10;
 }
