@@ -1,0 +1,18 @@
+@use './mixins/typography';
+@use './variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include typography.font-base(variables.$smoke180);
+  background-color: white;
+}

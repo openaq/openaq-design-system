@@ -1,0 +1,14 @@
+@use './mixins/chip' as *;
+@use './variables';
+
+.chip-brand {
+  @include chip(variables.$skys);
+}
+
+.chip-base-data {
+  @include chip(variables.$oceans);
+}
+
+.chip-base-interactive {
+  @include chip(variables.$lavenders);
+}

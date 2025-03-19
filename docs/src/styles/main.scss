@@ -1,14 +1,6 @@
-@use "openaq-design-system/scss/resets";
-@use "openaq-design-system/scss/mixins/index.scss" as mixins;
-@use "openaq-design-system/scss/utilities/index.scss";
-@use "openaq-design-system/scss/variables" as var;
-@use "openaq-design-system/scss/badges";
-@use "openaq-design-system/scss/bubbles";
-@use "openaq-design-system/scss/buttons";
-@use "openaq-design-system/scss/cards";
-@use "openaq-design-system/scss/header";
-@use "openaq-design-system/scss/horizontal-rule";
-@use "openaq-design-system/scss/inputs";
+@use "../../../scss/mixins" as mixins;
+@use "../../../scss/variables" as var;
+@use "../../../scss/openaq.scss";
 
 h1,
 h2,
@@ -23,6 +15,10 @@ span {
 .astro-4yphtoen,
 .social-icons {
   display: none;
+}
+
+.astro-3ii7xxms {
+  color: var.$smoke120;
 }
 
 .sidebar-pane,

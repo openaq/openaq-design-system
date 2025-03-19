@@ -1,0 +1,10 @@
+@use '../variables' as *;
+
+.select {
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid $smoke30;
+  border-radius: 14px;
+  padding: 0 20px;
+  width: 250px;
+}

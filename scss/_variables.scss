@@ -1,0 +1,150 @@
+//colors
+
+// sky
+
+$sky120: #1e64ab;
+$sky100: #198cff;
+$sky60: #66b3ff;
+$sky30: #b3d9ff;
+$sky10: #eef7ff;
+
+$skys: (
+  '120': $sky120,
+  '100': $sky100,
+  '60': $sky60,
+  '30': $sky30,
+  '10': $sky10,
+);
+
+// lavender
+
+$lavender180: #241050;
+$lavender120: #584dae;
+$lavender100: #6a5cd8;
+$lavender80: #7867eb;
+$lavender60: #8f81ee;
+$lavender40: #a497fd;
+$lavender30: #bcb2fe;
+$lavender20: #cec7ff;
+$lavender10: #dedafb;
+
+$lavenders: (
+  '180': $lavender180,
+  '120': $lavender120,
+  '100': $lavender100,
+  '80': $lavender80,
+  '60': $lavender60,
+  '40': $lavender40,
+  '30': $lavender30,
+  '20': $lavender20,
+  '10': $lavender10,
+);
+
+//ocean
+
+$ocean120: #33a3a1;
+$ocean100: #3fc2c0;
+$ocean60: #85dbd9;
+$ocean30: #b0e8e6;
+$ocean10: #e6f8f8;
+
+$oceans: (
+  '120': $ocean120,
+  '100': $ocean100,
+  '60': $ocean60,
+  '30': $ocean30,
+  '10': $ocean10,
+);
+
+// mantis
+
+$mantis120: #669537;
+$mantis100: #89c053;
+$mantis60: #b2d78e;
+$mantis30: #cbe8ca;
+$mantis10: #e3f3e3;
+
+$mantes: (
+  '120': $mantis120,
+  '100': $mantis100,
+  '60': $mantis60,
+  '30': $mantis30,
+  '10': $mantis10,
+);
+
+// corn
+
+$corn120: #ce9217;
+$corn100: #f5b945;
+$corn60: #fdcd56;
+$corn30: #fee172;
+$corn10: #fbf8f3;
+
+$corns: (
+  '120': $corn120,
+  '100': $corn100,
+  '60': $corn60,
+  '30': $corn30,
+  '10': $corn10,
+);
+
+// fire
+
+$fire120: #6c6160;
+$fire100: #dd443c;
+$fire60: #f07973;
+$fire30: #f5a7a3;
+$fire10: #fbdcda;
+
+$fires: (
+  '120': $fire120,
+  '100': $fire100,
+  '60': $fire60,
+  '30': $fire30,
+  '10': $fire10,
+);
+
+// smoke
+
+$smoke180: #30363c;
+$smoke120: #5a6672;
+$smoke100: #7e8c9a;
+$smoke60: #a9b0bb;
+$smoke30: #d4d8dd;
+$smoke10: #e8ebed;
+
+$smokes: (
+  '180': $smoke180,
+  '120': $smoke120,
+  '100': $smoke100,
+  '60': $smoke60,
+  '30': $smoke30,
+  '10': $smoke10,
+);
+
+// white
+
+$white: #ffffff;
+
+// aliases
+
+$brand-color: $sky100;
+
+$base-interactive-color: $ocean100;
+$base-data-color: $lavender100;
+
+$status-ok-color: $mantis100;
+$status-alert-color: $corn100;
+$status-warning-color: $fire100;
+
+// aqi
+
+// us epa
+// https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf
+
+$us-epa-green: #00e400;
+$us-epa-yellow: #ffff00;
+$us-epa-orange: #ff7e00;
+$us-epa-red: #ff0000;
+$us-epa-purple: #8f3f97;
+$us-epa-maroon: #7e0023;
