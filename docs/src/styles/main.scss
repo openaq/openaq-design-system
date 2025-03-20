@@ -314,6 +314,14 @@ footer {
   padding: 0;
 }
 
+/*** OVERVIEW ICON SECTION ***/
+
+.overview-icons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 20px;
+}
+
 /*** CONTENT PANEL ***/
 
 .content-panel {

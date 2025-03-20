@@ -2,21 +2,25 @@
 title: "Icons"
 ---
 
+import { Icon } from "@astrojs/starlight/components";
+
 OpenAQ uses Material Symbols as the baseline icon set.
 When the lilbrary does not cover a specific requirement,
 it is permissible to create custom icons in line with
 the same style.
 
 <div
-  style="
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-row-gap: 20px;
+  class="overview-icons-wrapper
+
 "
+
 >
+
   <div class="icon-block">
-    <span class="material-symbols-outlined"> menu </span>
-    <span>menu</span>
+    <span>
+      <Icon name="bars" />
+      menu
+    </span>
   </div>
   <div class="icon-block">
     <span class="material-symbols-outlined">remove</span>
@@ -27,23 +31,31 @@ row-gap: 20px;
     <span>add</span>
   </div>
   <div class="icon-block">
-    <span class="material-symbols-outlined">expand_less</span>
-    <span>expand_less</span>
+    <span>
+      <Icon name="down-caret" />
+      expand_less
+    </span>
   </div>
   <div class="icon-block">
-    <span class="material-symbols-outlined">expand_more</span>
-    <span>expand_more</span>
+    <span>
+      <Icon name="up-caret" />
+      expand_more
+    </span>
   </div>
   <div class="icon-block">
-    <span class="material-symbols-outlined"> check </span>
-    <span>check</span>
+     <span>
+      <Icon name="approve-check" />
+      check
+    </span>
   </div>
   <div class="icon-block">
-    <span class="material-symbols-outlined"> close </span>
-    <span>close</span>
+    <span>
+      <Icon name="close" />
+      close
+    </span>
   </div>
   <div class="icon-block">
-    <span class="material-symbols-outlined">arrow_forward</span>
+    <span><Icon name="right-arrow" /></span>
     <span>arrow_forward</span>
   </div>
   <div class="icon-block">
@@ -51,19 +63,25 @@ row-gap: 20px;
     <span>skip_next</span>
   </div>
   <div class="icon-block">
-    <span class="material-icons"> cloud_download </span>
+      <span><Icon name="cloud-download" /></span>
     <span>cloud_download</span>
   </div>
   <div class="icon-block">
-    <span class="material-icons">sim_card_download</span>
+    <span><Icon name="download" /></span>
     <span>sim_card_download</span>
   </div>
   <div class="icon-block">
-    <span class="material-icons"> star </span>
+    <span>
+      <Icon name="seti:favicon" />
+    </span>
+
     <span>star</span>
+
   </div>
   <div class="icon-block">
-    <span class="material-icons"> star_border </span>
+    <span>
+      <Icon name="star" />
+    </span>
     <span>star_border</span>
   </div>
 </div>
