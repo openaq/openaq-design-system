@@ -298,6 +298,22 @@ footer {
   gap: 10;
 }
 
+/*** OVERVIEW COLORS SECTION ***/
+
+.overview-typography-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.overview-typography-wrapper > a {
+  color: var.$smoke120;
+}
+
+.type-heading-1 {
+  padding: 0;
+}
+
 /*** CONTENT PANEL ***/
 
 .content-panel {
@@ -332,7 +348,7 @@ h3,
 h4,
 h5,
 span {
-  color: var.$smoke120;
+  color: var.$smoke180;
 }
 
 .sl-markdown-content h2 {
@@ -344,7 +360,7 @@ span {
 }
 
 .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
-  color: var.$smoke120;
+  color: var.$smoke180;
 }
 
 .sl-markdown-content
@@ -354,7 +370,7 @@ span {
 }
 
 .astro-3ii7xxms {
-  color: var.$smoke120;
+  color: var.$smoke180;
 }
 
 /*** INLINE CODE ***/
