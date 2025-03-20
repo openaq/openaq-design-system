@@ -257,11 +257,17 @@ footer {
   gap: 15px;
 }
 
+/*** UTILITIES TYPOGRAPHY SECTION ***/
+
 .utilities-typography-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin-bottom: 20px;
+}
+
+.utilities-typography-wrapper > a {
+  color: var.$smoke180;
 }
 
 /*** OVERVIEW COLORS SECTION ***/
@@ -308,10 +314,6 @@ footer {
 
 .overview-typography-wrapper > a {
   color: var.$smoke120;
-}
-
-.type-heading-1 {
-  padding: 0;
 }
 
 /*** OVERVIEW ICON SECTION ***/
@@ -379,6 +381,14 @@ span {
 
 .astro-3ii7xxms {
   color: var.$smoke180;
+}
+
+.type-display-1 {
+  padding-top: 10px;
+}
+
+.type-heading-1 {
+  padding: 0;
 }
 
 /*** INLINE CODE ***/

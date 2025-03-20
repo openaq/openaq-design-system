@@ -8,7 +8,7 @@ export default defineConfig({
     starlight({
       title: "OpenAQ Design System",
       logo: {
-        src: "./src/assets/logo.svg",
+        src: "./src/assets/svg/logo.svg",
         replacesTitle: true,
       },
 
@@ -25,6 +25,7 @@ export default defineConfig({
       components: {
         Head: "/src/components/Head.astro",
       },
+
       social: {
         github: "https://github.com/withastro/starlight",
       },
