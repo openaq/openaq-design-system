@@ -2,11 +2,12 @@
 title: "Color"
 ---
 
-## Primary color palette
+<div class="overview-color-wrapper">
+<h2 class="overview-color-heading">Primary color palette</h2>
 
 <div>
 <p>The full color palette provides a wide range of colors. Three colors should be used at the primary colors which are aliases for colors within the color palette: </p>
-<div style="display:flex; gap: 5px;">
+<div class="primary-colors-wrapper">
 <div class="circle-lg bg-brand">
     <span class="text-white">Brand</span>
 </div>
@@ -26,7 +27,7 @@ title: "Color"
     <span class="text-white">Status Warning</span>
 </div>
 </div>
-<ul>
+<ul class="primary-colors-list">
     <li><span class="type-body-3">"Brand"/sky-100</span>  - Brand is the primary color, matching the OpenAQ logo color</li>
     <li><span class="type-body-3">"Base data"/lavender-100</span> - Base data is the primary color for data, charts, etc</li>
     <li><span class="type-body-3">"Base interactive"/ocean-100 </span>- Base interactive can be used as a secondary color for data, charts etc and as a interactive color</li>
@@ -37,7 +38,7 @@ title: "Color"
 
 </div>
 
-## Full color palette
+<h2 class="overview-color-heading">Full color palette</h2>
 
 The color system is based around 7 hues (sky, ocean,
 lavender, mantis, corn, fire smoke) and white with up to
@@ -47,12 +48,7 @@ should be used on all color above the 30 lightness and
 smoke-180 or black should be used for lightness levels
 30 and below (30,20,10).
 
-<div
-    style="
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    row-gap: 10px;
-    "
+<div class="color-palette-wrapper"
 >
     <div>Sky</div>
     <div>Ocean</div>
@@ -214,33 +210,34 @@ smoke-180 or black should be used for lightness levels
 </div>
 </div>
 
-## Other Colors
+<h2 class="overview-color-heading">Other Colors</h2>
 
 Additional colors outside the OpenAQ color palette are included in the design system such as the US EPA AQI color coding values.
 
 <h3 class="type-heading-3">US EPA AQI</h3>
-<div class="circle bg-us-epa-good">
-  <span>Good</span>
+<div class="us-epa-aqi-colors">
+  <div class="circle bg-us-epa-good">
+    <span>Good</span>
+  </div>
+  <div class="circle bg-us-epa-moderate">
+    <span>Moderate</span>
+  </div>
+  <div class="circle bg-us-epa-sensitive-groups">
+    <span>Unhealthy for sensitive groups</span>
+  </div>
+  <div class="circle bg-us-epa-unhealthy">
+    <span>Unhealthy</span>
+  </div>
+  <div class="circle bg-us-epa-very-unhealthy">
+    <span style="color: white">Very Unhealthy</span>
+  </div>
+  <div class="circle bg-us-epa-hazardous">
+    <span style="color: white">Hazardous</span>
+  </div>
 </div>
-<div class="circle bg-us-epa-moderate">
-  <span>Moderate</span>
-</div>
-<div class="circle bg-us-epa-sensitive-groups">
-  <span>Unhealthy for sensitive groups</span>
-</div>
-<div class="circle bg-us-epa-unhealthy">
-  <span>Unhealthy</span>
-</div>
-<div class="circle bg-us-epa-very-unhealthy">
-  <span style="color: white">Very Unhealthy</span>
-</div>
-<div class="circle bg-us-epa-hazardous">
-  <span style="color: white">Hazardous</span>
-</div>
+<h2 class="overview-color-heading">SCSS</h2>
 
-## SCSS
-
-### Variables
+<h2 class="overview-color-heading">Variables</h2>
 
 Colors are avaiable as SCSS variables in the form of hue name + lightness
 
@@ -256,7 +253,7 @@ $lavender20: #cec7ff;
 $lavender10: #dedafb;
 ```
 
-### Maps
+<h2 class="overview-color-heading">Maps</h2>
 
 Maps are available for all 7 hues, with keys referring to each lightness level:
 
@@ -293,3 +290,5 @@ $oceans: (
   "10": $ocean10,
 );
 ```
+
+</div>

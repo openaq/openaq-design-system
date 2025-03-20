@@ -2,6 +2,38 @@
 @use "../../../scss/variables" as var;
 @use "../../../scss/openaq.scss";
 
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Light.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-SemiBold.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
 .circle-lg {
   height: 100px;
   width: 100px;
@@ -230,6 +262,40 @@ footer {
   flex-direction: column;
   gap: 5px;
   margin-bottom: 20px;
+}
+
+/*** OVERVIEW COLORS SECTION ***/
+
+.overview-color-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.overview-color-wrapper > h2 {
+  padding-block: 10px;
+}
+
+.primary-colors-wrapper {
+  display: flex;
+  gap: 5px;
+  padding-block: 20px;
+}
+
+.primary-colors-list {
+  padding-bottom: 20px;
+}
+
+.color-palette-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 10px;
+}
+
+.us-epa-aqi-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
 }
 
 /*** CONTENT PANEL ***/
