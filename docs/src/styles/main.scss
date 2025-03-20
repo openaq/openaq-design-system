@@ -1,4 +1,4 @@
-@use "../../../scss/mixins" as mixins;
+@use "../../../scss/mixins/index.scss" as mixins;
 @use "../../../scss/variables" as var;
 @use "../../../scss/openaq.scss";
 
@@ -217,6 +217,15 @@ footer {
   padding-bottom: 20px;
 }
 
+/*** UTILITIES COLORS SECTION ***/
+
+.ultilities-colors-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+
+}
+
 /*** CONTENT PANEL ***/
 
 .content-panel {
@@ -235,8 +244,10 @@ footer {
 
 /*** GLOBAL STYLES ***/
 
-h1:where(.astro-j6tvhyss) {
+h1 {
+  @include mixins.heading1(var.$smoke180);
   margin-left: 45px;
+
 }
 
 h1,
@@ -250,8 +261,19 @@ h3,
 h4,
 h5,
 span {
+
   color: var.$smoke120;
+ 
 }
+
+.sl-markdown-content h2 {
+  @include mixins.heading2(var.$smoke180)
+}
+
+.sl-markdown-content h3 {
+  @include mixins.heading3(var.$smoke180)
+}
+
 
 .sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
   color: var.$smoke120;
