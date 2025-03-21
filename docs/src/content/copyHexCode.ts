@@ -8,7 +8,7 @@ type colorPaletteType = {
 };
 
 const printColorPalette = (colorPalettes: colorPaletteType[]) => {
-  const colorWrapper = document.querySelector("#testWrapper");
+  const colorWrapper = document.querySelector("#colorPaletteWrapper");
 
   if (!colorWrapper) {
     console.log("Can't find en element with id colorPaletteWrapper");
@@ -33,7 +33,6 @@ const printColorPalette = (colorPalettes: colorPaletteType[]) => {
 })();
 
 const getHexCode = (e: Event) => {
-  clearText();
   const target = e.currentTarget as HTMLElement;
   const clickedCircle = colorPalettes.find(
     (item) => item.hexCode === target.dataset.id
@@ -45,8 +44,8 @@ const getHexCode = (e: Event) => {
     navigator.clipboard.writeText(hexCode);
     target.innerHTML = "Hex code copied!";
     target.style.fontSize = "10px";
-
     const className = target.className;
+    clearCopyText();
 
     if (/\b(10|20|30)\b/.test(className)) {
       target.style.color = "#30363c";
@@ -61,7 +60,7 @@ circles.forEach((btn) => {
   btn.addEventListener("click", getHexCode);
 });
 
-const clearText = () => {
+const clearCopyText = () => {
   const allCircles = document.querySelectorAll(".color-circle");
   const allColorPalettes = colorPalettes;
   allCircles.forEach((circle) => {
@@ -70,7 +69,8 @@ const clearText = () => {
 
       allColorPalettes.forEach((color) => {
         if (circleDataId === color.hexCode) {
-          circle.innerHTML = `${color.tone}`;
+          setTimeout(() => (circle.innerHTML = `${color.tone}`), 1000);
+
           return;
         } else {
           return;
