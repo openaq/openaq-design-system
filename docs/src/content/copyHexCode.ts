@@ -19,7 +19,9 @@ const printColorPalette = (colorPalettes: colorPaletteType[]) => {
     colorWrapper.innerHTML += `
       <div class="${color.class}" data-id="${color.hexCode}">
         <span style="${
-          /\b10\b/.test(color.class) ? "color: #30363c;" : "color: #ffffff;"
+          /\b(10|20|30)\b/.test(color.class)
+            ? "color: #30363c;"
+            : "color: #ffffff;"
         }">${color.tone}</span>
       </div>
     `;
@@ -33,20 +35,20 @@ const printColorPalette = (colorPalettes: colorPaletteType[]) => {
 const getHexCode = (e: Event) => {
   clearText();
   const target = e.currentTarget as HTMLElement;
-  const circleObject = colorPalettes.find(
+  const clickedCircle = colorPalettes.find(
     (item) => item.hexCode === target.dataset.id
   );
-  const newCode = circleObject?.hexCode;
-  if (!newCode) {
+  const hexCode = clickedCircle?.hexCode;
+  if (!hexCode) {
     return;
   } else {
-    navigator.clipboard.writeText(newCode);
+    navigator.clipboard.writeText(hexCode);
     target.innerHTML = "Hex code copied!";
     target.style.fontSize = "10px";
 
     const className = target.className;
 
-    if (/\b10\b/.test(className)) {
+    if (/\b(10|20|30)\b/.test(className)) {
       target.style.color = "#30363c";
     } else {
       target.style.color = "#ffffff";
