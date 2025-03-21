@@ -292,17 +292,11 @@ footer {
   padding-bottom: 20px;
 }
 
+.color-names-wrapper,
 .color-palette-wrapper {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   row-gap: 10px;
-}
-
-.color-test-wrapper,
-.color-names-wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
   padding-bottom: 10px;
 }
 
