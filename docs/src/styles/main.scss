@@ -298,13 +298,25 @@ footer {
   row-gap: 10px;
 }
 
+.color-test-wrapper,
+.color-names-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
+
 .us-epa-aqi-colors {
   display: flex;
   flex-direction: column;
   gap: 10;
 }
 
-/*** OVERVIEW COLORS SECTION ***/
+/*** OVERVIEW TYPOGRAPHY SECTION ***/
 
 .overview-typography-wrapper {
   display: flex;
