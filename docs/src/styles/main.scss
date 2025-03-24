@@ -196,9 +196,6 @@ footer {
   padding-bottom: 20px;
 }
 
-.test {
-  background-color: pink;
-}
 /*** CARDS SECTION ***/
 .card-wrapper {
   display: grid;
@@ -305,6 +302,20 @@ footer {
 
 .color-circle:hover {
   cursor: pointer;
+  position: relative;
+}
+
+.color-circle:hover:after {
+  content: attr(data-id);
+  padding: 4px 8px;
+  color: var.$smoke180;
+  background-color: var.$white;
+  position: absolute;
+  left: 50%;
+  bottom: 70%;
+  z-index: 10;
+  border: 1px var.$smoke120 solid;
+  font-size: 10px;
 }
 
 .bg-us-epa-hazardous,
