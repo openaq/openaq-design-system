@@ -191,11 +191,14 @@ footer {
 
 .button-section-wrapper {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, auto);
   row-gap: 10px;
   padding-bottom: 20px;
 }
 
+.test {
+  background-color: pink;
+}
 /*** CARDS SECTION ***/
 .card-wrapper {
   display: grid;
@@ -304,10 +307,13 @@ footer {
   cursor: pointer;
 }
 
-.us-epa-aqi-colors {
-  display: flex;
-  flex-direction: column;
-  gap: 10;
+.bg-us-epa-hazardous,
+.bg-us-epa-very-unhealthy,
+.bg-us-epa-unhealthy,
+.bg-us-epa-sensitive-groups,
+.bg-us-epa-moderate,
+.bg-us-epa-good {
+  margin-top: 10px !important;
 }
 
 /*** OVERVIEW TYPOGRAPHY SECTION ***/

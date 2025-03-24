@@ -1,3 +1,4 @@
+import { transformSlots } from "astro/jsx-runtime";
 import colorPalettes from "./data/colorPalettes";
 import type { colorPaletteType } from "./types/types";
 
@@ -11,8 +12,12 @@ const printColorPalette = (colorPalettes: colorPaletteType[]) => {
 
   colorPalettes.map((color: colorPaletteType) => {
     colorWrapper.innerHTML += `
-      <div class="${color.class}" data-id="${color.hexCode}">
-        <span style="${
+      <div class="${color.class}" data-id="${
+      color.hexCode
+    }" onmouseover="this.querySelector('span').innerHTML='${color.hexCode}'"
+      onmouseout="this.querySelector('span').innerHTML='${color.tone}'"
+      style="cursor: pointer;">
+        <span  style="${
           /\b(10|20|30)\b/.test(color.class)
             ? "color: #30363c;"
             : "color: #ffffff;"
@@ -28,15 +33,16 @@ const printColorPalette = (colorPalettes: colorPaletteType[]) => {
 
 const getHexCode = (e: Event) => {
   const target = e.currentTarget as HTMLElement;
+  const targetedSpan = target.querySelector("span");
   const clickedCircle = colorPalettes.find(
     (item) => item.hexCode === target.dataset.id
   );
   const hexCode = clickedCircle?.hexCode;
-  if (!hexCode) {
+  if (!hexCode || !targetedSpan) {
     return;
   } else {
     navigator.clipboard.writeText(hexCode);
-    target.innerHTML = "Hex code copied";
+    targetedSpan.innerText = "Hex code copied";
     target.style.fontSize = "10px";
     const className = target.className;
     clearCopyText();
