@@ -423,7 +423,6 @@ span {
 /*** HIDDEN ELEMENTS ***/
 
 .astro-4yphtoen,
-.astro-v37mnknz,
 .social-icons {
   display: none;
 }
@@ -443,10 +442,20 @@ span {
   background-color: var.$sky10;
 }
 
-/*** SIDEBAR HEADER ***/
+/*** HEADER ***/
 
 .header {
   background-color: var.$sky10;
+}
+
+.astro-v37mnknz [data-open-modal] {
+  width: 350px;
+  background-color: var.$sky10;
+}
+
+.astro-v37mnknz {
+  background-color: var.$sky10;
+  color: var.$smoke120;
 }
 
 /*** 404 PAGE ***/
