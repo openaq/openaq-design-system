@@ -1,9 +1,4 @@
-type colorPaletteType = {
-  class: string;
-  hexCode: string;
-  name: string;
-  tone: string;
-};
+import type { colorPaletteType } from "../types/types";
 
 const colorPalettes: colorPaletteType[] = [
   {

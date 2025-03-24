@@ -1,11 +1,5 @@
-import colorPalettes from "./colorPalettes";
-
-type colorPaletteType = {
-  class: string;
-  hexCode: string;
-  name: string;
-  tone: string;
-};
+import colorPalettes from "./data/colorPalettes";
+import type { colorPaletteType } from "./types/types";
 
 const printColorPalette = (colorPalettes: colorPaletteType[]) => {
   const colorWrapper = document.querySelector("#colorPaletteWrapper");
