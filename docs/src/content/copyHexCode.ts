@@ -42,7 +42,7 @@ const getHexCode = (e: Event) => {
     return;
   } else {
     navigator.clipboard.writeText(hexCode);
-    target.innerHTML = "Hex code copied!";
+    target.innerHTML = "Hex code copied";
     target.style.fontSize = "10px";
     const className = target.className;
     clearCopyText();
@@ -64,7 +64,7 @@ const clearCopyText = () => {
   const allCircles = document.querySelectorAll(".color-circle");
   const allColorPalettes = colorPalettes;
   allCircles.forEach((circle) => {
-    if (circle.innerHTML === "Hex code copied!") {
+    if (circle.innerHTML === "Hex code copied") {
       const circleDataId = circle.getAttribute("data-id");
 
       allColorPalettes.forEach((color) => {
