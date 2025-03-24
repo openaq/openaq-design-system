@@ -11,6 +11,7 @@ export default defineConfig({
         src: "./src/assets/svg/logo.svg",
         replacesTitle: true,
       },
+      disable404Route: true,
 
       head: [
         {

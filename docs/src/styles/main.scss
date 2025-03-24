@@ -431,3 +431,16 @@ span {
 .header {
   background-color: var.$sky10;
 }
+
+/*** 404 PAGE ***/
+
+.section-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-404 {
+  font-family: "Space Grotesk", sans-serif;
+}
