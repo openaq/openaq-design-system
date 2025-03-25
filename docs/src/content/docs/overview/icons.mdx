@@ -2,110 +2,138 @@
 title: "Icons"
 ---
 
-import { Icon } from "@astrojs/starlight/components";
-
 OpenAQ uses Material Symbols as the baseline icon set.
 When the lilbrary does not cover a specific requirement,
 it is permissible to create custom icons in line with
-the same style.
+the same style. You could either insert the svg inside
+an image tag, or set is as an inline tag by itself.
 
 <div class="overview-icons-wrapper">
 
-  <div class="icon-block">
-    <span>
+{" "}
 
-      menu
-    </span>
+<div class="icon-block">
+  <span> menu</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> add</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> remove</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="M200-440v-80h560v80H200Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> right arrow</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> close</span>
+  <img src="../../../src/assets/svg/close.svg"></img>{" "}
+</div>
+<div class="icon-block">
+  <span> check</span>
+  <img src="../../../src/assets/svg/check.svg"></img>{" "}
+</div>
+<div class="icon-block">
+  <span> download_cloud</span>
+  <img src="../../../src/assets/svg/cloud_download.svg"></img>{" "}
+</div>
 
-  </div>
-  <div class="icon-block">
-    <span class="material-symbols-outlined">remove</span>
-    <span>remove</span>
-  </div>
-  <div class="icon-block">
-    <span class="material-symbols-outlined"> add </span>
-    <span>add</span>
-  </div>
-  <div class="icon-block">
-    <span>
-  
-      expand_less
-    </span>
-  </div>
-  <div class="icon-block">
-    <span>
-      <Icon name="up-caret" />
-      expand_more
-    </span>
-  </div>
-  <div class="icon-block">
-     <span>
-      <Icon name="approve-check" />
-      check
-    </span>
-  </div>
-  <div class="icon-block">
-    <span>
-      <Icon name="close" />
-      close
-    </span>
-  </div>
-  <div class="icon-block">
-    <span><Icon name="right-arrow" /></span>
-    <span>arrow_forward</span>
-  </div>
-  <div class="icon-block">
-    <span class="material-icons">skip_next </span>
-    <span>skip_next</span>
-  </div>
-  <div class="icon-block">
-      <span><Icon name="cloud-download" /></span>
-    <span>cloud_download</span>
-  </div>
-  <div class="icon-block">
-    <span><Icon name="download" /></span>
-    <span>sim_card_download</span>
-  </div>
-  <div class="icon-block">
-    <span>
-      <Icon name="seti:favicon" />
-    </span>
-
-    <span>star</span>
-
-  </div>
-  <div class="icon-block">
-    <span>
-      <Icon name="star" />
-    </span>
-    <span>star_border</span>
-  </div>
 </div>
 
 ```html
-<span class="material-symbols-outlined"> menu </span>
-
-<span class="material-symbols-outlined"> remove </span>
-
-<span class="material-symbols-outlined"> add </span>
-
-<span class="material-symbols-outlined"> expand_less </span>
-
-<span class="material-symbols-outlined"> expand_more </span>
-
-<span class="material-symbols-outlined"> check </span>
-
-<span class="material-symbols-outlined"> close </span>
-
-<span class="material-symbols-outlined"> arrow_forward </span>
-
-<span class="material-icons">skip_next </span>
-
-<span class="material-icons"> cloud_download </span>
-
-<span class="material-icons"> sim_card_download </span>
-
-<span class="material-icons"> star </span>
-
-<span class="material-icons"> star_border </span>
+<div class="icon-block">
+  <span> menu</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> add</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> remove</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="M200-440v-80h560v80H200Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> right arrow</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#000000"
+  >
+    <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+  </svg>
+</div>
+<div class="icon-block">
+  <span> close</span>
+  <img src="../../../src/assets/svg/close.svg"></img>{" "}
+</div>
+<div class="icon-block">
+  <span> check</span>
+  <img src="../../../src/assets/svg/check.svg"></img>{" "}
+</div>
+<div class="icon-block">
+  <span> download_cloud</span>
+  <img src="../../../src/assets/svg/cloud_download.svg"></img>{" "}
+</div>
 ```

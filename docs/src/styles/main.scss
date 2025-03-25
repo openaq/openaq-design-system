@@ -136,11 +136,6 @@
   padding: 10px;
 }
 
-.badge-icon {
-  fill: white;
-  font-size: 1.2rem;
-}
-
 /*** BUBBLES SECTION ***/
 
 .bubbles-wrapper {
@@ -345,6 +340,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   row-gap: 20px;
+  padding-block: 20px;
 }
 
 /*** CONTENT PANEL ***/
