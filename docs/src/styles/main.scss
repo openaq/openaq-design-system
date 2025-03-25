@@ -1,7 +1,6 @@
 @use "../../../scss/mixins/index.scss" as mixins;
 @use "../../../scss/variables" as var;
 @use "../../../scss/openaq.scss";
-@use "./badge" as *;
 
 @font-face {
   font-family: "Space Grotesk";
@@ -389,6 +388,10 @@ footer {
 .sl-markdown-content {
   width: 49.5vw;
   margin: 45px;
+}
+
+.buttons-page-wrapper {
+  width: 58.5vw;
 }
 
 /*** GLOBAL STYLES ***/
