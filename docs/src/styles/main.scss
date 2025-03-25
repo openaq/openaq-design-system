@@ -114,6 +114,37 @@
   }
 }
 
+/*** HOMEPAGE ***/
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shortcuts-list {
+  display: flex;
+  gap: 20px;
+}
+
+.shortcuts-list > a {
+  color: var.$smoke120;
+}
+
+.shortcut-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  color: inherit;
+}
+
+.shortcut-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
 /*** BADGES SECTION ***/
 
 .badge-wrapper {
