@@ -1,13 +1,14 @@
 @use "./mixins/bubble" as *;
+@use "./variables" as var;
 
 .bubble-lg {
-  @include bubble(230, var.$lavender60, var.$lavender100);
+  @include bubble(230, var.$lavender100);
 }
 
 .bubble-md {
-  @include bubble(135, var.$lavender60, var.$lavender100);
+  @include bubble(135, var.$lavender100);
 }
 
 .bubble-sm {
-  @include bubble(45, var.$lavender60, var.$lavender100);
+  @include bubble(45, var.$lavender100);
 }

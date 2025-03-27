@@ -1,8 +1,8 @@
 @use "../variables" as *;
 
-@mixin bubble($diameter: 230, $lightColor, $darkcolor) {
+@mixin bubble($diameter: 230, $color) {
   height: $diameter * 1px;
   width: $diameter * 1px;
   border-radius: 100%;
-  background: linear-gradient(135deg, $lightColor 0%, rgba($darkcolor, 0) 100%);
+  background: linear-gradient(135deg, $lavender60 0%, rgba($color, 0) 100%);
 }
