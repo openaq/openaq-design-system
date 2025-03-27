@@ -34,15 +34,11 @@ export default defineConfig({
       sidebar: [
         {
           label: "OpenAQ Design System",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Home", slug: "index" },
-          ],
+          items: [{ label: "Home", slug: "index" }],
         },
         {
           label: "Overview",
           items: [
-            // Each item here is one entry in the navigation menu.
             { label: "About Overview", slug: "overview/about" },
             { label: "Color", slug: "overview/color" },
             { label: "Typography", slug: "overview/typography" },
@@ -52,7 +48,6 @@ export default defineConfig({
         {
           label: "Components",
           items: [
-            // Each item here is one entry in the navigation menu.
             { label: "About Components", slug: "components/about" },
             { label: "Badges", slug: "components/badges" },
             { label: "Bubbles", slug: "components/bubbles" },
@@ -66,7 +61,6 @@ export default defineConfig({
         {
           label: "Utilities",
           items: [
-            // Each item here is one entry in the navigation menu.
             { label: "About Utilities", slug: "utilities/about" },
             { label: "Colors", slug: "utilities/colors" },
             { label: "Typography", slug: "utilities/typography" },
