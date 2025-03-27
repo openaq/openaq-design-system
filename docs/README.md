@@ -22,3 +22,13 @@ Then, to start the local development server run
 ```sh
 npx astro dev
 ```
+
+### Build
+
+To build the Design System, run:
+
+```sh
+npx astro build
+```
+
+The built files will be available in the dist/ directory.
