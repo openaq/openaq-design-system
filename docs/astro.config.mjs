@@ -12,7 +12,9 @@ export default defineConfig({
         replacesTitle: true,
       },
       disable404Route: true,
-
+      customCss: [
+        './src/styles/main.scss'
+      ],
       head: [
         {
           tag: "link",
@@ -24,13 +26,11 @@ export default defineConfig({
         },
       ],
       components: {
-        Head: "/src/components/Head.astro",
+        ThemeSelect: "/src/components/ThemeSelect.astro",
       },
-
       social: {
         github: "https://github.com/withastro/starlight",
       },
-      customCss: ["./src/styles/main.scss"],
       sidebar: [
         {
           label: "OpenAQ Design System",
