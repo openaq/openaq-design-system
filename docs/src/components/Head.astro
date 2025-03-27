@@ -1,0 +1,21 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Head.astro';
+
+---
+
+<Default {...Astro.props}><slot /></Default>
+<script
+  is:inline
+  defer
+  data-domain="openaq.github.io/openaq-design-system/"
+  crossorigin="anonymous"
+  src="https://plausible.io/js/script.outbound-links.js"></script>
+<script is:inline>
+  window.plausible =
+    window.plausible ||
+    function () {
+      (window.plausible.q = window.plausible.q || []).push(arguments);
+    };
+</script>
+<meta />

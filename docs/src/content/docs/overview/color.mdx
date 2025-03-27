@@ -1,0 +1,247 @@
+---
+title: "Color"
+tableOfContents: false
+---
+
+<script
+  type="module"
+  src="../../../src/utilities/copyHexCode.ts"
+  defer
+></script>
+
+<div class="overview-color-wrapper">
+
+<h2 class="overview-color-heading">Primary color palette</h2>
+
+<div>
+<p>The full color palette provides a wide range of colors. Three colors should be used at the primary colors which are aliases for colors within the color palette: </p>
+<div class="primary-colors-wrapper">
+<div class="circle-lg bg-brand">
+    <span class="text-white">Brand</span>
+</div>
+<div class="circle-lg bg-base-data">
+    <span class="text-white">Base data</span>
+</div>
+<div class="circle-lg bg-base-interactive">
+    <span class="text-white">Base interactive</span>
+</div>
+<div class="circle-lg bg-status-ok">
+    <span class="text-white">Status OK</span>
+</div>
+<div class="circle-lg bg-status-alert">
+    <span class="text-white">Status Alert</span>
+</div>
+<div class="circle-lg bg-status-warning">
+    <span class="text-white">Status Warning</span>
+</div>
+</div>
+<ul class="primary-colors-list">
+    <li><span class="type-body-3">"Brand"/sky-100</span>  - Brand is the primary color, matching the OpenAQ logo color</li>
+    <li><span class="type-body-3">"Base data"/lavender-100</span> - Base data is the primary color for data, charts, etc</li>
+    <li><span class="type-body-3">"Base interactive"/ocean-100 </span>- Base interactive can be used as a secondary color for data, charts etc and as a interactive color</li>
+    <li><span class="type-body-3">"Status OK"/mantis-100 </span>x- Status OK is the primary color for "success" or general positive theming</li>
+    <li><span class="type-body-3">"Status Alert"/corn-100</span> - Status Alert is the primary color for alerting or somewhat negative theming</li>
+    <li><span class="type-body-3">"Status Warning"/fire-100 </span>- Status Warning is the primary color for "failure" or general negative theming</li>
+</ul>
+
+</div>
+
+<h2 class="overview-color-heading" id="overviewColorHeading">
+  Full color palette
+</h2>
+
+The color system is based around 7 hues (sky, ocean,
+lavender, mantis, corn, fire smoke) and white with up to
+9 levels of lightness per hue. Not all hues have all 9
+levels defined. When overlaying text atop a color, white
+should be used on all color above the 30 lightness and
+smoke-180 or black should be used for lightness levels
+30 and below (30,20,10).
+
+<div class="color-circles-wrapper">
+  <div class="color-names-wrapper">
+    <p>Sky</p>
+    <p>Ocean</p>
+    <p>Lavender</p>
+    <p>Mantis</p>
+    <p>Corn</p>
+    <p>Fire</p>
+    <p>Smoke</p>
+  </div>
+  <div id="colorPaletteWrapper" class="color-palette-wrapper"></div>
+</div>
+
+<h2 class="overview-color-heading">Other Colors</h2>
+
+Additional colors outside the OpenAQ color palette are included in the design system such as the US EPA AQI color coding values.
+
+<h3 class="type-heading-3">US EPA AQI</h3>
+<div class="us-epa-aqi-colors">
+  <div class="circle bg-us-epa-good">
+    <span>Good</span>
+  </div>
+  <div class="circle bg-us-epa-moderate">
+    <span>Moderate</span>
+  </div>
+  <div class="circle bg-us-epa-sensitive-groups">
+    <span>Unhealthy for sensitive groups</span>
+  </div>
+  <div class="circle bg-us-epa-unhealthy">
+    <span>Unhealthy</span>
+  </div>
+  <div class="circle bg-us-epa-very-unhealthy">
+    <span style="color: white">Very Unhealthy</span>
+  </div>
+  <div class="circle bg-us-epa-hazardous">
+    <span style="color: white">Hazardous</span>
+  </div>
+</div>
+<h2 class="overview-color-heading">SCSS</h2>
+
+<h2 class="overview-color-heading" id="variablesHeading">
+  Variables
+</h2>
+
+Colors are avaiable as SCSS variables in the form of hue name + lightness
+
+```scss
+$sky120: #1e64ab;
+$sky100: #198cff;
+$sky60: #66b3ff;
+$sky30: #b3d9ff;
+$sky10: #eef7ff;
+```
+
+```scss
+$ocean120: #33a3a1;
+$ocean100: #3fc2c0;
+$ocean60: #85dbd9;
+$ocean30: #b0e8e6;
+$ocean10: #e6f8f8;
+```
+
+```scss
+$lavender180: #241050;
+$lavender120: #584dae;
+$lavender100: #6a5cd8;
+$lavender80: #7867eb;
+$lavender60: #8f81ee;
+$lavender40: #a497fd;
+$lavender30: #bcb2fe;
+$lavender20: #cec7ff;
+$lavender10: #dedafb;
+```
+
+```scss
+$mantis120: #669537;
+$mantis100: #89c053;
+$mantis60: #b2d78e;
+$mantis30: #cbe8ca;
+$mantis10: #e3f3e3;
+```
+
+```scss
+$corn120: #ce9217;
+$corn100: #f5b945;
+$corn60: #fdcd56;
+$corn30: #fee172;
+$corn10: #fbf8f3;
+```
+
+```scss
+$fire120: #6c6160;
+$fire100: #dd443c;
+$fire60: #f07973;
+$fire30: #f5a7a3;
+$fire10: #fbdcda;
+```
+
+```scss
+$smoke180: #30363c;
+$smoke120: #5a6672;
+$smoke100: #7e8c9a;
+$smoke60: #a9b0bb;
+$smoke30: #d4d8dd;
+$smoke10: #e8ebed;
+```
+
+<h2 class="overview-color-heading">Maps</h2>
+
+Maps are available for all 7 hues, with keys referring to each lightness level:
+
+```scss
+$skys: (
+  "120": $sky120,
+  "100": $sky100,
+  "60": $sky60,
+  "30": $sky30,
+  "10": $sky10,
+);
+```
+
+```scss
+$oceans: (
+  "120": $ocean120,
+  "100": $ocean100,
+  "60": $ocean60,
+  "30": $ocean30,
+  "10": $ocean10,
+);
+```
+
+```scss
+$lavenders: (
+  "180": $lavender180,
+  "120": $lavender120,
+  "100": $lavender100,
+  "80": $lavender80,
+  "60": $lavender60,
+  "40": $lavender40,
+  "30": $lavender30,
+  "20": $lavender20,
+  "10": $lavender10,
+);
+```
+
+```scss
+$mantes: (
+  "120": $mantis120,
+  "100": $mantis100,
+  "60": $mantis60,
+  "30": $mantis30,
+  "10": $mantis10,
+);
+```
+
+```scss
+$corns: (
+  "120": $corn120,
+  "100": $corn100,
+  "60": $corn60,
+  "30": $corn30,
+  "10": $corn10,
+);
+```
+
+```scss
+$fires: (
+  "120": $fire120,
+  "100": $fire100,
+  "60": $fire60,
+  "30": $fire30,
+  "10": $fire10,
+);
+```
+
+```scss
+$smokes: (
+  "180": $smoke180,
+  "120": $smoke120,
+  "100": $smoke100,
+  "60": $smoke60,
+  "30": $smoke30,
+  "10": $smoke10,
+);
+```
+
+</div>

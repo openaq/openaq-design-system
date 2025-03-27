@@ -1,0 +1,238 @@
+---
+title: "Buttons"
+tableOfContents: false
+---
+
+<div class="buttons-page-wrapper">
+There are 3 types of button available in the design system:
+
+- **Primary**
+- **Secondary**
+- **Tertiary**
+
+All buttons share the base `btn` class in addition to their specific sub-variant class, `btn-primary` `btn-secondary` `btn-tertiary`. e.g.:
+
+`class="btn btn-primary"`
+
+Buttons can style any block element, but when the semantic use case is a button, the `<button>` tag is preffered.
+
+Each variant also supports a sub-variant to hadle text and an icon, which essentially changes the button from a `display:flex; justify-content:center;` to `display:flex; justify-content:space-between;`
+
+<div
+class="button-section-wrapper"
+>
+<div></div>
+<div>Primary</div>
+<div>Primary + Icon</div>
+<div>Secondary</div>
+<div>Secondary + Icon</div>
+<div>Tertiary</div>
+<div>Tertiary + Icon</div>
+
+<div>Active</div>
+<div>
+  <button class="btn btn-primary">Primary</button>
+</div>
+<div class="button-wrapper">
+  <button class="icon-btn btn-primary">
+    <span>Primary</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#FFFFFF"
+    >
+      <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+    </svg>
+  </button>
+</div>
+<div>
+  <button class="btn btn-secondary">Secondary</button>
+</div>
+
+<div class="button-wrapper">
+  <button class="icon-btn btn-secondary">
+    Secondary
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#33a3a1"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+  </button>
+</div>
+<div>
+  <button class="btn btn-tertiary">Tertiary</button>
+</div>
+<div>
+  <button class="btn btn-tertiary">
+    Tertiary
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5a6672"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+
+  </button>
+</div>
+
+<div>Disabled</div>
+<div>
+<button
+    class="btn btn-primary btn-primary--disabled"
+    disabled
+>
+    Primary
+</button>
+</div>
+<div>
+<button class="icon-btn btn-primary btn-primary--disabled">Primary <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></button>
+</div>
+<div>
+<button
+    class="btn btn-secondary btn-secondary--disabled"
+>
+    Secondary
+</button>
+</div>
+<div>
+<button
+class="btn btn-secondary btn-secondary--disabled"
+>
+Secondary
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5a6672"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+</button>
+</div>
+<div>
+<button
+    class="btn btn-tertiary btn-tertiary--disabled"
+>
+    Tertiary
+</button>
+</div>
+<div>
+<button
+class="icon-btn btn-tertiary btn-tertiary--disabled"
+>
+Tertiary
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5a6672"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+
+</button>
+</div>
+</div>
+
+```html
+<div>
+  <button class="btn btn-primary">Primary</button>
+</div>
+<div class="button-wrapper">
+  <button class="icon-btn btn-primary">
+    <span>Primary</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#FFFFFF"
+    >
+      <path
+        d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+      />
+    </svg>
+  </button>
+</div>
+<div>
+  <button class="btn btn-secondary">Secondary</button>
+</div>
+
+<div class="button-wrapper">
+  <button class="icon-btn btn-secondary">
+    Secondary
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#33a3a1"
+    >
+      <path
+        d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+      />
+    </svg>
+  </button>
+</div>
+<div>
+  <button class="btn btn-tertiary">Tertiary</button>
+</div>
+<div>
+  <button class="btn btn-tertiary">
+    Tertiary
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#5a6672"
+    >
+      <path
+        d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+      />
+    </svg>
+  </button>
+</div>
+
+<div>Disabled</div>
+<div>
+  <button class="btn btn-primary btn-primary--disabled" disabled>
+    Primary
+  </button>
+</div>
+<div>
+  <button class="icon-btn btn-primary btn-primary--disabled">
+    Primary
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#FFFFFF"
+    >
+      <path
+        d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+      />
+    </svg>
+  </button>
+</div>
+<div>
+  <button class="btn btn-secondary btn-secondary--disabled">Secondary</button>
+</div>
+<div>
+  <button class="btn btn-secondary btn-secondary--disabled">
+    Secondary
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#5a6672"
+    >
+      <path
+        d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+      />
+    </svg>
+  </button>
+</div>
+<div>
+  <button class="btn btn-tertiary btn-tertiary--disabled">Tertiary</button>
+</div>
+<div>
+  <button class="icon-btn btn-tertiary btn-tertiary--disabled">
+    Tertiary
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#5a6672"
+    >
+      <path
+        d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+      />
+    </svg>
+  </button>
+</div>
+```
+
+</div>
