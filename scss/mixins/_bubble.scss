@@ -1,8 +1,15 @@
 @use "../variables" as *;
 
-@mixin bubble($diameter: 230, $color) {
+@mixin bubble($diameter: 230, $color-map) {
+  $lighterTone: map-get($color-map, "60");
+  $darkerTone: map-get($color-map, "100");
+
   height: $diameter * 1px;
   width: $diameter * 1px;
   border-radius: 100%;
-  background: linear-gradient(135deg, $lavender60 0%, rgba($color, 0) 100%);
+  background: linear-gradient(
+    135deg,
+    $lighterTone 0%,
+    rgba($darkerTone, 0) 100%
+  );
 }
