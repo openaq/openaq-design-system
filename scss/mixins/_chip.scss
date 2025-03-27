@@ -1,5 +1,5 @@
-@use "../variables" as *;
-@use "./typography" as *;
+@use '../variables' as *;
+@use './typography' as *;
 
 @mixin chip($color: $skys) {
   @include subtitle3;

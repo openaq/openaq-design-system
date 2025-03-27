@@ -1,0 +1,15 @@
+
+<aside class="menu">
+    <ul class="section-list">
+    {{ range .Site.Sections }}
+        {{ range .Sections}}
+                <li class="section-list__item">{{ .Page.Title }}</li>
+                    <ul class="page-list">
+                        {{ range .Pages }}
+                            <li class="page-list__item"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+                        {{ end }}
+                    </ul>
+        {{ end }}
+    {{ end }}
+    </ul>
+</aside>
