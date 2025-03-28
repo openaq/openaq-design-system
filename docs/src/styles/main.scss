@@ -1,35 +1,36 @@
-@use '../../../scss/mixins/index.scss' as mixins;
-@use '../../../scss/variables' as var;
-@use '../../../scss/openaq.scss';
+@use "../../../scss/mixins/index.scss" as mixins;
+@use "../../../scss/variables" as var;
+@use "../../../scss/openaq.scss";
+@use "../../../scss/utilities/index" as u;
 
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
-    url('/fonts/SpaceGrotesk-Regular.woff') format('woff');
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
-    url('/fonts/SpaceGrotesk-Light.woff') format('woff');
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Light.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Light.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
-    url('/fonts/SpaceGrotesk-Bold.woff') format('woff');
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Space Grotesk';
-  src: url('/fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
-    url('/fonts/SpaceGrotesk-SemiBold.woff') format('woff');
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-SemiBold.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-SemiBold.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -195,9 +196,9 @@ span {
   background-color: var.$white;
 }
 
-.astro-3ii7xxms[aria-current='page'],
-.astro-3ii7xxms[aria-current='page']:hover,
-.astro-3ii7xxms[aria-current='page']:focus {
+.astro-3ii7xxms[aria-current="page"],
+.astro-3ii7xxms[aria-current="page"]:hover,
+.astro-3ii7xxms[aria-current="page"]:focus {
   font-weight: 600;
   color: var(--sl-color-text-invert);
   background-color: var.$sky10;
@@ -208,7 +209,7 @@ span {
 .intro-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: u.rem(10px);
 }
 
 .shortcuts-list {
@@ -499,5 +500,5 @@ footer {
 }
 
 .heading-404 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
