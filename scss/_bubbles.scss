@@ -1,8 +1,6 @@
 @use "./mixins/bubble" as *;
 @use "./variables" as *;
 
-@use "./variables" as *;
-
 .bubble-lg {
   @include bubble(230, $lavenders);
 }
