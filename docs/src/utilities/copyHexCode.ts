@@ -1,33 +1,32 @@
 import colorPalettes from "./data/colorPalettes";
-import type { colorPaletteType } from "./types/types";
 
-const printColorPalette = (colorPalettes: colorPaletteType[]) => {
-  const colorWrapper = document.querySelector("#colorPaletteWrapper");
+// const printColorPalette = (colorPalettes: colorPaletteType[]) => {
+//   const colorWrapper = document.querySelector("#colorPaletteWrapper");
 
-  if (!colorWrapper) {
-    console.log("Can't find en element with id colorPaletteWrapper");
-    return;
-  }
+//   if (!colorWrapper) {
+//     console.log("Can't find en element with id colorPaletteWrapper");
+//     return;
+//   }
 
-  colorPalettes.map((color: colorPaletteType) => {
-    colorWrapper.innerHTML += `
-      <div class="${color.class}" data-id="${color.hexCode}" 
-      style="cursor: pointer;">
-        <span  style="${
-          /\b(10|20|30)\b/.test(color.class)
-            ? "color: #30363c;"
-            : "color: #ffffff;"
-        }">${color.tone}</span>
-      </div>
-    `;
-  });
-};
+//   colorPalettes.map((color: colorPaletteType) => {
+//     colorWrapper.innerHTML += `
+//       <div class="${color.class}" data-id="${color.hexCode}"
+//       style="cursor: pointer;">
+//         <span  style="${
+//           /\b(10|20|30)\b/.test(color.class)
+//             ? "color: #30363c;"
+//             : "color: #ffffff;"
+//         }">${color.tone}</span>
+//       </div>
+//     `;
+//   });
+// };
 
-(() => {
-  printColorPalette(colorPalettes);
-})();
+// (() => {
+//   printColorPalette(colorPalettes);
+// })();
 
-const getHexCode = (e: Event) => {
+export const getHexCode = (e: Event) => {
   const target = e.currentTarget as HTMLElement;
   const clickedCircle = colorPalettes.find(
     (item) => item.hexCode === target.dataset.id
@@ -50,10 +49,10 @@ const getHexCode = (e: Event) => {
   }
 };
 
-const circles = document.querySelectorAll(".color-circle");
-circles.forEach((btn) => {
-  btn.addEventListener("click", getHexCode);
-});
+// const circles = document.querySelectorAll(".color-circle");
+// circles.forEach((btn) => {
+//   btn.addEventListener("click", getHexCode);
+// });
 
 const clearCopyText = () => {
   const allCircles = document.querySelectorAll(".color-circle");

@@ -3,12 +3,6 @@ title: "Color"
 tableOfContents: false
 ---
 
-<script
-  type="module"
-  src="../../../src/utilities/copyHexCode.ts"
-  defer
-></script>
-
 <div class="overview-color-wrapper">
 
 <h2 class="overview-color-heading">Primary color palette</h2>
@@ -58,17 +52,78 @@ should be used on all color above the 30 lightness and
 smoke-180 or black should be used for lightness levels
 30 and below (30,20,10).
 
-<div class="color-circles-wrapper">
-  <div class="color-names-wrapper">
-    <p>Sky</p>
-    <p>Ocean</p>
-    <p>Lavender</p>
-    <p>Mantis</p>
-    <p>Corn</p>
-    <p>Fire</p>
-    <p>Smoke</p>
-  </div>
-  <div id="colorPaletteWrapper" class="color-palette-wrapper"></div>
+<div class="color-palette-wrapper" id="colorPaletteWrapper">
+      <div>Sky</div>
+      <div>Ocean</div>
+      <div>Lavender</div>
+      <div>Mantis</div>
+      <div>Corn</div>
+      <div>Fire</div>
+      <div>Smoke</div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-lavender-180"><span style="color: white">180</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-smoke-180"><span style="color: white">180</span></div>
+      <div class="circle color-circle bg-sky-120 color-circle" id="sky120" data-id="#1e64ab"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-ocean-120 color-circle" id="ocean120" data-id="#198cff"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-lavender-120"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-mantis-120"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-corn-120"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-fire-120"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-smoke-120"><span style="color: white">120</span></div>
+      <div class="circle color-circle bg-sky-100"><span style="color: white">100</span></div>
+      <div class="circle color-circle bg-ocean-100"><span style="color: white">100</span></div>
+      <div class="circle color-circle bg-lavender-100"><span style="color: white">100</span></div>
+      <div class="circle color-circle bg-mantis-100"><span style="color: white">100</span></div>
+      <div class="circle color-circle bg-corn-100"><span style="color: white">100</span></div>
+      <div class="circle color-circle bg-fire-100"><span style="color: white">100</span></div>
+      <div class="circle color-circle bg-smoke-100"><span style="color: white">100</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-lavender-80"><span style="color: white">80</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-sky-60"><span style="color: white">60</span></div>
+      <div class="circle color-circle bg-ocean-60"><span style="color: white">60</span></div>
+      <div class="circle color-circle bg-lavender-60"><span style="color: white">60</span></div>
+      <div class="circle color-circle bg-mantis-60"><span style="color: white">60</span></div>
+      <div class="circle color-circle bg-corn-60"><span style="color: white">60</span></div>
+      <div class="circle color-circle bg-fire-60"><span style="color: white">60</span></div>
+      <div class="circle color-circle bg-smoke-60"><span style="color: white">60</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-lavender-40"><span style="color: white">40</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-sky-30"><span>30</span></div>
+      <div class="circle color-circle bg-ocean-30"><span>30</span></div>
+      <div class="circle color-circle bg-lavender-30"><span>30</span></div>
+      <div class="circle color-circle bg-mantis-30"><span>30</span></div>
+      <div class="circle color-circle bg-corn-30"><span>30</span></div>
+      <div class="circle color-circle bg-fire-30"><span>30</span></div>
+      <div class="circle color-circle bg-smoke-30"><span>30</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle color-circle bg-lavender-20"><span>20</span></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="color-circle circle bg-sky-10"><span>10</span></div>
+      <div class="circle color-circle bg-ocean-10"><span>10</span></div>
+      <div class="circle color-circle bg-lavender-10"><span>10</span></div>
+      <div class="circle color-circle bg-mantis-10"><span>10</span></div>
+      <div class="circle color-circle bg-corn-10"><span>10</span></div>
+      <div class="circle color-circle bg-fire-10"><span>10</span></div>
+      <div class="circle color-circle bg-smoke-10"><span>10</span></div>
+
 </div>
 
 <h2 class="overview-color-heading">Other Colors</h2>
@@ -245,3 +300,9 @@ $smokes: (
 ```
 
 </div>
+
+<script type="module" src="" is:inline>
+  import getHexCode from '../../../utilities/copyHexCode.ts'; const circles =
+  document.querySelectorAll(".color-circle"); circles.forEach((btn) =>
+  {btn.addEventListener("click", getHexCode)});
+</script>
