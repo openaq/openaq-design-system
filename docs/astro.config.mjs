@@ -1,11 +1,12 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import solidJs from "@astrojs/solid-js";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://openaq.github.io',
-  base: 'openaq-design-system',
+  site: "https://openaq.github.io",
+  base: "openaq-design-system",
   integrations: [
     starlight({
       title: "OpenAQ Design System",
@@ -14,9 +15,7 @@ export default defineConfig({
         replacesTitle: true,
       },
       disable404Route: true,
-      customCss: [
-        './src/styles/main.scss'
-      ],
+      customCss: ["./src/styles/main.scss"],
       head: [
         {
           tag: "link",
@@ -70,5 +69,6 @@ export default defineConfig({
         },
       ],
     }),
+    solidJs(),
   ],
 });
