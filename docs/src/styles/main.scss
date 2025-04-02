@@ -420,7 +420,7 @@ footer {
 }
 
 .color-circle {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .color-circle:hover {
@@ -429,7 +429,7 @@ footer {
 }
 
 .color-circle:hover:after {
-  content: attr(data-id);
+  content: attr(data-hex-code);
   padding: 4px 8px;
   color: var.$smoke180;
   background-color: var.$white;

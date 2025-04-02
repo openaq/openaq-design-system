@@ -6,12 +6,10 @@ const ColorCircle = (props: { color: colorPaletteType }) => {
   const [hexCodeCopied, setHexCodeCopied] = createSignal(false);
 
   const copyHexCode = async () => {
-    console.log("KNAPP KLICKAD");
     if (hexCodeCopied()) {
       return;
     }
 
-    console.log("hex code", props.color.hexCode);
     await navigator.clipboard.writeText(props.color.hexCode);
     setHexCodeCopied(true);
     setTimeout(() => setHexCodeCopied(false), 1000);
@@ -20,7 +18,7 @@ const ColorCircle = (props: { color: colorPaletteType }) => {
   return (
     <div
       class={props.color.class}
-      data-id={props.color.hexCode}
+      data-hex-code={props.color.hexCode}
       onClick={copyHexCode}
       style={{
         color: /\b(10|20|30)\b/.test(props.color.class) ? "#30363c" : "#ffffff",
@@ -31,7 +29,7 @@ const ColorCircle = (props: { color: colorPaletteType }) => {
   );
 };
 
-const CircleGrid = () => {
+export const CircleGrid = () => {
   return (
     <div id="colorPaletteWrapper" class="color-palette-wrapper">
       {colorPalettes.map((color) => (
@@ -40,5 +38,3 @@ const CircleGrid = () => {
     </div>
   );
 };
-
-export default CircleGrid;
