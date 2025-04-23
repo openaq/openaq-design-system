@@ -3,6 +3,10 @@ title: "Badges"
 tableOfContents: false
 ---
 
+import WhiteCheckIcon from "@assets/svg/white_check.svg";
+import WhiteInfoIcon from "@assets/svg/white_info.svg";
+import WhiteWarningIcon from "@assets/svg/white_check.svg";
+
 <div
 class="badge-wrapper"
 
@@ -11,30 +15,30 @@ class="badge-wrapper"
   <div class="badge-item">
     <div class="badge badge--status-ok">Ok </div>
 
-    <div class="badge badge--status-ok">Ok<img  class="badge-icon" src="@assets/svg/white_check.svg"></img></div>
+    <div class="badge badge--status-ok">Ok<img  class="badge-icon" src={WhiteCheckIcon.src}></img></div>
 
   </div>
   <div class="badge-item">
     <div class="badge badge--status-alert">Alert</div>
-    <div class="badge badge--status-alert">Alert<img  class="badge-icon" src="@assets/svg/white_info.svg"></img></div>
+    <div class="badge badge--status-alert">Alert<img  class="badge-icon" src={WhiteInfoIcon.src}></img></div>
   </div>
   <div class="badge-item">
     <div class="badge badge--status-warning">Warning</div>
-    <div class="badge badge--status-warning">Warning<img class="badge-icon" src="@assets/svg/white_warning.svg"></img></div>
+    <div class="badge badge--status-warning">Warning<img class="badge-icon" src={WhiteWarningIcon.src}></img></div>
   </div>
 </div>
 
 ```ini
   <div class="badge-item">
     <div class="badge badge--status-ok">Ok </div>
-    <div class="badge badge--status-ok">Ok<img  class="badge-icon" src="@assets/svg/white_check.svg"></img></div>
+    <div class="badge badge--status-ok">Ok<img  class="badge-icon" src={WhiteCheckIcon.src}></img></div>
   </div>
   <div class="badge-item">
     <div class="badge badge--status-alert">Alert</div>
-    <div class="badge badge--status-alert">Alert<img  class="badge-icon" src="@assets/svg/white_info.svg"></img></div>
+    <div class="badge badge--status-alert">Alert<img  class="badge-icon" src={WhiteInfoIcon.src}></img></div>
   </div>
   <div class="badge-item">
     <div class="badge badge--status-warning">Warning</div>
-    <div class="badge badge--status-warning">Warning<img class="badge-icon" src="@assets/svg/white_warning.svg"></img></div>
+    <div class="badge badge--status-warning">Warning<img class="badge-icon" src={WhiteWarningIcon.src}></img></div>
   </div>
 ```
