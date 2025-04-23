@@ -1,6 +1,6 @@
 import { createSignal } from "solid-js";
-import type { colorPaletteType } from "../utilities/types/types";
-import colorPalettes from "../utilities/data/colorPalettes";
+import type { colorPaletteType } from "@utilities/types/types";
+import colorPalettes from "@utilities/data/colorPalettes";
 
 const ColorCircle = (props: { color: colorPaletteType }) => {
   const [hexCodeCopied, setHexCodeCopied] = createSignal(false);
