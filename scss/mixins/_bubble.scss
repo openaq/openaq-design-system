@@ -1,8 +1,9 @@
 @use "../variables" as *;
+@use "sass:map";
 
 @mixin bubble($diameter: 230, $color-map) {
-  $lighterTone: map-get($color-map, "60");
-  $darkerTone: map-get($color-map, "100");
+  $lighterTone: map.get($color-map, "60");
+  $darkerTone: map.get($color-map, "100");
 
   height: $diameter * 1px;
   width: $diameter * 1px;
