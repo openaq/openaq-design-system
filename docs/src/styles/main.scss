@@ -1,6 +1,7 @@
 @use "@scss/mixins/index.scss" as mixins;
 @use "@scss/variables" as var;
 @use "@scss/openaq.scss";
+@use "@scss/utilities/index" as u;
 
 @font-face {
   font-family: "Space Grotesk";
@@ -212,7 +213,7 @@ span {
 .intro-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: u.rem(10);
 }
 
 .shortcuts-list {
