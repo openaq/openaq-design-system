@@ -1,6 +1,6 @@
 {
   "name": "openaq-design-system",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "sass": "src/openaq.scss",
   "repository": "https://github.com/openaq/openaq-design-system.git",
   "author": "OpenAQ <dev@openaq.org>",
