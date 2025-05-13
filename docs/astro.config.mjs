@@ -6,7 +6,7 @@ import solidJs from "@astrojs/solid-js";
 // https://astro.build/config
 export default defineConfig({
   site: "https://openaq.github.io",
-  base: "openaq-design-system",
+  base: "/openaq-design-system/",
   integrations: [
     starlight({
       title: "OpenAQ Design System",
@@ -29,9 +29,14 @@ export default defineConfig({
       components: {
         ThemeSelect: "/src/components/ThemeSelect.astro",
       },
-      social: {
-        github: "https://github.com/withastro/starlight",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/withastro/starlight",
+        },
+      ],
+
       sidebar: [
         {
           label: "OpenAQ Design System",
