@@ -23,14 +23,34 @@ Bubbles are purely decorative elements used in the OpenAQ website and OpenAQ exp
 <div class="bubbles-mixin-wrapper">
   <h2 class="bubbles-mixin-heading">Mixin</h2>
 
-In addition to the base classes, bubbles can be created with a mixin. The mixin takes a diameter parameter with a default of 230px, the same at the large bubble.
+In addition to the base classes, bubbles can be created using the bubble mixin. The mixin takes two parameters:
+
+<ul>
+  <li>Diameter – the size of the bubble in pixels (e.g. 230)</li>
+  <li>Color – a color map variable from the design system (e.g. $skys)</li>
+</ul>
+
+Example:
+
+<div class="bubbles-container">
+  <div class="bubble-sm"></div>
+  <div class="bubble-lg"></div>
+</div>
 
 </div>
-```scss
-@use "openaq-design-system/mixins" as mixins;
-
-@include mixins.bubble(300);
 
 ```
+  @use "openaq-design-system/scss/mixins/bubble" as mixins;
+  @use "openaq-design-system/scss/variables" as var;
+
+.bubbles-container {
+  .bubble-lg {
+    @include mixins.bubble(230, var.$skys);
+  }
+
+  .bubble-sm {
+    @include mixins.bubble(45, var.$skys);
+  }
+}
 
 ```

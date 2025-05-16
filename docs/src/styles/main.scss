@@ -278,6 +278,20 @@ span {
   padding-top: 20px;
 }
 
+.bubbles-container {
+  display: flex;
+  gap: 20px;
+
+  .bubble-lg {
+    @include mixins.bubble(230, var.$skys);
+    margin-bottom: 20px;
+  }
+
+  .bubble-sm {
+    @include mixins.bubble(45, var.$skys);
+  }
+}
+
 /*** FOOTER ***/
 
 footer {
